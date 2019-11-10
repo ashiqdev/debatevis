@@ -1,0 +1,38 @@
+.timeline {
+    margin: -8px 0; /* I do not know why this is needed */
+}
+.timeline-button {
+    background: #ccc;
+    border-radius: 3px;
+    width: 100%;
+    height: 18px;
+    border: none;
+}
+.timeline-container{
+    position:fixed;
+    top:0;
+    padding:0;
+}
+
+.timeline-container .episode {
+    border-top: 1px solid #333;
+    font-size: 11px;
+    position: absolute;
+    padding: 3px 3px 3px 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.timeline-container .episode:hover {
+    border-left: 3px solid #666;
+    padding-left: 47px;
+}
+
+.episodes {
+    position: absolute;
+    top: 18px;
+}
+
+.unseen-content-filter {
+    fill: #fff;
+    opacity: 0.9;
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "id": "2020-dem-4",
+    "filename": "data/dem-2020-4.csv",
+    "title": "Fourth 2020 Democratic primary debate",
+    "video": {"id": "", "start": 160},
+    "date": "October 15, 2019",
+    "include": true,
+    "old": false,
+    "applause": true
+  },{
+    "id": "2020-dem-3",
+    "filename": "data/dem-2020-3.csv",
+    "title": "Third 2020 Democratic primary debate",
+    "video": {"id": "2UWVO0Trd1c", "start": 160},
+    "date": "September 12, 2019",
+    "include": true,
+    "old": false,
+    "applause": true
+  },{
+    "id": "2020-dem-2-night2",
+    "filename": "data/dem-2020-2-night2.csv",
+    "title": "Second 2020 Democratic primary debate - Night 2",
+    "video": {"id": "", "start": 0},
+    "date": "July 31, 2019",
+    "include": true,
+    "old": false,
+    "applause": true
+  },{
+    "id": "2020-dem-2-night1",
+    "filename": "data/dem-2020-2-night1.csv",
+    "title": "Second 2020 Democratic primary debate - Night 1",
+    "video": {"id": "", "start": 0},
+    "date": "July 30, 2019",
+    "include": true,
+    "old": false,
+    "applause": true
+  },{
+    "id": "2020-dem-1-night1",
+    "filename": "data/scribie-dem-2020-1-night1.csv",
+    "title": "First 2020 Democratic primary debate - Night 1",
+    "video": {"id": "vJ6MrDO0kgY", "start": 80},
+    "date": "June 26, 2019",
+    "include": true,
+    "old": false,
+    "applause": true
+  },{
+    "id": "2020-dem-1-night2",
+    "filename": "data/scribie-dem-2020-1-night2.csv",
+    "title": "First 2020 Democratic primary debate - Night 2",
+    "video": {"id": "cX7hni-zGD8", "start": 75},
+    "date": "June 27, 2019",
+    "include": true,
+    "old": false,
+    "applause": true
+  },{
+    "id": "2020-dem-1-night1-old",
+    "filename": "data/democratic-primary-2020-1-autotopics.csv",
+    "title": "First 2020 Democratic primary debate - Night 1",
+    "video": {"id": "vJ6MrDO0kgY", "start": 80},
+    "date": "June 26, 2019",
+    "include": false,
+    "old": false,
+    "applause": true
+  },
+  {
+    "id": "2020-dem-1-night2-old",
+    "filename": "data/democratic-primary-2020-1b-autotopics.csv",
+    "title": "First 2020 Democratic primary debate - Night 2",
+    "video": {"id": "cX7hni-zGD8", "start": 75},
+    "date": "June 27, 2019",
+    "include": false,
+    "old": false,
+    "applause": true
+  },{
+    "id": "1960-gen-1",
+    "filename": "data/nixon-kennedy-1960-1.csv",
+    "title": "First Kennedy/Nixon presidential debate",
+    "video": {"id": "gbrcRKqLSRw", "start": 0},
+    "date": "September 26, 1960",
+    "include": true,
+    "old": true,
+    "applause": false
+  },
+  {
+    "id": "2016-gen-1",
+    "filename": "data/clinton-trump-2016-1.csv",
+    "title": "First 2016 Clinton/Trump presidential debate",
+    "video": {"id": "855Am6ovK7s", "start": 320},
+    "date": "September 26, 2016",
+    "include": true,
+    "old": true,
+    "applause": true
+  },
+  {
+    "id": "2016-gen-2",
+    "filename": "data/clinton-trump-2016-2.csv",
+    "title": "Second 2016 Clinton/Trump presidential debate",
+    "date": "October 9, 2016",
+    "video": {"id": "FRlI2SQ0Ueg", "start": 62},
+    "include": true,
+    "old": true,
+    "applause": true
+  },
+  {
+    "id": "2016-gen-3",
+    "filename": "data/clinton-trump-2016-3.csv",
+    "title": "Third 2016 Clinton/Trump presidential debate",
+    "video": {"id": "smkyorC5qwc", "start": 0},
+    "date": "October 19, 2016",
+    "include": true,
+    "old": true,
+    "applause": true
+  },
+  {
+    "id": "2019-sotu",
+    "filename": "data/trump-sotu-2019.csv",
+    "title": "Trump's 2019 State of the Union speech",
+    "video": {"id": "bYj4cDmilxc", "start": 0},
+    "date": "February 5, 2019",
+    "include": false,
+    "old": true,
+    "applause": true
+  },
+  {
+    "id": "2020-dem-test",
+    "filename": "data/random1.csv",
+    "title": "Sample 2019 Democratic Primary (randomly generated)",
+    "video": {"id": "", "start": 0},
+    "include": false,
+    "old": true,
+    "applause": false
+  },{
+    "id": "2016-rep-1",
+    "filename": "data/republican-primary-2016-1.csv",
+    "title": "First 2016 Republican primary debate",
+    "video": {"id": "", "start": 0},
+	  "date": "August 6, 2015",
+    "include": false,
+    "old": true,
+    "applause": true
+  },
+  {
+    "id": "2016-dem-4",
+    "filename": "data/democratic-primary-2016-4.csv",
+    "title": "Fourth Democratic primary debate",
+    "video": {"id": "ti2Nokoq1J4", "start": 66},
+    "date": "January 17, 2016",
+    "include": true,
+    "old": true,
+    "applause": true
+  }
+]

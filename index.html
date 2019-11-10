@@ -1,0 +1,3430 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/timeline.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.10/css/bootstrap-select.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/css/bootstrap-slider.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.10/js/bootstrap-select.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/bootstrap-slider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+<script type="text/javascript" src="lib/graph-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.0.3/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+<title>DebateVis</title>
+
+<style>
+.detail{
+  font-size: 9pt;
+  color: #525252;
+  display: inline;
+}
+.dropdown-item{
+  font-size: 11pt;
+}
+.dropdown-menu{
+  overflow-y: scroll;
+}
+.chord-label{
+  font-size: 10pt;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hover-detail{
+  font-size: 9pt;
+  font-family: sans-serif;
+}
+.legend-label{
+  font-size: 9pt;
+  text-anchor: start;
+}
+.phrase{
+  font-size: 11pt;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.selectpicker{
+  overflow: visible;
+}
+.topic-tag{
+  font-size: 9pt;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.detail-label{
+  text-anchor: start;
+  font-size: 8pt;
+}
+
+.timeline-label{
+  font-size: 9pt;
+  text-anchor: start;
+  text-shadow: 2px 2px 5px white;
+}
+
+.timeline-col{
+  fill: gray;
+  stroke: black;
+  opacity: 0.1;
+}
+.title{
+  text-align: left;
+  display: inline;
+  margin-top: 0;
+}
+
+.topic-selection-container{
+  font-size: 10pt;
+}
+
+.topic-selection-container > .topic-option{
+  font-size: 10pt;
+}
+
+.select2-results__options{
+  font-size:10pt !important;
+ }
+
+.select2-selection--multiple{
+  max-height: 80px;
+}
+
+li.select2-results__option{
+   overflow: hidden;
+}
+.select2-choices {
+  min-height: 150px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#player{
+  transform: translate(-25%, 0%);
+}
+.project-summary{
+  font-size: 9pt;
+  color: #525252;
+  display: inline;
+}
+.logo{
+  display: inline;
+}
+#sections > div{
+  opacity: .7
+}
+
+#sections{
+  padding-top: 150px;
+}
+
+#sections div.graph-scroll-active{
+  opacity: 1;
+  font-weight: bold;
+}
+
+#sections div.graph-scroll-secondary{
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+#topic-detail-label{
+  font-size: 9pt;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navbar-text-group{
+  word-wrap: break-word;
+  max-width: 25%;
+}
+
+.navbar-text{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#currently-viewing-label{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+@media (max-width: 720px)  {
+  .timeline-label{
+    font-size: 8pt;
+  }
+  .chord-label{
+    font-size: 9pt;
+  }
+
+  .navbar-text-group{
+    max-width: 100%;
+  }
+
+  #topic-details{
+    transform: translate(60%,10%);
+  }
+
+  .detail-label{
+    font-size: 8pt;
+  }
+
+  #speaker-details{
+    transform: translate(60%,45%);
+  }
+
+  #player{
+    transform: translate(20%, 20%);
+  }
+
+  #topic-frequency{
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  #debate-selection{
+    max-height: 400px;
+    overflow: auto;
+  }
+
+  .debate-item{
+    white-space: normal;
+    width: 100%;
+  }
+
+  #sections{
+    overflow-y: scroll;
+
+/*    position: relative;
+    margin: 0px auto; */
+    position: inherit;
+    padding-top: 400px;
+    z-index: -1;
+  }
+}
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-     controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="http://web.northeastern.edu/debatevis">DebateVis</a>
+    <div class="navbar-text-group">
+      <span class="navbar-text" style="font-size: 10pt; color: black; visibility: visible;">A project by the InterVis lab at Northeastern University.</span>
+      <span class="navbar-text" style="font-size: 9pt;" id="currently-viewing-label">Currently viewing: </span>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a data-toggle="modal" class="nav-link" href="#how-to-read-modal" title="How to read">How to read</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Topics</a>
+          <div class="dropdown-menu topic-selection-container" aria-labelledby="dropdownMenu">
+            <select id="topic-selection" multiple="multiple" style="width: 100%; overflow: hidden;">
+            </select>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">Select a different debate</a>
+          <div id="debate-selection" class="dropdown-menu" style="overflow: scroll;" aria-labelledby="dropdownMenu"></div>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="visibility: visible;" href="http://www.northeastern.edu/">
+              <img src="img/northeastern-seal.png" alt="Northeastern logo" width="100"></img>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" href="#methodology-modal" title="Methodology"><i class="fa fa-info-circle"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/debatevis" title="@debatevis"><i class="fa fa-twitter"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" href="#share-modal" onclick="createShareableLink()" title="Get shareable link"><i class="fa fa-link"></i></a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" data-toggle="modal" href="#survey-modal" title="Take our feedback survey!" class="nav-link"><i class="fa fa-comment"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container-fluid" id="container">
+      <div class="row">
+        <div class="col-xs-4 col-md-5" id="vis-container">
+          <div class="row">
+            <div class="col-md-6" id="chord-diagram-container">
+              <svg id="topic-frequency" style="position: fixed; top: 50px;"></svg>
+              <div id="player">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2UWVO0Trd1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+           <div class="col-md-6" id="details-container">
+              <div class="col-md card" id="speaker-details-container">
+              </div>
+              <div class="col-md card" id="topic-details-container">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-5 col-9" id="sections"></div>
+
+        <div class="col-1 col-md-2" id="timeline-container" style="padding-left: 100; margin-left: 0;">
+          <svg id="mini-timeline-svg" style="position: fixed; top: 0px; right: 10px;"></svg>
+          <svg id="timeline-svg" style="position: fixed; top: 0px; right: 10px;"></svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="share-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Shareable link</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" style="font-size: 10pt;">
+            <div class="input-group">
+              <input type="text" class="form-control" value="" id="shareable-link">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary" onclick="copyLink()">Copy link</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="timeline-help-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">How to read the timeline</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" style="font-size: 10pt;">
+            <p>The timeline shows a birds-eye view of the debate, from the first few utterances at the top of the timeline to the last at the bottom of the timeline. It is split into two sections: speaker interactions and topic distributions. A speaker interaction is a catch-all term that includes attacks, agreements, interruptions, and direct references to other speakers or well-known public figures (e.g. Donald Trump and Barack Obama):
+              <ul>
+                <li> A green arrow <img width="6%"style="display: inline-block;" src="img/green-arrow.png"></img> indicates agreement. </li>
+                <li> A red arrow <img width="6%"style="display: inline-block;" src="img/attack-arrow.png"></img> indicates an attack. </li>
+                <li> A black arrow <img width="6%"style="display: inline-block;" src="img/black-arrow.png"></img> indicates a reference that couldn’t be easily placed in either of the previous categories.</li>
+                <li> An arrow of any color with a slash through it<img width="6%"style="display: inline-block;" src="img/slash-arrow.png"></img> indicates an interruption. </li>
+              </ul>
+              <!--Here’s an example of Cory Booker agreeing with Julian Castro in the June 2019 Democratic primary debate. The arrow goes from Booker to Castro to show that Booker initiated the interaction.</p>
+            <span><img class="center" src="img/timeline-interaction-example.png" width="20%"></img></span> -->
+
+            <p>The timeline also shows what topics were discussed at various points in the debate. For example, if a speaker starts talking about healthcare reform and the economic implications of private insurance, a line is placed in the <b>healthcare</b> and <b>economic inequality</b> columns. This produces clusters of marks that make it easy to spot when a topic is being discussed in great detail. Click on any mark in the timeline to jump to that moment in the transcript!</p>
+
+            <h4>Interactivity</h4>
+            Hover or click on a speaker picture to see all the interactions involving a specific candidate. This will also highlight all utterances from a specific candidate on the timeline.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="topic-speaker-diagram-help-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">How to read the topic diagram</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" style="font-size: 10pt;">
+            <p>The topic-speaker diagram summarizes what topics all of the speakers have discussed, individually and as a group.</p>
+
+            <span><img class="center" src="img/annotated-topic-speaker-chord-diagram.png" width="80%"></img></span>
+            <span><img class="center" src="img/annotated-barcharts.png" width="80%"></img></span>
+
+            <p>The topic diagram shows the selected topics on the outside of the circle, arranged so topics that are frequently mentioned together in the debate and placed side-by-side. All of the speakers can be seen in the center of the circle. Their icons will move to follow the topic trajectory of the debate as you scroll through the transcript. Relationships between topics are summarized by the chords that stretch across the circle to connect the topics. A thicker chord implies a stronger connection; in other words, two topics that are frequently mentioned together or one after another will have a thicker chord than two topics that are not brought up together by the speakers or the moderators. For example, in the topic diagram from the first Democratic primary debate in June 2019, we can see a strong connection between <b>healthcare</b> and <b>jobs</b>, but no connection between <b>climate change</b> and <b>gun control</b>. </p>
+
+
+            <img class="center" width="60%" src="img/topic-diagram-example.png"></img>
+
+            <h4>Interactivity</h4>
+            <p>DebateVis is built for interactive exploration! Use the topic selection box to pick the topics you're most interested in to see them reflected in the visualization. Click on any of the marks in the timeline to navigate to that moment in the transcript. Hover over speaker photos in the topic diagram to learn more about their debate performance. Click <b>Select a different debate</b> to check out the other debate transcripts we have available within DebateVis.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="how-to-read-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">How to read this visualization</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" style="font-size: 10pt;">
+            <h4>How to read the timeline</h4>
+            <p>The timeline shows a birds-eye view of the debate, from the first few utterances at the top of the timeline to the last at the bottom of the timeline. It is split into two sections: speaker interactions and topic distributions. A speaker interaction is a catch-all term that includes attacks, agreements, interruptions, and direct references to other speakers or well-known public figures (e.g. Donald Trump and Barack Obama).  A green arrow <img width="6%"style="display: inline-block;" src="img/green-arrow.png"></img> indicates agreement, a red arrow <img width="6%"style="display: inline-block;" src="img/attack-arrow.png"></img> indicates an attack, and a black arrow <img width="6%"style="display: inline-block;" src="img/black-arrow.png"></img> indicates a reference that couldn’t be easily placed in either of the previous categories. An arrow of any color with a slash through it<img width="6%"style="display: inline-block;" src="img/slash-arrow.png"></img> indicates an interruption. Here’s an example of Cory Booker agreeing with Julian Castro in the June 2019 Democratic primary debate. The arrow goes from Booker to Castro to show that Booker initiated the interaction.</p>
+            <span><img class="center" src="img/timeline-interaction-example.png" width="20%"></img></span>
+
+            <p>The timeline also shows what topics were discussed at various points in the debate. For example, if a speaker starts talking about healthcare reform and the economic implications of private insurance, a line is placed in the <b>healthcare</b> and <b>economic inequality</b> columns. This produces clusters of marks that are easy to spot when a topic is being discussed in great detail. Click on any mark in the timeline to jump to that moment in the transcript!</p>
+
+            <h4>How to read the topic diagram</h4>
+            <p>The topic diagram shows the selected topics on the outside of the circle, arranged so topics that are frequently mentioned together in the debate and placed side-by-side. All of the speakers can be seen in the center of the circle. Their icons will move to follow the topic trajectory of the debate as you scroll through the transcript. Relationships between topics are summarized by the chords that stretch across the circle to connect the topics. A thicker chord implies a stronger connection; in other words, two topics that are frequently mentioned together or one after another will have a thicker chord than two topics that are not brought up together by the speakers or the moderators. For example, in the topic diagram from the first Democratic primary debate in June 2019, we can see a strong connection between <b>healthcare</b> and <b>jobs</b>, but no connection between <b>climate change</b> and <b>gun control</b>. </p>
+
+            <img class="center" width="80%" src="img/topic-diagram-example.png"></img>
+
+            <h4>How to read the bar charts</h4>
+            <p>Two bar charts provide extra details about the topics and speakers in the debate, including the total number of utterances for each speaker and for each topic. Hover over a speaker or a topic in the topic diagram to filter the information in the bar charts.</p>
+
+            <h4>Interactivity</h4>
+            <p>DebateVis is built for interactive exploration! Use the topic selection box to pick the topics you're most interested in to see them reflected in the visualization. Click on any of the marks in the timeline to navigate to that moment in the transcript. Hover over speaker photos in the topic diagram to learn more about their debate performance. Click <b>Select a different debate</b> to check out the other debate transcripts we have available within DebateVis.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="methodology-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Methodology</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" style="font-size: 10pt;">
+            <p>For best performance, please use Chrome on a desktop computer.</p>
+            <h4>Data</h4>
+            <p>Transcripts for the 2019 primary debates were obtained from <a href="https://www.nbcnews.com/politics/2020-election/full-transcript-first-democratic-primary-debate-2019-n1022816">NBC News</a>. All topic labels are coded by hand. Sentiment scores are calculated for each statement using <a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a>. Sentiment scores indicate the sentiment of a statement, ranging from -1 (most negative) to 1 (most positive).</p>
+
+            <h4>Topic Diagram</h4>
+            <p>The topic diagram shows a summary of the most frequently mentioned topics in the debate. Topics are listed on the outside of the circle. A chord diagram inside the circle shows topic switches that occured during the debate. Topic switches and agenda setting can be used strategically by debate participants to improve their performance.</p>
+
+            <h4>Timeline</h4>
+            The timeline on the right side of the interface shows the topic distribution of the entire debate, from the first utterance at the top to the last utterance at the bottom. Lines representing utterances are placed according to the topic being discussed.
+
+            <h4>Acknowledgements</h4>
+            <p>DebateVis was created by an interdisciplinary team of researchers at Northeastern University, including <a href="https://www.khoury.northeastern.edu/people/laura-south/">Laura South</a>, <a href="https://www.khoury.northeastern.edu/people/michail-schwab/">Micha Schwab</a>, <a href="https://cssh.northeastern.edu/people/faculty/nicholas-beauchamp/">Nick Beauchamp</a>, <a href="https://www.ccs.neu.edu/home/luwang/">Lu Wang</a>, and <a href="http://www.ccs.neu.edu/home/borkin/">Michelle Borkin</a>. This work is funded by a Tier 1 grant from Northeastern University. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="survey-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Would you like to give any feedback?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body" style="font-size: 10pt;">
+            <!-- TODO: Rewrite modal body text so it's more "please consider taking our survey" and less "here's your link" -->
+            <p>Click the button below if you would like to answer a few questions about your experience with DebateVis. Thank you!</p>
+            <div class="col text-center">
+              <a class="btn btn-primary" href="https://neu.co1.qualtrics.com/jfe/form/SV_8uAtLENHYMnPb5b">Take our survey</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<footer>
+  <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141413826-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141413826-2');
+
+</script>
+
+
+<script>
+  let margin = {top: 180, bottom: 30, left: 100, right: 30};
+  let visWidth = $("#vis-container").width() - margin.left - margin.right;
+  let visHeight = (window.visualViewport.height - margin.top - margin.bottom) * 0.5;
+  let timelineWidth =  Math.max(250,$("#timeline-container").width());
+
+//  let width = visWidth - margin.left - margin.right;
+  let height = window.innerHeight - margin.top - margin.bottom;
+  let countSmallMax = 0;
+  let player = null;
+  let topicCount = 6;
+  let interactionPath = d3.line().curve(d3.curveBasis);
+  let isMobile = false;
+
+  let color = {
+    mint: "#94b5b1",
+    blue: "#2b8cbe",
+    orange: "#f1a340",
+    purple: "#998ec3",
+    darkOrange: "#8b0000",
+  }
+
+  let interaction = {
+    attack: d3.symbol().size(60).type(d3.symbolCross)(),
+    interruption: d3.symbol().size(60).type(d3.symbolCross)()
+  }
+
+  let scale = {
+    speakers: d3.scaleBand(),
+    polarity: d3.scaleLinear().domain([-1,1]).range([0,45]),
+    subjectivity: d3.scaleLinear().domain([0,1]),
+    topics: d3.scaleBand().paddingOuter(1.2),
+    topicDetail: d3.scaleBand(),
+    speakerDetail: d3.scaleBand(),
+    topicsCircular: d3.scaleBand().range([0, 2 * Math.PI]),
+    speakersCircular: d3.scaleBand().range([0, 2 * Math.PI]),
+    time: d3.scaleLinear(),
+    count: d3.scaleLinear(),
+    speaker: d3.scaleOrdinal(),
+  }
+
+  let axis = {
+    speakers: d3.axisLeft().scale(scale.speakers),
+    topicDetail: d3.axisLeft().scale(scale.topicDetail),
+    time: d3.axisBottom().scale(scale.time),
+    topics: d3.axisTop().scale(scale.topics)
+  }
+
+  let svg;
+
+  let total_topic_counts, speaker_counts, utterance_counts, applause_counts, words_said, topic_transitions;
+  let speakerImageRadius = 30;
+  let chordInnerRadius;
+  let current = 0;
+  let arc;
+  let chords;
+  let included_topics;
+
+  let dem2016 = "data/democratic-primary-2016-4-sentiments.csv";
+  let dem2019 = "data/random1.csv";
+  let debate2 = "data/debate2.csv";
+  let rep2016 = "data/republican-primary-2016-1.csv";
+  let currentDebate;
+  let processedData;
+  let urlParams = getUrlVars();
+  let start_time;
+  let selectedSpeaker = "";
+  let selectedTopic = "";
+
+  d3.json("data/debates-may27.json").then(populateDebateSelection).then(function(){
+    d3.csv(currentDebate.filename).then(function(data){
+      d3.select("#currently-viewing-label").text("Currently viewing: " + currentDebate.title);
+      processedData = readData(data);
+      $("#player").width(visWidth * 0.6);
+      $("#player").height(visWidth * 0.6 / 1.86);
+
+      let speaker_counts = processedData["speaker_counts"];
+      let topics = speaker_counts.get("all").keys();
+      // sort topics in descending order by absolute number of mentions in debate
+      topics.sort((a,b) => speaker_counts.get("all").get(b) - speaker_counts.get("all").get(a));
+      included_topics = topics.slice(0,topicCount);
+      render(processedData, included_topics);
+      sessionStorage.setItem('debate',currentDebate.id);
+    });
+  });
+
+  window.addEventListener("resize", function(){
+    clearSpeakerVisualizations();
+    clearText();
+    clearTimeline();
+    visWidth = $("#vis-container").width() - margin.left - margin.right;
+    let visHeight = (window.visualViewport.height - margin.top - margin.bottom) * 0.5;
+    d3.select("#background-rect")
+      .attr("width",visWidth+ margin.left + margin.right)
+      .attr("height", visHeight);
+    $("#player").width(visWidth * 0.6);
+    $("#player").height(visWidth * 0.6 / 1.86);
+    let selected = $("#topic-selection").select2("data");
+    included_topics = selected.map(function(d){return d.text.replace(" ", "-")});
+    included_topics.sort((a,b) => processedData["speaker_counts"].get("all").get(b) - processedData["speaker_counts"].get("all").get(a));
+    render(processedData, included_topics);
+  });
+
+
+  function readData(data){
+    let topics = d3.map(); // topics collects all of the topics (and their frequencies) that are automatically identified for each speaker's corpus.
+    let corpus = d3.map(); // corpus collects all of the utterances for each speaker.
+    let speaker_names = [];
+    let mentions = []; // this will store all of the names referenced in the debate. These names do not have to be people in the debate.
+    let speaker_counts = d3.map();
+    speaker_counts.set("all",d3.map()); // this will keep track of accumulated topic counts for all speakers.
+
+    let utterance_counts = d3.map(); // counts the total number of utterances for each speaker.
+    let applause_counts = d3.map();  // collects all of the times the audience applauds each speaker.
+    let words_said = d3.map();       // counts the total number of words said by each speaker.
+    let speaker_sentiments = d3.map();
+    speaker_sentiments.set("all",d3.map()); // this will keep track of accumulated topic sentiments for all speakers.
+
+    data.forEach(function(link){
+      link.interruption = link.interruption == "True";
+      link.interaction = link.interaction == "True";
+      link.attack = link.attack == "True";
+      link.agree = link.agree == "True";
+      link.defense = link.defense == "True";
+      link.reference = link.reference == "True";
+      link.applause = link.applause == "True";
+      link.laughter = link.laughter == "True";
+      link.index = parseInt(link.index);
+
+      if(!Array.isArray(link.topic)){ // on first pass through, split comma-separated topic list into an array.
+        link.topic = link.autotopic ? link.autotopic.slice(1,link.autotopic.length - 1).split(",") : link.topic.split(",");
+        if(link.autotopic){
+          let parsed_topics = "";
+          link.topic.forEach(function(id,i){
+            id = id.trim();
+            parsed_topics += id.slice(1, id.length-1) + ",";
+          });
+          link.topic = parsed_topics.slice(0, parsed_topics.length-1).split(",");
+        }
+      }
+      if(!Array.isArray(link.mentions)){ // on first pass through, split comma-separated mentions list into an array.
+        link.mentions = link.mentions.slice(1,link.mentions.length - 1).split(",");
+        if(link.mentions){
+          let parsed = "";
+          link.mentions.forEach(function(id,i){
+            id = id.trim();
+            id = id.slice(1, id.length-1);
+            parsed += id + ",";
+            if(mentions.indexOf(id) == -1){ // add to list of mentions if we haven't added it already.
+              mentions.push(id);
+            }
+          });
+          link.mentions = parsed.slice(0, parsed.length-1).split(",");
+        }
+      }
+      if(!Array.isArray(link.agree_target)){ // on first pass through, split comma-separated mentions list into an array.
+        link.agree_target = link.agree_target.slice(1,link.agree_target.length - 1).split(",");
+        if(link.agree_target){
+          let parsed = "";
+          link.agree_target.forEach(function(id,i){
+            id = id.trim();
+            id = id.slice(1, id.length-1);
+            parsed += id + ",";
+            if(mentions.indexOf(id) == -1){ // add to list of mentions if we haven't added it already.
+              mentions.push(id);
+            }
+          });
+          link.agree_target = parsed.slice(0, parsed.length-1).split(",");
+        }
+      }
+      if(!Array.isArray(link.attack_target)){ // on first pass through, split comma-separated mentions list into an array.
+        link.attack_target = link.attack_target.slice(1,link.attack_target.length - 1).split(",");
+        if(link.attack_target){
+          let parsed = "";
+          link.attack_target.forEach(function(id,i){
+            id = id.trim();
+            id = id.slice(1, id.length-1);
+            parsed += id + ",";
+            if(mentions.indexOf(id) == -1){ // add to list of mentions if we haven't added it already.
+              mentions.push(id);
+            }
+          });
+          link.attack_target = parsed.slice(0, parsed.length-1).split(",");
+        }
+      }
+      let topic_counts = speaker_counts.get(link.speaker);
+      let topic_sentiments = speaker_sentiments.get(link.speaker);
+      if(topic_counts === undefined){ // is this the first time we've seen this speaker?
+        topic_counts = d3.map();
+        topic_counts.set("all",1);
+        topic_sentiments = d3.map();
+        topic_sentiments.set("all",0);
+        speaker_names.push(link.speaker_name);
+        utterance_counts.set(link.speaker, 1);
+        applause_counts.set(link.speaker, 0);
+        words_said.set(link.speaker,0);
+        corpus.set(link.speaker, "");
+        if(mentions.indexOf(link.speaker) == -1){ // add to list of mentions if we haven't added it already.
+          mentions.push(link.speaker);
+        }
+      }
+      else{
+        let count = utterance_counts.get(link.speaker);
+        utterance_counts.set(link.speaker, ++count);
+        let word_count = words_said.get(link.speaker);
+        words_said.set(link.speaker, word_count + link.text.split(" ").length);
+        corpus.set(link.speaker, corpus.get(link.speaker).concat(link.text).concat(" "));
+        if(link.text.toLowerCase().includes("(applause)") || link.text.toLowerCase().includes("[applause]")){
+          count = applause_counts.get(link.speaker);
+          applause_counts.set(link.speaker, ++count);
+        }
+      }
+      let line_topics = link.topic;
+      line_topics.forEach(function(topic){
+        topic = topic.trim();
+        if(topic != "misc" && topic != "question"){
+          // count mentions of given topic by given speaker.
+          let count = topic_counts.get(topic);
+          topic_counts.set(topic, count === undefined ? 1 : ++count);
+          // sum sentiment scores for given topic and speaker.
+          let sentiment = topic_sentiments.get(topic);
+          topic_sentiments.set(topic, sentiment === undefined ? parseFloat(link.polarity) : (parseFloat(sentiment) + parseFloat(link.polarity)));
+          // count total mentions of given topic, regardless of speaker.
+          let total_count = speaker_counts.get("all").get(topic);
+          speaker_counts.get("all").set(topic, total_count === undefined ? 1 : ++total_count);
+
+          let total_sentiment = speaker_sentiments.get("all").get(topic);
+          speaker_sentiments.get("all").set(topic, total_sentiment === undefined ? parseFloat(link.polarity) : (parseFloat(total_sentiment) + parseFloat(link.polarity)));
+        }
+      });
+      let count = topic_counts.get("all");
+      topic_counts.set("all", ++count);
+      let sentiment = topic_sentiments.get("all");
+      topic_sentiments.set("all", sentiment == undefined ? parseFloat(link.polarity) : (parseFloat(sentiment) + parseFloat(link.polarity)));
+      speaker_counts.set(link.speaker, topic_counts);
+      speaker_sentiments.set(link.speaker, topic_sentiments);
+
+    });
+    speakers = speaker_counts.keys().filter(d => !d.includes("unknown") && d != "all");
+    speaker_names = speaker_names.filter(d => !d.includes("UNKNOWN"));
+    let result = d3.map();
+    result["speaker_names"] = speaker_names;
+    result["mentions"] = mentions;
+    result["speakers"] = speakers;
+    result["corpus"] = corpus;
+    result["speaker_counts"] = speaker_counts;
+    //result["all_speaker_counts"] = utterance_counts;
+    result["speaker_sentiments"] = speaker_sentiments;
+    result["lines"] = data;
+    result["topics"] = speaker_counts.get("all").keys();
+
+    // sort topics in descending order by absolute number of mentions in debate
+    result["topics"].sort((a,b) => speaker_counts.get("all").get(b) - speaker_counts.get("all").get(a));
+    $("#topic-count-slider").attr("data-slider-max",result["topics"].length);
+    return result;
+  }
+
+  function render(data, included_topics){
+    if(window.innerWidth < 720){
+      isMobile = true;
+    }
+    if(currentDebate.video.id == ""){
+      d3.select("#player").style("visibility","hidden")
+    }
+    if(currentDebate.video.id == "" && !isMobile){
+      //no video, so make visualizations larger.
+      visHeight = (window.visualViewport.height - margin.top - margin.bottom) * 0.8;
+    }
+    svg = d3.select("#topic-frequency")
+                .attr("width", visWidth + margin.left + margin.right)
+                .attr("height", visHeight + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(0,0)");
+
+    svg.append("rect").attr("x",0).attr("y",0).attr("id","background-rect").attr("width",visWidth+ margin.left + margin.right).attr("height", visHeight + margin.bottom).style("fill","white").style("stroke","none").style("opacity","1");
+
+
+    addPolarityGradient();
+    addSubjectivityGradient();
+
+    let speakers = processedData["speakers"];
+    let speaker_names = processedData["speaker_names"];
+    let speaker_sentiments = processedData["speaker_sentiments"];
+    let speaker_counts = processedData["speaker_counts"];
+    let topics = speaker_counts.get("all").keys();
+    scale.speaker.domain(speakers).range(speaker_names);
+
+    // calculate the maximum topic count across all speakers, which we will use for scaling in the bar charts.
+    let max = 0;
+    speakers.forEach(function(speaker){
+      let speaker_count = speaker_counts.get(speaker);
+      included_topics.forEach(function(included_topic){
+        if(speaker_count.get(included_topic) != undefined){
+          max = Math.max(max, speaker_count.get(included_topic));
+        }
+      })
+    });
+    countSmallMax = max;
+    scale.count.domain([0,countSmallMax]);
+    scale.topics.domain(included_topics);
+    scale.topics.range([timelineWidth * 0.4, timelineWidth]);
+    scale.topicsCircular.domain(included_topics);
+    scale.time.domain([1,data["lines"].length]);
+
+    svg.append("pattern")
+      .attr("id","applause-icon")
+      .attr("height", 5)
+      .attr("width", 5)
+      .append("image")
+      .attr("height",20)
+      .attr("width",20)
+      .attr("x", 5)
+      .attr("y", 5)
+      .attr("href","img/clap.svg");
+
+    // create grayscale filter that will be applied to speaker images when they are not active.
+    svg.append('filter')
+        .attr('id','desaturate')
+        .append('feColorMatrix')
+        .attr('type','matrix')
+        .attr('values',"0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0");
+
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
+
+    addChordDiagram(data["lines"], included_topics);
+    createMentionPatterns(data["mentions"]);
+
+
+    addTopicTimeline(data["lines"], included_topics);
+    addAudienceInteractionChart();
+    addSpeakerInteractionChart();
+
+    if(isMobile){
+      addMinimizedTimeline()
+    }
+
+    addText(data["lines"], included_topics);
+
+    addSpeakerImages(speakers);
+    if(currentDebate.video.id){
+      addVideoPlayer();
+    }
+    else{
+      d3.select("#video-btn").style("visibility","hidden");
+    }
+    addTopicDetailChart(data["speaker_counts"], data["speaker_sentiments"]);
+    addSpeakerDetailChart(data["speaker_counts"].get("all"), data["speaker_sentiments"].get("all"), included_topics);
+    populateTopicSelection(topics, included_topics);
+    let mentions = calculateSpeakerMentions(data["lines"], data["speaker_counts"].keys());
+
+    if(urlParams['debate'] != undefined){
+      // if a debate was stored in URL parameters, jump to the stored index of that debate.
+      storedIndex = urlParams['index'];
+      let element = d3.select("#phrase-" + storedIndex);
+      scrollToElement(element);
+    }
+
+    else if(sessionStorage.getItem('debate') != undefined){
+      // if a debate was stored in session storage, jump to the stored index of that debate.
+      storedIndex = sessionStorage.getItem('index');
+      let element = d3.select("#phrase-" + storedIndex);
+      scrollToElement(element);
+    }
+
+    else{
+      $('#how-to-read-modal').modal('show');
+      scrollToElement(d3.select("#phrase-1"));
+    }
+
+  }
+
+  function matchCustom(params, data) {
+      // If there are no search terms, return all of the data
+      if ($.trim(params.term) === '') {
+        return data;
+      }
+
+      // Do not display the item if there is no 'text' property
+      if (typeof data.text === 'undefined') {
+        return null;
+      }
+
+      // `params.term` should be the term that is used for searching
+      // `data.text` is the text that is displayed for the data object
+      if (data.text.slice(0,params.term.length) === params.term) {
+        var modifiedData = $.extend({}, data, true);
+        return modifiedData;
+      }
+
+      // Return `null` if the term should not be displayed
+      return null;
+  }
+
+  function addSlider(){
+    // Instantiate slider
+    d3.select("input.slider").style("visibility","visible");
+    var mySlider = $("input.slider").slider();
+    let sliderTimeout = null;
+    $("input.slider").on("change", function(slideEvt) {
+      if(sliderTimeout){
+        window.clearTimeout(sliderTimeout);
+      }
+      sliderTimeout = window.setTimeout(function(){
+        clearTimeline();
+        clearText();
+        clearSpeakerVisualizations();
+        d3.csv(currentDebate.filename).then(function(data){
+          processedData = readData(data)
+        });
+        $("#topic-count-slider-val").text(slideEvt.value.newValue);
+        topicCount = slideEvt.value.newValue;
+        render(processedData);
+      }, 100);
+    });
+  }
+
+  function addChordDiagram(data, included_topics){
+    chordInnerRadius = visWidth * 0.2;
+    let chordOuterRadius = chordInnerRadius + 10;
+    let ribbon = d3.ribbon().radius(chordInnerRadius);
+    arc = d3.arc().innerRadius(chordInnerRadius).outerRadius(chordOuterRadius);
+
+    let topic_matrix = calculateTopicTransitionsMatrix(data, included_topics, speaker="all");
+    let reorderTopics = true;
+    if(reorderTopics){
+      w = getMatrixOrdering(topic_matrix, included_topics);
+      let sorted_rows = [];
+      topic_matrix.sort(function(a,b){
+        return w[topic_matrix.indexOf(b)] - w[topic_matrix.indexOf(a)];
+      });
+
+      topic_matrix.forEach(function(row){
+        for(let i = 0; i < w.length; i++){
+          row[i] = row[i] + "-" + i;
+        }
+
+        row.sort(function(a,b){
+          return w[row.indexOf(b)] - w[row.indexOf(a)];
+        });
+
+        for(let i = 0; i < w.length; i++){
+          row[i] = parseInt(row[i].split("-")[0]);
+        }
+      });
+      included_topics.sort((a,b) => w[included_topics.indexOf(b)] - w[included_topics.indexOf(a)]);
+    }
+
+    chord = d3.chord().padAngle(0.05);
+    chords = chord(topic_matrix);
+    let x_offset = isMobile ? visWidth * 0.5 : visWidth * 0.35;
+    let y_offset = visHeight * 0.7;
+
+    let chordG = d3.select("#topic-frequency").append("g").attr("id","chord-diagram").attr("transform","translate(" + x_offset + "," + y_offset + ")");
+
+  //  chordG.append("text").attr("transform","translate(" + (visWidth * -0.07) + "," + (height * -0.35) + ")").text("Topic Diagram");
+    chordG.selectAll(".chord")
+      .data(chords)
+      .enter()
+      .each(d => { d.source.label = included_topics[d.source.index]; d.target.label = included_topics[d.target.index]; })
+      .append("path")
+      .attr("d", ribbon)
+      .attr("class",d => "chord chord-" + d.source.label + " chord-" + d.target.label)
+      .attr("stroke","none")
+      .attr("fill","gray")
+      .style("visibility",d => d.source.index == d.target.index ? "hidden" : "visible")
+      .style("opacity",0.3)
+      .on("mouseover", function(d){
+        d3.selectAll(".chord-group").style("opacity","0.5")
+        d3.selectAll(".chord").style("opacity","0.2")
+        d3.select(this).style("opacity","0.8");
+        d3.select("#chord-group-" + d.source.label).style("opacity","1");
+        d3.select("#chord-group-" + d.target.label).style("opacity","1");
+      })
+      .on("mouseout", function(d){
+        d3.selectAll(".chord-group").style("opacity","1")
+        d3.selectAll(".chord").style("opacity","0.3")
+      })
+      .append("svg:title")
+      .text(d => d.source.value + " transition" + (d.source.value > 1 ? "s from " : " from ") + d.source.label.replace("-"," ") + " to " + d.target.label.replace("-"," "));
+
+    chordG.selectAll(".chord-group")
+      .data(chords.groups)
+      .enter()
+      .each(d => { d.label = included_topics[d.index];})
+      .append("path")
+      .attr("d", arc)
+      .attr("id", function(d){return "chord-group-" + d.label;})
+      .attr("class","chord-group")
+      .attr("fill", d3.hsl(color.purple).darker(1))
+      .on("mouseover", function(d){
+    //    updateTopicDetailChart(d.label, processedData["speaker_counts"], processedData["speaker_sentiments"]);
+        highlightTopic(d.label);
+        d3.selectAll(".chord")
+          .style("opacity", function(chord){
+            return chord.source.label == d.label || chord.target.label == d.label ? 0.8 : 0.2;
+          });
+      })
+      .on("mouseout", function(d){
+        let selected = d3.select(this).classed("selected");
+        if(!selected){
+  //        updateTopicDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"]);
+          removeHighlightTopic();
+        }
+      })
+      .on("click", function(d){
+        let selected = d3.select(this).classed("selected");
+        if(selected){
+  //        updateTopicDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"]);
+          removeHighlightTopic();
+        }
+        else{
+    //      updateTopicDetailChart(d.label, processedData["speaker_counts"], processedData["speaker_sentiments"]);
+          highlightTopic(d.label);
+        }
+        d3.select(this).classed("selected", !selected);
+      });
+
+    chordG.selectAll(".chord-label")
+      .data(chords.groups)
+      .enter()
+      .append("g")
+      .each(d => { d.angle = (d.startAngle + d.endAngle) / 2; })
+      .attr("transform", d => "translate(" + ((chordOuterRadius) * Math.cos(d.angle - Math.PI/2)) + "," + ((chordOuterRadius) * Math.sin(d.angle -Math.PI/2)) + ")")
+      .append("g")
+      .attr("class","chord-label")
+      .attr("id", d => "chord-label-" + d.label)
+      .attr("x", 3)
+      .attr("dy", ".35em")
+  //    .attr("transform", function(d) { return d.angle > Math.PI ? "rotate(180) translate(-16)" : null; })
+      .style("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+      .text(function(d) {return d.label.replace("-", " ") })
+      .style("font-size", 10);
+
+    chords.groups.forEach(function(group){
+      let splitBySpaces = group.label.split("-");
+      let g = d3.select("#chord-label-" + group.label);
+      splitBySpaces.forEach(function(word,i){
+        let step = i * (group.angle > Math.PI ? -0.25 : 0.25);
+        let radius = 30;
+        chordG.append("text")
+          .attr("transform",function(){
+            i++;
+            let radius = chordOuterRadius;
+            if(Math.abs(group.angle - Math.PI) < 0.5){
+              radius += 10 * i;
+              step = 0;
+            }
+            else if(Math.abs(group.angle - (2 * Math.PI)) < 0.3 || Math.abs(group.angle) < 0.2){
+              radius += (10) * (splitBySpaces.length - i);
+              step = 0;
+            }
+            else{
+              radius += 10;
+            }
+            let x = (radius * Math.cos(group.angle + step - Math.PI/2));
+            let y = (radius * Math.sin(group.angle + step - Math.PI/2));
+            return "translate(" + x + "," + y + ")";
+          })
+          .text(word)
+          .style("text-anchor", function(d) { return group.angle > Math.PI ? "end" : null; })
+          .style("font-size", 10)
+          .attr("class", "chord-label chord-label-" + group.label);
+      })
+    });
+    d3.select("#topic-frequency").append("text").text("Topic-speaker diagram").attr("x",visWidth * 0.1).attr("y",visHeight * 0.15).attr("font-size", isMobile ? "9pt" : "12pt");
+    d3.select("#topic-frequency").append("image")
+      .attr("xlink:href", "img/information.svg")
+      .attr("width",20).attr("height",20)
+      .attr("x",visWidth * 0.1).attr("y",visHeight * 0.2)
+      .style("cursor","pointer")
+      .on("click", function(){
+        console.log("click");
+        $("#topic-speaker-diagram-help-modal").modal('show');
+      });
+  }
+
+  function addPolarityGradient(){
+    var defs = svg.append("defs");
+
+    var linearGradient = defs.append("linearGradient").attr("id", "polarity-gradient");
+
+    linearGradient
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "0%");
+
+    //Set the color for the start (0%)
+    linearGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", color.purple); //light blue
+
+    //Set color for middle (50%)
+    linearGradient.append("stop")
+      .attr("offset", "50%")
+      .attr("stop-color", "#f7f7f7");
+
+    //Set the color for the end (100%)
+    linearGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", color.orange); //dark blue
+  }
+
+  function addSubjectivityGradient(){
+    var defs = svg.select("defs");
+
+    var linearGradient = defs.append("linearGradient").attr("id", "subjectivity-gradient");
+
+    linearGradient
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "0%");
+
+    //Set the color for the start (0%)
+    linearGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "#f7f7f7"); //light blue
+
+    //Set the color for the end (100%)
+    linearGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", "#ef8a62"); //dark blue
+  }
+
+  function addMinimizedTimeline(){
+    let timelineHeight = window.visualViewport.height - margin.top - margin.bottom;
+    let minimizedWidth = 15;
+    scale.time.range([40, timelineHeight]);
+
+    let timeline = d3.select("#mini-timeline");
+    if(timeline.empty()){
+      timeline = d3.select("#mini-timeline-svg").attr("width", minimizedWidth + 10).attr("height", timelineHeight + margin.top + margin.bottom).append("g").attr("id","mini-timeline").attr("transform", "translate(10," + margin.top + ")");
+
+      timeline.append("circle")
+        .attr("id","expand-timeline")
+        .attr("cx", 0)
+        .attr("cy", scale.time.range()[0] + (scale.time.range()[1] - scale.time.range()[0]) / 2)
+        .attr("r", minimizedWidth * 0.6)
+        .style("fill","#cdd1d1");
+
+      timeline.append('text')
+        .attr("id","expand-timeline-label")
+        .attr("x", minimizedWidth * (-0.5))
+        .attr("y", minimizedWidth * (0.3) + scale.time.range()[0] +  (scale.time.range()[1] - scale.time.range()[0]) / 2)
+        .attr('font-family', 'FontAwesome')
+        .attr('font-size', "9pt")
+        .text(function(d) { return '\uf053' })
+        .on("click", openTimeline);
+
+      timeline.append("rect")
+        .attr("id","minimized-timeline-rect")
+        .attr("x", 0)
+        .attr("y", scale.time.range()[0])
+        .attr("width",minimizedWidth)
+        .attr("rx",minimizedWidth / 2)
+        .attr("ry", minimizedWidth / 2)
+        .attr("height", scale.time.range()[1] - scale.time.range()[0])
+        .style("fill","#cdd1d1");
+
+      let placemarkerRadius = minimizedWidth/2 - 1;
+      timeline.append("circle")
+        .attr("id","mini-place-marker")
+        .attr("cx",minimizedWidth/2)
+        .attr("cy", scale.time.range()[0] + placemarkerRadius)
+        .attr("r", placemarkerRadius)
+        .style("fill","black")
+        .call(dragMiniPlaceMarker);
+    }
+
+    // Hide full timeline at first, only show minimized version.
+    d3.select("#timeline-svg").style("visibility","hidden");
+  }
+
+  function addTopicTimeline(data, included_topics){
+    let timelineHeight = window.visualViewport.height - margin.top - margin.bottom;
+
+    let timeline = d3.select("#timeline-svg").attr("width", timelineWidth + 10).attr("height", timelineHeight + margin.top + margin.bottom).append("g").attr("id","timeline").attr("transform", "translate(0," + margin.top + ")");
+
+    timeline.append("rect")
+      .attr("id","timeline-background")
+      .attr("x",0)
+      .attr("y",0 - margin.top)
+      .attr("height",timelineHeight + margin.top + margin.bottom)
+      .attr("width", timelineWidth)
+      .style("fill","white")
+      .style("stroke","none")
+      .style("opacity","1");
+
+    let titleG = d3.select("#timeline-svg").append("g").attr("transform","translate(10,90)");
+    titleG.append("text").text("Timeline").attr("y",10).style("text-align","center").attr("font-size", isMobile ? "9pt" : "12pt");
+    titleG.append("image")
+      .attr("xlink:href","img/information.svg")
+      .attr("width",20).attr("height",20)
+      .attr("y",20)
+      .attr("class","timeline-help-button")
+    //    .style("display","inline-block")
+      .style("float","right")
+      .style("cursor","pointer")
+      .on("click", function(){
+        $("#timeline-help-modal").modal('show');
+      });
+
+    scale.time.range([40, timelineHeight]);
+    // Create place marker rectangle.
+    placemarker_height = 20;
+    timeline.append("rect")
+      .attr("id","place-marker")
+      .attr("x",0)
+      .attr("width", timelineWidth)
+      .attr("y",scale.time.range()[0] - placemarker_height/2)
+      .attr("height",placemarker_height)
+      .style("fill","gray")
+      .style("opacity","0.5")
+      .call(dragPlaceMarker)
+      .on("click", function(){
+        if (d3.event.defaultPrevented){
+          return;
+        }
+      });
+
+    // Create triangle pointer on place marker
+    let symbol = d3.symbol().size(400).type(d3.symbolTriangle);
+    let pathData = symbol();
+    timeline.append("g")
+        .attr("id","place-marker-triangle")
+        .attr("transform","translate(0," + (scale.time.range()[0] - placemarker_height/2) + ")")
+        .call(dragPlaceMarker)
+        .on("click", function(){
+          if (d3.event.defaultPrevented){
+            return;
+          }
+        })
+        .append("path")
+        .attr("d", pathData)
+        .attr("transform", "translate(0,10) rotate(90)");
+
+    $("#place-marker-triangle").css("cursor","grab");
+    $("#place-marker").css("cursor","grab");
+
+    let temp_domain = included_topics.slice();
+    scale.topics.domain(temp_domain);
+
+    // create containers for each topic column.
+    timeline.selectAll(".timeline-col")
+      .data(temp_domain)
+      .enter()
+      .append("rect")
+      .attr("id",function(d){return "timeline-col-" + d;})
+      .attr("class","timeline-col")
+      .attr("x", d => scale.topics(d))
+      .attr("width",scale.topics.bandwidth())
+      .attr("y", scale.time.range()[0])
+      .attr("height", scale.time.range()[1] - scale.time.range()[0])
+      .on("mouseover", function(d){
+          highlightTopic(d);
+      })
+      .on("mouseout", function(d){
+        if(!d3.select(this).classed("selected")){
+          removeHighlightTopic();
+        }
+      })
+      .on("click", function(d){
+        let selected = d3.select(this).classed("selected");
+        if(selected){
+          removeHighlightTopic();
+        }
+        else{
+          highlightTopic(d);
+        }
+        d3.select(this).classed("selected", !selected);
+    });
+
+    let triangle = d3.symbol().size(60).type(d3.symbolTriangle)();
+    let cross = d3.symbol().size(60).type(d3.symbolCross)();
+    let circle = d3.symbol().size(60).type(d3.symbolCircle)();
+    let star = d3.symbol().size(60).type(d3.symbolStar)();
+
+    data.forEach(function(line){
+      line.topic.forEach(function(topic){
+        if(included_topics.includes(topic)){  // we only want to draw lines for utterances tagged in the included topics.
+          timeline.append("rect")
+            .attr("class",d => "utterance speaker-" + line.speaker)
+            .attr("y", (d) => scale.time(line.index))
+            .attr("height", 2)
+            .attr("x", d => scale.topics(topic))
+            .attr("width",scale.topics.bandwidth())
+            .attr("fill", "gray")
+            .attr("opacity","1")
+            .style("stroke","none")
+            .style("cursor","pointer")
+            .on("click", function(){
+              let offset = line.index;
+              let element = d3.select("#phrase-" + offset);
+              sessionStorage.setItem('index',offset);
+              scrollToElement(element);
+            })
+            .on("mouseover", function(d){
+              d3.select(this).style("stroke","black");
+            })
+            .on("mouseout", function(d){
+              d3.select(this).style("stroke","none");
+            })
+            .append("svg:title")
+            .text(line.speaker.toUpperCase() + ": " + line.text);
+        }
+      })
+    })
+
+     // create labels for the included topics at the top of the timeline.
+     timeline.selectAll(".timeline-label")
+       .data(temp_domain)
+       .enter()
+       .append("g")
+       .attr("transform", function(d){
+         return "translate(" + (scale.topics(d) + 10) + "," + scale.time.range()[0] + ")";
+       })
+       .append("text")
+         .attr("transform","rotate(-70)")
+         .attr("class","timeline-label")
+         .attr("id",d => "timeline-label-" + d)
+         .text(d => d.replace("-"," "));
+  }
+
+  function addSpeakerImages(speakers){
+    let filtered_speakers = speakers.filter(function(d){return d != "all" && d != "unknown";});
+
+    scale.speakersCircular.domain(filtered_speakers);
+    let speakerRadius = chordInnerRadius * 0.6;
+    let speakerImageRadius = speakerRadius * 0.3;
+
+    svg.selectAll(".speaker-img")
+      .data(filtered_speakers)
+      .enter()
+      .append("pattern")
+      .attr("id",function(d){return "pattern-" + d;})
+      .attr("height", 1)
+      .attr("width", 1)
+      .append("image")
+        .attr("class","speaker-img")
+        .attr("id",function(d){return "speaker-img-" + d})
+        .attr("height", d => isMobile ? "5%" : "8%")
+        .attr("width", d => isMobile ? "5%" : "8%")
+        .attr("x", d => isMobile ?  -5 : -8)
+        .attr("y", -5)
+        .attr("href", function(d){return "headshots/" + d + ".png";})
+        .style("filter","url(#desaturate)");
+
+
+    d3.select("#chord-diagram").selectAll(".speaker-circle")
+      .data(filtered_speakers)
+      .enter()
+      .append("circle")
+      .attr("id", function(d){return "speaker-circle-" + d;})
+      .attr("class","speaker-circle")
+      .attr("r",speakerImageRadius)
+      .attr("cx", function(d){
+        return speakerRadius * Math.cos(scale.speakersCircular(d));
+      })
+      .attr("cy", function(d){
+        return speakerRadius * Math.sin(scale.speakersCircular(d));
+      })
+      .style("fill",function(d){return "url(#pattern-" + d})
+      .style("stroke-width","3")
+      .style("cursor","pointer")
+      .on("mouseover", function(d){
+  //      console.log(d);
+  //      updateSpeakerDetailChart(d, processedData["speaker_counts"], processedData["speaker_sentiments"], included_topics);
+//        dimTimeline();
+        highlightSpeaker(d);
+      })
+      .on("mouseout", function(d){
+        if(!d3.select(this).classed("selected")){
+  //        brightenTimeline();
+          removeHighlightSpeaker();
+  //        updateSpeakerDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"], included_topics);
+        }
+      })
+      .on("click", function(d){
+        let selected = d3.select(this).classed("selected");
+        removeHighlightSpeaker();
+        if(selected){
+          updateSpeakerDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"], included_topics);
+        }
+        else{
+          highlightSpeaker(d);
+          updateSpeakerDetailChart(d, processedData["speaker_counts"], processedData["speaker_sentiments"], included_topics);
+        }
+        d3.select(this).classed("selected", !selected);
+      })
+      .call(dragSpeakerCircles);
+  }
+
+  function openTimeline(){
+    d3.select("#mini-timeline-svg").transition().attr("transform","translate(-240,0)");
+    d3.select("#timeline-container").style("background-color","#ffffff");
+    d3.select("#timeline-svg").style("width","250px").style("visibility","visible");
+    d3.select("#expand-timeline-label").text("\uf054").on("click",closeTimeline);
+  }
+
+  function closeTimeline(){
+    d3.select("#timeline-container").style("background-color","transparent");
+    d3.select("#timeline-svg").style("visibility","hidden");
+    d3.select("#expand-timeline-label").text("\uf053").on("click",openTimeline);
+    d3.select("#mini-timeline-svg").transition().attr("transform","translate(0,0)");
+  }
+
+  function dimTimeline(){
+    d3.selectAll(".utterance").transition().style("stroke-opacity","0.6");
+  }
+
+  function brightenTimeline(){
+    d3.selectAll(".utterance").transition().style("stroke-opacity","1");
+  }
+
+  function highlightSpeaker(speaker){
+    // outline speaker's photo in topic-speaker diagram.
+    d3.select("#speaker-circle-" + speaker).attr("stroke","orange");
+
+    // highlight speaker's interactions in timeline (as long as speaker isn't moderator, because moderator doesn't have speaker interactions).
+    if(speaker != "moderator"){
+      d3.selectAll(".interaction").style("opacity",0.1);
+      let speaker_interactions = d3.selectAll(".interaction")
+        .filter(function(d){
+          return d.speaker == speaker || d.agree_target.includes(speaker) || d.attack_target.includes(speaker) || d.defense_against.includes(speaker) || d.mentions.includes(speaker);
+        })
+        .style("opacity",1);
+    }
+
+    // highlight speaker's utterances in timeline.
+    d3.selectAll(".utterance").transition().style("fill","gray");
+    d3.selectAll(".utterance.speaker-" + speaker).transition().style("fill",color.orange).attr("width",scale.topics.bandwidth() + 5);
+
+    // highlight speaker's applause in timeline.
+    d3.selectAll(".applause").transition().style("fill","gray");
+    d3.selectAll(".applause-speaker-" + speaker).transition().style("fill",color.orange);
+
+    updateSpeakerDetailChart(speaker, processedData["speaker_counts"], processedData["speaker_sentiments"], included_topics);
+
+  }
+
+  function removeHighlightSpeaker(){
+    d3.selectAll(".speaker-circle").attr("stroke","none");
+    d3.selectAll(".interaction").style("opacity",1);
+
+    d3.selectAll(".utterance").transition().style("fill","gray").attr("width",scale.topics.bandwidth());
+    d3.selectAll(".applause").transition().style("fill","gray");
+
+    updateSpeakerDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"], included_topics);
+
+  }
+
+  function highlightTopic(topic){
+    d3.selectAll(".chord-group").style("opacity","0.5")
+    d3.select("#chord-group-" + topic).style("opacity",1);
+    d3.selectAll(".chord-label-" + topic).style("font-weight","bold");
+    d3.selectAll(".chord-" + topic).style("opacity", 0.8);
+    d3.select("#timeline-label-" + topic).style("font-weight","bold");
+    d3.selectAll(".topic-tag-" + topic).style("border-width","2px");
+    d3.select("#timeline-col-" + topic).style("opacity","0.3").style("fill",color.purple);
+    d3.select("#topic-label-" + topic).style("font-weight","bold");
+
+    updateTopicDetailChart(topic, processedData["speaker_counts"], processedData["speaker_sentiments"]);
+  }
+
+  function removeHighlightTopic(){
+    d3.selectAll(".chord-group").style("opacity","1");
+    d3.selectAll(".chord").style("opacity", 0.3);
+    d3.selectAll(".chord-label").style("font-weight","normal");
+    d3.selectAll(".timeline-label").style("font-weight","normal");
+    d3.selectAll(".topic-tag").style("border-width","1px");
+    d3.selectAll(".timeline-col").style("opacity","0.1").style("fill","gray");
+    d3.selectAll(".topic-label").style("font-weight","normal");
+
+    updateTopicDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"]);
+  }
+
+  function addText(data, included_topics){
+  //  let text = svg.append("g").attr("id","text-section").attr("transform","translate(" + width * 0.6 + ", 0)");
+    d3.select("#sections").style("height",window.visualViewport.height);
+
+//    d3.select("#sections").append("div").append("h4").text("Transcript").style("position","fixed").style("top", "10").style("background","white").style("width",$("#sections").width());
+
+    d3.select("#sections")
+          .selectAll(".phrase")
+          .data(data)
+          .enter()
+          .append("div")
+            .attr("class","phrase")
+            .attr("id", (d,i) => "phrase-" + i)
+            .on("mouseover",function(d){
+              d3.select(this).selectAll(".text-sentiment-detail").style("visibility","visible");
+            })
+            .on("mouseout",function(d){
+              d3.select(this).selectAll(".text-sentiment-detail").style("visibility","hidden");
+            })
+            .on("click",function(d){
+              scrollToElement(d3.select(this));
+              sessionStorage.setItem("index", d.index);
+        //      updateVideo(d.timestamp);
+            });
+
+    d3.selectAll(".phrase")
+      .append("img")
+      .attr("width","10%")
+      .style("filter","grayscale(100%)")
+      .style("border-radius","50%")
+      .style("float","left")
+      .attr("src",d => "headshots/" + d.speaker + ".png")
+      .style("visibility",d => d.text.charAt(0) == '[' || d.text.charAt(0) == '(' ? "hidden" : "visible");
+
+    d3.selectAll(".phrase")
+    .append("p")
+        .style("font-size", "10pt")
+        .style("cursor","pointer")
+        .style("z-index","-1")
+        .style("margin-left","10%")
+		.style("margin-right","12%")
+        .text(function(d){
+          if(d.applause || d.laughter || d.text.charAt(0) == '['){
+            return d.text;
+          }
+          return toTitleCase(d.speaker_name) + ": " + d.text;
+        });
+
+
+    addTextTags(data, included_topics);
+
+    // add invisible text underneath last utterance so it scrolls fully into view.
+    for(i = 0; i < 15; i++){
+      d3.select("#sections")
+          .append("div")
+          .attr("class","skip")
+          .text(".");
+    }
+
+    let updateVisTimeout = null;
+
+    d3.graphScroll()
+        .graph(svg)
+        .container(d3.select('#container'))
+        .sections(d3.selectAll('#sections > div'))
+        .on('active', function(i){
+      //    i -= 7;
+
+          if(i > 0 && i < data.length){
+            if(updateVisTimeout){
+              window.clearTimeout(updateVisTimeout);
+            }
+            updateVisTimeout = window.setTimeout(() => {
+              if(Math.abs(current - i) > 2){
+                updateVideo(processedData["lines"][i].timestamp);
+              }
+              let forward = current < i;
+              updateVis(processedData["lines"][i], forward, included_topics);
+              current = i;
+              sessionStorage.setItem('index', current);
+              d3.select("#mini-place-marker").transition().attr("cy", scale.time(i));
+              d3.select("#place-marker").transition().attr("y", scale.time(i) - 10);
+              d3.select("#place-marker-triangle").transition().attr("transform", "translate(0," + (scale.time(i) - 10) + ")");
+            }, 100);
+          }
+        });
+  }
+
+  function addTextTags(data, included_topics){
+    prev_topic = "";
+    data.forEach(function(line,i){
+      let div = d3.select("#phrase-" + i);
+      line.topic.forEach(function(topic){
+        topic = topic.trim();
+        if(included_topics.includes(topic) && prev_topic != topic){
+          div.append("text")
+            .attr("class","topic-tag topic-tag-" + topic)
+            .text(topic.replace("-"," "))
+            .on("mouseover", function(){
+              highlightTopic(topic);
+      //        updateTopicDetailChart(topic, processedData["speaker_counts"], processedData["speaker_sentiments"]);
+            })
+            .on("mouseout", function(){
+              removeHighlightTopic();
+        //      updateTopicDetailChart("all", processedData["speaker_counts"], processedData["speaker_sentiments"]);
+            });
+          }
+          prev_topic = topic;
+      });
+
+      let small_div = div.append("div").style("text-align","right").style("margin-right","12%");
+      if(line.interaction){
+        let height = 30;
+        let width = 300;
+
+      /*  // First, include an interruption icon if appropriate.
+        if(line.interruption){
+          interaction_svg.append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", width * 0.1)
+            .attr("height", height * 1.2)
+            .attr("rx","15px")
+            .style("fill","gray")
+            .style("opacity","0.3");
+
+          interaction_svg.append("image")
+            .attr("x", 5)
+            .attr("y", 7)
+            .attr("width", height * 0.7)
+            .attr("height", height * 0.7)
+            .attr("href","img/jitter.png");
+        }*/
+        let num_actions = line.agree ? 1 : 0;
+        num_actions += line.attack ? 1 : 0;
+        num_actions += line.reference ? 1 : 0;
+        num_actions += line.defense ? 1 : 0;
+
+        let interaction_svg = small_div.append("svg").attr("width",width).attr("height",(height + 20) * num_actions);
+
+        let action_count = 0;
+
+        if(num_actions > 0){
+          let num_targets = Math.max(line.mentions.length, line.agree_target.length);
+          num_targets = Math.max(num_targets, line.attack_target.length);
+          let action_start = width * 0.2;
+
+          if(line.reference){
+            interaction_svg.append("rect")
+              .attr("height", height+10)
+              .attr("width", 90 + height * line.mentions.length)
+              .attr("x", action_start)
+              .attr("y", 10 + 50 * (action_count))
+              .attr("rx","15")
+              .style("fill","gray")
+              .style("opacity","0.3");
+
+            // Image of current speaker (source)
+            interaction_svg.append("circle")
+              .attr("cx", action_start + 20)
+              .attr("cy", 30 + 50 * action_count)
+              .attr("r", "7%")
+              .style("fill", "url(#mention-img-" + line.speaker + ")")
+
+            // Action icon
+            interaction_svg.append("image")
+              .attr("width",height - 10)
+              .attr("height",height - 10)
+              .attr("x", action_start + 50)
+              .attr("y", 20 + 50 * action_count)
+              .attr("href", "img/chat.png");
+
+            line.mentions.forEach(function(name,i){
+              interaction_svg.append("circle")
+                .attr("cx", action_start + 100 + (height * i))
+                .attr("cy", 30 + 50 * action_count)
+                .attr("r", "7%")
+                .style("fill", "url(#mention-img-" + name + ")");
+            });
+
+            action_count++;
+          }
+
+          if(line.agree){
+            interaction_svg.append("rect")
+              .attr("height", height+10)
+              .attr("width", 100 + height * line.agree_target.length)
+              .attr("x", action_start)
+              .attr("y", 10 + 50 * (action_count))
+              .attr("rx","15")
+              .style("fill","green")
+              .style("opacity","0.3");
+
+            // Image of current speaker (source)
+            interaction_svg.append("circle")
+              .attr("cx", action_start + 20)
+              .attr("cy", 30 + 50 * action_count)
+              .attr("r", "7%")
+              .style("fill", "url(#mention-img-" + line.speaker + ")");
+
+            // Action icon
+            interaction_svg.append("image")
+              .attr("width",height - 10)
+              .attr("height",height - 10)
+              .attr("x", action_start + 50)
+              .attr("y", 20 + 50 * action_count)
+              .attr("href", "img/hand-shake.png");
+
+            line.agree_target.forEach(function(name,i){
+              interaction_svg.append("circle")
+                .attr("cx", action_start + 100 + (height * i))
+                .attr("cy", 30 + 50 * action_count)
+                .attr("r", "7%")
+                .style("fill", "url(#mention-img-" + name + ")");
+            });
+
+            action_count++;
+          }
+
+          if(line.attack){
+            interaction_svg.append("rect")
+              .attr("height", height+10)
+              .attr("width", 100 + height * line.attack_target.length)
+              .attr("x", action_start)
+              .attr("y", 10 + 50 * (action_count))
+              .attr("rx","15")
+              .style("fill","red")
+              .style("opacity","0.3")
+              .append("svg:title").text(action_count);
+
+            // Image of current speaker (source)
+            interaction_svg.append("circle")
+              .attr("cx", action_start + 20)
+              .attr("cy", 30 + 50 * action_count)
+              .attr("r", "7%")
+              .style("fill", "url(#mention-img-" + line.speaker + ")");
+
+            // Action icon
+            interaction_svg.append("image")
+              .attr("width",height - 10)
+              .attr("height",height - 10)
+              .attr("x", action_start + 50)
+              .attr("y", 20 + 50 * action_count)
+              .attr("href", "img/swords.png");
+
+            line.attack_target.forEach(function(name,i){
+              interaction_svg.append("circle")
+                .attr("cx", action_start + 100 + (height * i))
+                .attr("cy", 30 + 50 * action_count)
+                .attr("r", "7%")
+                .style("fill", "url(#mention-img-" + name + ")");
+            });
+
+            action_count++;
+          }
+
+          if(line.defense){
+            interaction_svg.append("rect")
+              .attr("height", height+10)
+              .attr("width", 100 + height)
+              .attr("x", action_start)
+              .attr("y", 10 + 50 * (action_count))
+              .attr("rx","15")
+              .style("fill","gray")
+              .style("opacity","0.3");
+
+            // Image of current speaker (source)
+            interaction_svg.append("circle")
+              .attr("cx", action_start + 20)
+              .attr("cy", 30 + 50 * action_count)
+              .attr("r", "7%")
+              .style("fill", "url(#mention-img-" + line.speaker + ")");
+
+            // Action icon
+            interaction_svg.append("image")
+              .attr("width",height - 10)
+              .attr("height",height - 10)
+              .attr("x", action_start + 50)
+              .attr("y", 20 + 50 * action_count)
+              .attr("href", "img/shield.png");
+
+            interaction_svg.append("circle")
+              .attr("cx", action_start + 100)
+              .attr("cy", 30 + 50 * action_count)
+              .attr("r", "7%")
+              .style("fill", "url(#mention-img-" + line.defense_against + ")");
+
+            action_count++;
+          }
+        }
+      }
+      addPolarity(small_div, parseFloat(line.polarity).toFixed(2));
+      small_div.selectAll(".text-sentiment-detail").style("visibility","hidden");
+
+      if(line.text.charAt(0) == "[" || line.text.charAt(0) == "("){
+        small_div.selectAll(".sentiment-label").remove();
+        small_div.select("svg").selectAll("*").remove();
+      }
+    });
+  }
+
+  function createMentionPatterns(mentions){
+    svg.selectAll(".mention-img")
+      .data(mentions.filter(d => d != ""))
+      .enter()
+      .append("pattern")
+      .attr("id",function(d){return "mention-img-" + d;})
+      .attr("height", 1)
+      .attr("width", 1)
+      .append("image")
+        .attr("class","mention-img")
+        .attr("height", 40)
+        .attr("width", 40)
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("href", function(d){return "headshots/" + d + ".png";})
+        .style("filter","url(#desaturate)")
+        .style("opacity","1");
+  }
+
+  function getTargetImage(d){
+    name = d.mentions[0];
+    if(d.agree){
+      name = d.agree_target[0];
+    }
+    if(d.attack){
+      name = d.attack_target[0];
+    }
+    return name;
+  }
+
+  function getActionColor(d){
+    if(d.agree){
+      return "green";
+    }
+    if(d.attack){
+      return "red";
+    }
+    if(d.defense){
+      return "orange";
+    }
+    return "black";
+  }
+
+  function getActionImage(d){
+    let action = "chat.png";
+/*    if(d.interruption){
+      action = "raising-hand.png"
+    }*/
+    if(d.agree){
+      action = "hand-shake.png";
+    }
+    if(d.attack){
+      action = "swords.png";
+    }
+    if(d.defense){
+      action = "shield.png";
+    }
+    return "img/" + action;
+  }
+
+  function addPolarity(div, value){
+    div.append("text").attr("class","text-sentiment-detail sentiment-label").style("font-size","8pt").text(d => "Sentiment: "); //+ parseFloat(d.polarity).toFixed(2));
+    let svg = div.append("svg").attr("width", "50").attr("height","30").attr("class","text-sentiment-detail");
+    scale.polarity.range([0,45])
+    //Draw the rectangle and fill with gradient
+    svg.append("rect")
+        .attr("width", 45)
+        .attr("height", 8)
+        .attr("x", 0)
+        .attr("y", 10)
+        .style("fill", "url(#polarity-gradient)");
+
+    svg.append("text").attr("x",3).attr("y","7").style("font-size","9pt").text("-");
+    svg.append("text").attr("x",43).attr("y","7").style("font-size","9pt").text("+");
+    svg.append("text").attr("x", scale.polarity(value) - 10).attr("y","30").style("font-size","8pt").text(value)
+
+    svg.append("line")
+      .attr("x1", scale.polarity(value))
+      .attr("x2", scale.polarity(value))
+      .attr("y1", 8)
+      .attr("y2", 18)
+      .style("stroke","black")
+      .style("stroke-width","2");
+
+  }
+
+  function addSubjectivity(div, value){
+    let svg = div.append("svg").attr("width", "50").attr("height","20");
+    scale.subjectivity.range([2,45])
+
+    //Draw the rectangle and fill with gradient
+    svg.append("rect")
+        .attr("width", 45)
+        .attr("height", 8)
+        .attr("x", 2)
+        .attr("y", 6)
+        .style("fill", "url(#subjectivity-gradient)");
+    svg.append("text").attr("x",3).attr("y",7).style("font-size","9pt").text("-");
+    svg.append("text").attr("x",43).attr("y",7).style("font-size","9pt").text("+");
+
+    svg.append("line")
+      .attr("x1", scale.subjectivity(value))
+      .attr("x2", scale.subjectivity(value))
+      .attr("y1", 5)
+      .attr("y2", 15)
+      .style("stroke","black")
+      .style("stroke-width","3");
+  }
+
+  function updateVis(line, forward, included_topics){
+    d3.selectAll(".speaker-img")
+        .transition()
+        .style("filter","url(#desaturate)");
+    d3.select("#speaker-img-" + line.speaker)
+        .transition()
+        .style("filter","none");
+
+    // if returning to top of transcript, reset speaker icons.
+    if(line.index == 0){
+      let speakerRadius = chordInnerRadius * 0.6;
+      d3.selectAll(".speaker-img")
+        .transition()
+        .attr("cx", function(d){
+          return speakerRadius * Math.cos(scale.speakersCircular(d));
+        })
+        .attr("cy", function(d){
+          return speakerRadius * Math.sin(scale.speakersCircular(d));
+        });
+    }
+    else{
+      let moved = false;
+      line.topic.forEach(function(topic){
+        topic = topic.trim();
+          if(included_topics.includes(topic)){
+            if(!moved){
+              moveSpeaker(line.speaker, included_topics.indexOf(topic),topic);
+              moved = true;
+            }
+          }
+      });
+    }
+
+    d3.selectAll(".interaction-line").remove();
+
+    let chordDiagram = d3.select("#chord-diagram");
+    line.mentions.forEach(function(mentioned){
+  /*    if($("#speaker-circle-" + mentioned).length){
+        let path = chordDiagram.append("path")
+            .attr("class", "interaction-line interaction-line-" + line.index)
+            .transition()
+            .delay(1000)
+            .attr("d", getInteractionPath(line.speaker, mentioned))
+            .style("stroke", "black")
+            .attr("fill", "none")
+            .attr("marker-end", function(){
+              if(line.agree){
+                return "url(#arrowHeadAgree)";
+              }
+              if(line.attack){
+                return "url(#arrowHeadAttack)";
+              }
+              return "url(#arrowHeadBlack)";
+            });
+
+        let totalLength = path.node().getTotalLength();
+
+        path.attr("stroke-dasharray", totalLength + " " + totalLength)
+          .attr("stroke-dashoffset", totalLength)
+          .transition()
+            .delay(1000)
+            .duration(500)
+            .ease(d3.easeLinear)
+            .attr("stroke-dashoffset", 0);
+
+        document.getElementById("chord-diagram").appendChild(document.getElementById("speaker-circle-" + mentioned));
+
+      }*/
+    });
+
+    line.agree_target.forEach(function(mentioned){
+      if($("#speaker-circle-" + mentioned).length){
+        let path = chordDiagram.append("path")
+            .attr("class", "interaction-line interaction-line-" + line.index)
+            .attr("d", getInteractionPath(line.speaker, mentioned))
+            .style("stroke", "green");
+
+        let totalLength = path.node().getTotalLength();
+
+        path.attr("stroke-dasharray", totalLength + " " + totalLength)
+          .attr("stroke-dashoffset", totalLength)
+          .transition()
+            .duration(500)
+            .ease(d3.easeLinear)
+            .attr("stroke-dashoffset", 0);
+
+        document.getElementById("chord-diagram").appendChild(document.getElementById("speaker-circle-" + mentioned));
+      }
+    });
+
+    line.attack_target.forEach(function(mentioned){
+      if($("#speaker-circle-" + mentioned).length){
+        let path = chordDiagram.append("path")
+            .attr("class", "interaction-line interaction-line-" + line.index)
+            .attr("d", getInteractionPath(line.speaker, mentioned))
+            .style("stroke", "red");
+
+        let totalLength = path.node().getTotalLength();
+
+        path.attr("stroke-dasharray", totalLength + " " + totalLength)
+          .attr("stroke-dashoffset", totalLength)
+          .transition()
+            .duration(500)
+            .ease(d3.easeLinear)
+            .attr("stroke-dashoffset", 0);
+
+        document.getElementById("chord-diagram").appendChild(document.getElementById("speaker-circle-" + mentioned));
+      }
+    });
+    document.getElementById("chord-diagram").appendChild(document.getElementById("speaker-circle-" + line.speaker));
+
+  }
+
+  function updateVideo(timestamp){
+    /*if($("#video-player").css("visibility") == "hidden"){
+      return;
+    }*/
+    if(timestamp == "" || player == null){
+      return;
+    }
+    let time = d3.timeParse("%I:%M:%S");
+    let split = timestamp.split(":");
+    let hours = split[0];
+    let minutes = split[1];
+    let seconds = split[2];
+    let seekLocation = (3600 * parseInt(hours)) + (60 * parseInt(minutes)) + parseInt(seconds);
+    player.seekTo(seekLocation);
+  }
+
+  function updateBars(speakers){
+    // iterate through all radial bar charts and update with new topic counts.
+    speakers.forEach(function(speaker){
+  //    if(speaker == "moderator") return;
+      let topic_counts = speaker_counts.get(speaker);
+      d3.select("#barchart-speaker-" + speaker)
+        .selectAll(".topic-bar")
+        .attr("d", function(d){
+          let count = topic_counts.get(d);
+          return arc.outerRadius(d => scale.count(count == undefined ? 0 : count))(d);
+        })
+        .selectAll(".detail").text(d => d + ": " + topic_counts.get(d));
+      });
+  }
+
+  function moveSpeaker(speaker, topicIndex, topic){
+    let filtered = chords.groups.filter(function(group){return group.label == topic;});
+    let chord = filtered[0];
+    let angle = (chord.angle - Math.PI / 2) + (Math.random() * 0.2);//* (180 / Math.PI);
+    let x = (chordInnerRadius -10 - 30 * Math.random()) * Math.cos(angle);
+    let y = (chordInnerRadius -10 - 30 * Math.random()) * Math.sin(angle);
+    document.getElementById("chord-diagram").appendChild(document.getElementById("speaker-circle-" + speaker));
+    d3.select("#speaker-circle-" + speaker).transition().attr("cx",x).attr("cy",y).duration(1000);
+  }
+
+  function resetCounts(){
+    // iterate through topic and applause counters and set values to zero for all speakers.
+    speakers.forEach(function(speaker){
+      topic_counts = speaker_counts.get(speaker);
+      applause_counts.set(speaker, 0);
+      topic_counts.keys().forEach(function(topic){
+        topic_counts.set(topic,0);
+      });
+    });
+  }
+
+  function getInteractionPath(source, target){
+    let source_elem = $("#speaker-circle-" + source);
+    let source_x = source_elem.attr("cx");
+    let source_y = source_elem.attr("cy");
+    let target_elem = $("#speaker-circle-" + target);
+    let target_x = target_elem.attr("cx");
+    let target_y = target_elem.attr("cy");
+    return interactionPath([[source_x, source_y], [target_x, target_y]]);
+  }
+
+  function clearText(){
+    $("#sections").empty();
+    for(i = 0; i < 4; i++){
+      d3.select("#sections")
+          .append("div")
+          .attr("class","skip")
+          .text(".");
+    }
+  }
+
+  function clearSpeakerVisualizations(){
+    $("#topic-frequency").empty();
+    $("#chord-diagram").empty();
+  }
+
+  function clearTimeline(){
+    $("#timeline-svg").empty();
+    current = 0;
+  }
+
+  function populateDebateSelection(debates){
+    let newDebates = debates.filter(function(d){return d.include && !d.old;});
+    // first check if a debate is specified in URL params
+    let urlDebateId = urlParams['debate'];
+    // then check if a debate is specified in session storage
+    if(urlDebateId != undefined){
+      currentDebate = debates.filter(d => d.id == urlDebateId)[0];
+    }
+    else{
+      let storedDebateId = sessionStorage.getItem('debate');
+      if(storedDebateId == undefined){
+        // if a debate isn't specified, display the most recent debate.
+        currentDebate = newDebates[0];
+      }
+      else{
+        currentDebate = debates.filter(d => d.id == storedDebateId)[0];
+      }
+    }
+
+    d3.select("#debate-selection")
+      .selectAll(".new-debate-item")
+      .data(newDebates)
+      .enter()
+      .append("button")
+      .attr("class","dropdown-item debate-item new-debate-item")
+      .style("font-size","11pt")
+      .style("white-space","normal")
+      .style("width","100%")
+      .text(d => d.title + " (" + d.date + ")")
+      .on("click", function(d){
+        currentDebate = d;
+        clearSpeakerVisualizations();
+        clearText();
+        clearTimeline();
+        sessionStorage.setItem('debate', d.id);
+        sessionStorage.setItem('index', 1);
+        d3.select("#currently-viewing-label").text("Currently viewing: " + d.title);
+        d3.csv(d.filename).then(function(data){
+          processedData = readData(data);
+          let speaker_counts = processedData["speaker_counts"];
+          let topics = speaker_counts.get("all").keys();
+          // sort topics in descending order by absolute number of mentions in debate.
+          topics.sort((a,b) => speaker_counts.get("all").get(b) - speaker_counts.get("all").get(a));
+          included_topics = topics.slice(0,topicCount);
+          render(processedData, included_topics);
+          if(d.video.id != ""){
+            player.loadVideoById(d.video.id);
+          }
+          else{
+            $("#player").css("visibility","hidden");
+          }
+        })
+      });
+
+    d3.select("#debate-selection")
+      .append("div")
+      .attr("class","dropdown-divider");
+
+    d3.select("#debate-selection")
+        .selectAll(".old-debate-item")
+        .data(debates.filter(function(d){return d.include && d.old;}))
+        .enter()
+        .append("button")
+        .attr("class","dropdown-item debate-item old-debate-item")
+        .text(function(d){return d.title + " (" + d.date + ")";})
+        .on("click", function(d){
+          currentDebate = d;
+          sessionStorage.setItem('debate', d.id);
+          clearSpeakerVisualizations();
+          clearText();
+          clearTimeline();
+          d3.select("#debate-label").text("Currently viewing: " + d.title);
+          d3.csv(d.filename).then(function(data){
+            processedData = readData(data);
+            let speaker_counts = processedData["speaker_counts"];
+            let topics = speaker_counts.get("all").keys();
+            // sort topics in descending order by absolute number of mentions in debate
+            topics.sort((a,b) => speaker_counts.get("all").get(b) - speaker_counts.get("all").get(a));
+            included_topics = topics.slice(0,topicCount);
+            render(processedData, included_topics);
+            currentDebate = d;
+            if(currentDebate.video.id != ""){
+              player.loadVideoById(currentDebate.video.id);
+            }
+            else{
+              $("#player").css("visibility","hidden");
+            }
+          });
+        });
+  }
+
+  function populateTopicSelection(topics, included_topics){
+    // add an option in topic selection window for every topic in the debate transcript.
+    $("#topic-selection").empty();
+    d3.select("#topic-selection")
+      .selectAll(".topic-option")
+      .data(topics)
+      .enter()
+      .append("option")
+      .attr("class","topic-option")
+      .attr("id",d => "topic-" + d)
+      .text(d => d.replace("-"," "));
+
+    // show checkmarks for topics that are included in visualization by default.
+    included_topics.forEach(function(included_topic){
+      d3.select("#topic-" + included_topic).attr("selected","selected");
+    });
+
+    $('#topic-selection').on('select2:close', function (e) {
+      let selected = $("#topic-selection").select2("data").map(function(d){return d.text.replace(" ", "-")});
+      let changedSize = selected.length != included_topics.length;
+      if(changedSize){
+        // TODO: check that the new selection is different from the current selection before re-rendering.
+        included_topics = selected
+        let speaker_counts = processedData["speaker_counts"];
+        included_topics.sort((a,b) => speaker_counts.get("all").get(b) - speaker_counts.get("all").get(a));
+        clearTimeline();
+        clearText();
+        clearSpeakerVisualizations();
+        /*d3.csv(currentDebate.filename).then(function(data){
+          processedData = readData(data)
+        });*/
+        topicCount = included_topics.length;
+        render(processedData, included_topics);
+      }
+    });
+
+    $(document).ready(function() {
+      // keep track of when the user starts browsing the page.
+      start_time = new Date();
+      // when the user tries to leave page, show survey modal.
+        $("body").bind("mouseleave",function(){
+          leave_time = new Date();
+          // make sure the user has been on the page longer than five seconds.
+          if(leave_time.getTime() - start_time.getTime() > 5000){
+            // make sure the popup hasn't appeared before during this session.
+            if(!sessionStorage.getItem('survey_popup')) {
+              $("#survey-modal").modal('show');
+              sessionStorage.setItem('survey_popup', '1');
+            }
+          }
+        });
+
+        $('#topic-selection').select2({
+            templateSelection: function (data, container) {
+              // Add custom attributes to the <option> tag for the selected option
+              $(data.element).attr('data-id', data.id.replace(" ","-"));
+              return data.text;
+            },
+            closeOnSelect: false,
+            matcher: matchCustom,
+            tags: true,
+            // TODO: implement createTag handler that collects the new user generated tags and then loops through the text finding all mentions of user-generated tags.
+          });
+    });
+  }
+
+  function scrollToElement(element){
+    let offsetTop = window.pageYOffset || document.documentElement.scrollTop;
+    let elementBottom = element.node().getBoundingClientRect().bottom + window.scrollY;
+    let elementTop = element.node().getBoundingClientRect().top + window.scrollY;
+    let elementHeight = (elementBottom - elementTop);
+    let windowHeight = window.innerHeight;
+    d3.transition()
+      .tween("scroll", (offset => () => {
+        var i = d3.interpolateNumber(offsetTop, offset);
+        return t => scrollTo(0, i(t))
+      })(elementTop - (windowHeight * 0.4)));
+    updateVideo(element.data()[0].timestamp);
+  }
+
+  function addLegend(included_topics){
+    arc.outerRadius(scale.count.range()[1]/2);
+    let legend = svg.append("g").attr("id","legend").attr("transform","translate(" + width/4 + "," + height/2 + ")");
+    legend = d3.select("#barchart-speaker-moderator")
+    /*legend.selectAll(".topic-bar-outline")
+        .data(included_topics)
+        .enter()
+        .append("path")
+          .attr("class", d => "topic-bar-outline topic-bar-outline-" + d)
+          .attr("d", arc)
+          .style("stroke","none")
+          .style("fill","none");*/
+
+    legend.selectAll(".legend-label")
+        .data(included_topics)
+        .enter()
+        .append("text")
+        .attr("class",d => "legend-label legend-label-" + d)
+        .text(d => d)
+        .style("text-anchor", function(d){
+          let angle = scale.topicsCircular(d) + scale.topicsCircular.bandwidth()/2;
+          return angle > Math.PI ? "end" : "start";
+        })
+        .attr("transform",function(d){
+          let angle = scale.topicsCircular(d) + scale.topicsCircular.bandwidth()/2;
+          return "translate(" + arc.centroid(d)[0] + "," + arc.centroid(d)[1] + ") rotate(-90) rotate(" + (angle * 180/Math.PI) + ")" + "rotate(" + (angle > Math.PI ? "180" : "0") + ")";
+        });
+  }
+
+  function addSpeakerDetailChart(counts, sentiments, included_topics){
+    let topics = included_topics;
+    topics.sort(function(a,b){
+      let count1 = counts.get(b) == undefined ? 0 : counts.get(b);
+      let count2 = counts.get(a) == undefined ? 0 : counts.get(a);
+      return count1 - count2;
+    });
+    scale.topicDetail.domain(topics);
+
+
+    let minBandwidth = 20;
+    let minHeight = minBandwidth * included_topics.length;
+    let height = Math.min(minHeight, visHeight * 0.25)
+
+//    let speakerDetails = d3.select("#speaker-details-container").append("svg").attr("height", height).attr("width", $("#speaker-details-container").width()).style("position","fixed").style("top","100px").attr("id","speaker-details");
+
+    let speakerDetails = d3.select("#topic-frequency").append("g").attr("transform","translate(" + (visWidth * 0.8) + "," + visHeight * 0.25 + ")").attr("id","speaker-details");
+
+
+    scale.topicDetail.range([0,Math.min(minHeight,visHeight * 0.4)]);
+
+    let max = d3.max(counts.values());
+    scale.count.domain([0, max]);
+
+    scale.count.range([visWidth*0.1,visWidth*0.25]);
+
+    speakerDetails.append("text")
+      .attr("id", "speaker-detail-label")
+      .attr("transform","translate(-50,-20)")
+      .style("font-size", function(d){
+        if(isMobile){
+          return "7pt";
+        }
+        return "10pt";
+      })
+      .text("What topics were discussed?");
+
+    speakerDetails.append("g").attr("transform","translate(" + scale.count.range()[0] + ",0)").attr("id","speaker-detail-axis").call(axis.topicDetail).selectAll("text").text(d => d.replace("-"," "));
+
+    speakerDetails.append("text")
+      .attr("transform","translate(" + scale.count.range()[0] + ",-5)")
+      .style("font-size",function(d){
+        if(visWidth > 500){
+          return "10pt";
+        }
+        return "8pt";
+      })
+      .style("fill","black")
+      .text("Count");
+
+    speakerDetails.selectAll(".speaker-detail-bar")
+      .data(topics)
+      .enter()
+      .append("rect")
+      .attr("id", d => "speaker-detail-bar")
+      .attr("class","speaker-detail-bar")
+      .attr("x", scale.count.range()[0])
+      .attr("width", d => scale.count(counts.get(d)))
+      .attr("y", d => scale.topicDetail(d))
+      .attr("height", scale.topicDetail.bandwidth() * 0.75)
+      .attr("fill", d => counts.get(d) == undefined ? "gray" : color.purple)
+      .attr("stroke","none")
+      .on("mouseover", function(d){
+        d3.select(this).attr("fill",color.orange);
+        highlightTopic(d);
+      })
+      .on("mouseout", function(d){
+        let selected = d3.select(this).classed("selected");
+        if(!selected){
+          d3.select(this).attr("fill", color.purple);
+          removeHighlightTopic();
+        }
+      })
+      .on("click", function(d){
+        let selected = d3.select(this).classed("selected");
+        if(selected){
+          d3.select(this).attr("fill", color.purple).style("stroke","none");
+          removeHighlightTopic();
+        }
+        else{
+          d3.selectAll(".speaker-detail-bar").attr("fill", color.purple);
+          d3.select(this).attr("fill",color.orange).attr("stroke","black");
+          highlightTopic(d);
+        }
+        d3.select(this).classed("selected", !selected);
+      });
+
+    speakerDetails.selectAll(".speaker-detail-count")
+      .data(topics)
+      .enter()
+      .append("text")
+      .attr("id",(d,i) => "speaker-detail-count-" + i)
+      .attr("class","detail-label speaker-detail-count")
+      .attr("x", d => scale.count.range()[0] + scale.count(counts.get(d)))
+      .attr("y", d => scale.topicDetail(d) + (scale.topicDetail.bandwidth() * 0.5))
+      .text(d => counts.get(d));
+
+    scale.polarity.range([scale.count.range()[1] * 1.3, scale.count.range()[1] * 1.7]);
+    scale.polarity.domain([-1, 1]);
+
+    speakerDetails.append("text")
+      .attr("transform","translate(" + scale.polarity.range()[0] + ",-5)")
+      .attr("class","detail-label")
+      .style("fill","black")
+      .style("visibility","hidden")
+      .text("Sentiment");
+
+    speakerDetails.selectAll(".speaker-sentiment-bar")
+      .data(topics)
+      .enter()
+      .append("rect")
+      .attr("class","speaker-sentiment-bar")
+      .attr("x", scale.polarity.range()[0])
+      .attr("width", scale.polarity.range()[1] - scale.polarity.range()[0])
+      .attr("y", d => scale.topicDetail(d) + (scale.topicDetail.bandwidth() * 0.1))
+      .attr("height", scale.topicDetail.bandwidth() * 0.3)
+      .style("fill", "url(#polarity-gradient)")
+      .style("visibility","hidden")
+      .on("mouseover", function(d){
+        highlightSpeaker(d);
+      })
+      .on("mouseout", function(d){
+        removeHighlightSpeaker();
+      });
+
+    speakerDetails.selectAll(".speaker-sentiment-line")
+      .data(topics)
+      .enter()
+      .append("line")
+      .attr("class","speaker-sentiment-line")
+      .attr("x1", d => scale.polarity(sentiments.get(d) / counts.get(d)))
+      .attr("x2", d => scale.polarity(sentiments.get(d) / counts.get(d)))
+      .attr("y1", d => scale.topicDetail(d))
+      .attr("y2", d => scale.topicDetail(d) + scale.topicDetail.bandwidth() * 0.4)
+      .style("stroke", "black")
+      .style("visibility","hidden")
+      .on("mouseover", function(d){
+        highlightSpeaker(d);
+      })
+      .on("mouseout", function(d){
+        removeHighlightSpeaker();
+      });
+
+    speakerDetails.selectAll(".speaker-sentiment-label")
+      .data(topics)
+      .enter()
+      .append("text")
+      .attr("class","detail-label speaker-sentiment-label")
+      .attr("x", d => scale.polarity.range()[1])
+      .attr("y", d => scale.topicDetail(d) + (scale.topicDetail.bandwidth() * 0.5))
+      .style("visibility","hidden")
+      .text(function(d){
+        return counts.get(d) == undefined ? "N/A" : (sentiments.get(d) / counts.get(d)).toFixed(2)
+      });
+
+  }
+
+  function updateSpeakerDetailChart(speaker, counts, sentiments, included_topics){
+    let topics = scale.topicDetail.domain();
+    topics.sort(function(a,b){
+      let count1 = counts.get(speaker).get(b) == undefined ? 0 : counts.get(speaker).get(b);
+      let count2 = counts.get(speaker).get(a) == undefined ? 0 : counts.get(speaker).get(a);
+      return count1 - count2;
+    });
+
+    if(counts.get(speaker).get(topics[0]) != undefined){
+      scale.count.domain([0,counts.get(speaker).get(topics[0])]);
+    }
+
+    scale.topicDetail.domain(topics);
+    d3.select("#speaker-detail-axis").transition().call(axis.topicDetail).selectAll("text").text(d => d.replace("-"," "));
+
+    d3.select("#speaker-details").selectAll(".speaker-detail-bar")
+      .transition()
+      .attr("width", d => scale.count(counts.get(speaker).get(d) == undefined ? 0.3 : counts.get(speaker).get(d)))
+      .attr("y", d => scale.topicDetail(d))
+      .attr("fill", function(d){
+        return counts.get(speaker).get(d) == undefined ? "gray" : color.purple;
+      });
+
+    d3.select("#speaker-details").selectAll(".speaker-detail-count")
+      .transition()
+      .attr("x", d => scale.count.range()[0] + scale.count(counts.get(speaker).get(d) == undefined ? 0.3 : counts.get(speaker).get(d)))
+      .attr("y", d => scale.topicDetail(d) + (scale.topicDetail.bandwidth() * 0.5))
+      .text(d => counts.get(speaker).get(d) == undefined ? 0 : counts.get(speaker).get(d));
+
+    d3.select("#speaker-details").selectAll(".speaker-sentiment-bar")
+      .transition()
+      .attr("y", d => scale.topicDetail(d) + (scale.topicDetail.bandwidth() * 0.1))
+      .style("filter", d => counts.get(speaker).get(d) == undefined ? "url(#desaturate)" : "none");
+
+    d3.select("#speaker-details").selectAll(".speaker-sentiment-line")
+      .transition()
+      .attr("x1", d => scale.polarity(sentiments.get(speaker).get(d) / counts.get(speaker).get(d)))
+      .attr("x2", d => scale.polarity(sentiments.get(speaker).get(d) / counts.get(speaker).get(d)))
+      .attr("y1", d => scale.topicDetail(d))
+      .attr("y2", d => scale.topicDetail(d) + scale.topicDetail.bandwidth() * 0.4);
+
+    d3.select("#speaker-details").selectAll(".speaker-sentiment-label")
+      .transition()
+      .attr("y", d => scale.topicDetail(d) + (scale.topicDetail.bandwidth() * 0.5))
+      .text(d => counts.get(speaker).get(d) == undefined ? "N/A" : (sentiments.get(speaker).get(d) / counts.get(speaker).get(d)).toFixed(2));
+
+    let speaker_name = speaker == "moderator" ? "Moderator" : toTitleCase(scale.speaker(speaker));
+
+    if(speaker == "all"){
+      d3.select("#speaker-detail-label")
+        .text("What topics were discussed?");
+    }
+    else{
+      d3.select("#speaker-detail-label")
+        .text("What topics were discussed by ")
+        .append("tspan")
+        .style("font-weight","bold")
+        .text(speaker_name)
+        .append("tspan")
+        .style("font-weight","normal")
+        .text("?");
+    }
+//    d3.select("#speaker-detail-show-all").style("visibility","visible");
+  }
+
+  function addTopicDetailChart(counts, sentiments){
+    let speakers = counts.keys().filter(d => !d.includes("unknown") && d != "all" && d != "moderator");
+    speakers.sort((a,b) => counts.get(b).get("all") - counts.get(a).get("all"));
+
+    // create g to hold topic detail bar chart.
+    let topicDetails = d3.select("#topic-frequency").append("g").attr("transform","translate(" + (visWidth * 0.8) + "," + visHeight * 0.8 +")").attr("id","topic-details");
+
+    let minBandwidth = 20;
+    let minHeight = minBandwidth * speakers.length;
+    let chartHeight = Math.min(minHeight, visHeight * 0.6);
+
+  //  let topicDetails = d3.select("#topic-details-container").append("svg").attr("height", chartHeight).attr("width", $("#topic-details-container").width()).style("position","fixed").style("top","100px").attr("id","topic-details");
+
+    // we don't want to include the moderator because they speak disproportionately more than the rest of the speakers.
+    scale.speakers.domain(speakers.filter(function(d){return d != "moderator";}));
+
+
+    scale.speakers.range([0,chartHeight]);
+
+  //  scale.speakers.range([0,height*0.25]);
+
+    // calculate maximum count out of all speakers.
+    let max = counts.get(speakers[0]).get("all");
+    scale.count.domain([0, max]);
+    scale.count.range([visWidth*0.1,visWidth*0.25]);
+
+    // create header text.
+    topicDetails.append("text")
+      .attr("id", "topic-detail-label")
+      .attr("transform","translate(-50,-20)")
+      .style("font-size", function(d){
+        if(isMobile){
+          return "7pt";
+        }
+        return "10pt";
+      })
+      .text("Who spoke the most?");
+
+    // create (initially hidden) link to clear filters.
+    topicDetails.append("text")
+      .attr("transform","translate(-50, -15)")
+      .attr("id","topic-detail-show-all")
+      .style("fill","gray")
+      .style("font-size", "9pt")
+      .text("Click to remove topic filter")
+      .style("visibility","hidden")
+      .style("cursor","pointer")
+      .on("mouseover", function(){
+        d3.select(this).style("text-decoration","underline");
+      })
+      .on("mouseout", function(){
+        d3.select(this).style("text-decoration","none");
+      })
+      .on("click", function(){
+        d3.select(this).style("visibility","hidden");
+        removeTopicDetailChart();
+        addTopicDetailChart(processedData["speaker_counts"], processedData["speaker_sentiments"]);
+      });
+
+    // create left speaker axis for bar chart.
+    topicDetails.append("g").attr("transform","translate(" + scale.count.range()[0] + ",0)").attr("id","topic-detail-axis").call(axis.speakers).selectAll("text").text(d => toTitleCase(d));
+
+    topicDetails.append("text")
+      .attr("transform","translate(" + scale.count.range()[0] + ",-5)")
+      .style("font-size",function(d){
+        if(visWidth > 500){
+          return "10pt";
+        }
+        return "8pt";
+      })
+      .style("fill","black")
+      .text("Count");
+
+    // create bars in bar chart.
+    topicDetails.selectAll(".topic-detail-bar")
+      .data(speakers.filter(function(d){return d != "moderator"}))
+      .enter()
+      .append("rect")
+      .attr("class","topic-detail-bar")
+      .attr("x", scale.count(0))
+      .attr("width", d => scale.count(counts.get(d).get("all")))
+      .attr("y", d => scale.speakers(d))
+      .attr("height", scale.speakers.bandwidth() * 0.75)
+      .attr("fill", d => counts.get(d).get("all") == undefined ? "gray" : color.purple)
+      .on("mouseover", function(d){
+        console.log("topic detail mouseover");
+        d3.select(this).attr("fill",color.orange);
+        highlightSpeaker(d);
+      })
+      .on("mouseout", function(d){
+        console.log("topic detail mouseout");
+        let selected = d3.select(this).classed("selected");
+        if(!selected){
+          console.log("not selected");
+          d3.select(this).attr("fill", color.purple);
+          removeHighlightSpeaker();
+      //    d3.selectAll(".topic-detail-bar").attr("fill", color.purple);
+        }
+      })
+      .on("click", function(d){
+        let selected = d3.select(this).classed("selected");
+        if(selected){
+          d3.select(this).attr("fill", color.purple).style("stroke","none");
+          removeHighlightSpeaker();
+        }
+        else{
+          d3.selectAll(".topic-detail-bar").attr("fill", color.purple);
+          d3.select(this).attr("fill",color.orange).style("stroke","black");
+          highlightSpeaker(d);
+        }
+        d3.select(this).classed("selected", !selected);
+      });
+
+
+    // create text labels for value of each bar in bar chart.
+    topicDetails.selectAll(".topic-detail-count")
+      .data(speakers.filter(function(d){return d != "moderator"}))
+      .enter()
+      .append("text")
+      .attr("class","detail-label topic-detail-count")
+      .attr("x", d => scale.count.range()[0] + scale.count(counts.get(d).get("all")))
+      .attr("y", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.5))
+      .text(d => counts.get(d).get("all"));
+
+      // set polarity scale to match bar chart dimensions.
+      scale.polarity.range([scale.count.range()[1] * 1.2, scale.count.range()[1] * 1.6]);
+      scale.polarity.domain([-0.3, 0.3]);
+
+  /*    topicDetails.append("text")
+        .attr("transform","translate(" + scale.polarity.range()[0] + ",-5)")
+        .style("font-size",function(d){
+          if(visWidth > 500){
+            return "10pt";
+          }
+          return "8pt";
+        })
+        .style("fill","black")
+        .text("Sentiment");
+
+      // create gradient-filled rectangles for sentiment scores next to bar chart.
+      topicDetails.selectAll(".topic-sentiment-bar")
+        .data(speakers.filter(function(d){return d != "moderator"}))
+        .enter()
+        .append("rect")
+        .attr("class","topic-sentiment-bar")
+        .attr("x", scale.polarity.range()[0])
+        .attr("width", scale.polarity.range()[1] - scale.polarity.range()[0])
+        .attr("y", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.1))
+        .attr("height", scale.speakers.bandwidth() * 0.3)
+        .style("fill", "url(#polarity-gradient)")
+        .on("mouseover", function(d){
+          highlightSpeaker(d);
+        })
+        .on("mouseout", function(d){
+          removeHighlightSpeaker();
+        });
+
+      // create line marking value on sentiment chart.
+      topicDetails.selectAll(".topic-sentiment-line")
+        .data(speakers.filter(function(d){return d != "moderator"}))
+        .enter()
+        .append("line")
+        .attr("class","topic-sentiment-line")
+        .attr("x1", d => scale.polarity(sentiments.get(d).get("all") / counts.get(d).get("all")))
+        .attr("x2", d => scale.polarity(sentiments.get(d).get("all") / counts.get(d).get("all")))
+        .attr("y1", d => scale.speakers(d))
+        .attr("y2", d => scale.speakers(d) + scale.speakers.bandwidth() * 0.4)
+        .style("stroke", "black")
+        .on("mouseover", function(d){
+          highlightSpeaker(d);
+        })
+        .on("mouseout", function(d){
+          removeHighlightSpeaker();
+        });
+
+      // create text label for sentiment value.
+      topicDetails.selectAll(".topic-sentiment-label")
+        .data(speakers.filter(function(d){return d != "moderator"}))
+        .enter()
+        .append("text")
+        .attr("class","detail-label topic-sentiment-label")
+        .attr("x", scale.polarity.range()[1])
+  //      .attr("x", d => 5 + scale.polarity(sentiments.get(d).get("all") / counts.get(d).get("all")))
+        .attr("y", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.5))
+        .text(d => (sentiments.get(d).get("all") / counts.get(d).get("all")).toFixed(2));
+        */
+  }
+
+  function updateTopicDetailChart(topic, counts, sentiments){
+    let speakers = counts.keys().filter(d => !d.includes("unknown") && d != "all" && d != "moderator");
+    speakers.sort(function(a,b){
+      let count1 = counts.get(b).get(topic) == undefined ? 0 : counts.get(b).get(topic);
+      let count2 = counts.get(a).get(topic) == undefined ? 0 : counts.get(a).get(topic);
+      return count1 - count2;
+    });
+    scale.count.domain([0,counts.get(speakers[0]).get(topic)]);
+
+    scale.speakers.domain(speakers);
+    d3.select("#topic-detail-axis").transition().call(axis.speakers).selectAll("text").text(d => toTitleCase(d));
+
+    d3.select("#topic-details").selectAll(".topic-detail-bar")
+      .transition()
+      .attr("width", d => scale.count(counts.get(d).get(topic) == undefined ? 0.3 : counts.get(d).get(topic)))
+      .attr("y", d => scale.speakers(d))
+      .attr("fill", d => counts.get(d).get(topic) == undefined ? "gray" : color.purple);
+
+    d3.select("#topic-details").selectAll(".topic-detail-count")
+      .transition()
+      .attr("x", d => scale.count.range()[0] + scale.count(counts.get(d).get(topic) == undefined ? 0.3 : counts.get(d).get(topic)))
+      .attr("y", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.5))
+      .text(d => counts.get(d).get(topic) == undefined ? 0 : counts.get(d).get(topic));
+
+    d3.select("#topic-details").selectAll(".topic-sentiment-bar")
+      .transition()
+      .attr("y", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.1))
+      .style("filter", d => counts.get(d).get(topic) == undefined ? "url(#desaturate)" : "none");
+
+    d3.select("#topic-details").selectAll(".topic-sentiment-line")
+      .transition()
+      .attr("y1", d => scale.speakers(d))
+      .attr("y2", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.4))
+      .attr("x1", d => scale.polarity(sentiments.get(d).get(topic) / counts.get(d).get(topic)))
+      .attr("x2", d => scale.polarity(sentiments.get(d).get(topic) / counts.get(d).get(topic)));
+
+    d3.select("#topic-details").selectAll(".topic-sentiment-label")
+      .transition()
+      .attr("y", d => scale.speakers(d) + (scale.speakers.bandwidth() * 0.5))
+      .text(d => counts.get(d).get(topic) == undefined ? "N/A" : (sentiments.get(d).get(topic) / counts.get(d).get(topic)).toFixed(2));
+
+    if(topic == "all"){
+      d3.select("#topic-detail-label")
+        .text("Who spoke the most?");
+    }
+    else{
+      d3.select("#topic-detail-label")
+        .text("Who spoke the most about ")
+        .append("tspan")
+        .style("font-weight","bold")
+        .text(topic.replace("-"," "))
+        .append("tspan")
+        .style("font-weight","normal")
+        .text("?");
+    }
+  }
+
+  function removeTopicDetailChart(){
+    $("#topic-details").remove();
+  }
+
+  function removeSpeakerDetailChart(){
+    $("#speaker-details").remove();
+  }
+
+  function addPolarityPlot(data, container){
+    let bars = svg.append("g").attr("id","polarity-plot")
+    bars.selectAll(".polarity-bar")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("class",d => "polarity-bar speaker-" + d.speaker)
+      .attr("x", d => scale.time(d.index))
+      .attr("y", d => scale.polarity(Math.max(0,d.polarity) + 0.001))
+      .attr("width", d => scale.time.bandwidth())
+      .attr("height", d => Math.max(Math.abs(scale.polarity(d.polarity) - scale.polarity(0)), 3))
+      .attr("fill", d => "gray")
+      .style("visibility", d => "visible")
+      .on("mouseover", function(d){
+        d3.select(this).transition().attr("fill", color.mint);
+    //    svg.append("text").attr("id","text-detail").attr("x", visWidth * 0.3).attr("y", margin.top).style("font-size","10pt").text(d.speaker + ": " + d.text);
+      })
+      .on("mouseout", function(d){
+        d3.select(this).transition().attr("fill","gray");
+    //    $("#text-detail").remove();
+      })
+      .append("svg:title").text(d => d.speaker + ": " + d.text);
+
+    let axisg = svg.append("g").attr("transform","translate(" + margin.left + ",0)").call(axis.polarity);
+    axisg.append("text").attr("transform","translate(-35," + height/2 + ") rotate(-90)").text("Polarity").attr("fill","black").style("font-size","11pt")
+  }
+
+  function addAudienceInteractionChart(){
+    let height = scale.time.range()[1] - scale.time.range()[0];
+    let cols = d3.scaleBand().domain(["applause","laughter"]).range([0,timelineWidth*0.18]);
+
+    let timeline = d3.select("#timeline-svg").append("g").attr("id","audience-interaction-chart").attr("transform", "translate(0," + margin.top + ")");
+
+    timeline.selectAll(".audience-interaction-col")
+      .data(cols.domain())
+      .enter()
+      .append("rect")
+      .attr("class", "timeline-col audience-interaction-col")
+      .attr("x", d => cols(d))
+      .attr("width", d => cols.bandwidth())
+      .attr("y", scale.time.range()[0])
+      .attr("height", height)
+
+    timeline.append("image")
+      .attr("class", "interaction-applause")
+      .attr('width', cols.bandwidth() * 0.6)
+//      .attr('height', cols.bandwidth() * 0.6)
+      .attr("x", cols("applause")+ cols.bandwidth() * 0.2)
+      .attr("y", scale.time.range()[0] - cols.bandwidth() * 0.6)
+      .attr("href", "img/clap.svg")
+      .append("svg:title","Audience reaction: applause");
+
+    timeline.append("image")
+      .attr("class", "interaction-laughter")
+      .attr('width', cols.bandwidth() * 0.6)
+//      .attr('height', cols.bandwidth() * 0.6)
+      .attr("x", cols("laughter")+ cols.bandwidth() * 0.2)
+      .attr("y", scale.time.range()[0] - cols.bandwidth() * 0.6)
+      .attr("href", "img/laughing.svg")
+      .append("svg:title","Audience reaction: laughter");
+
+    timeline.selectAll(".audience-interaction")
+      .data(processedData["lines"].filter(d => d.applause || d.laughter))
+      .enter()
+      .append("line")
+        .attr("x1",d => cols( d.laughter ? "laughter" : "applause") + 2)
+        .attr("x2",d => cols( d.laughter ? "laughter" : "applause") + cols.bandwidth() - 2)
+        .attr("y1",d => scale.time(d.index))
+        .attr("y2",d => scale.time(d.index))
+        .attr("class","interaction interaction-applause")
+        .style("stroke","black")
+        .style("cursor","pointer")
+        .on("click", function(d){
+          sessionStorage.setItem('index',d.index);
+          scrollToElement(d3.select("#phrase-" + d.index));
+        })
+        .on("mouseover", function(d){
+          d3.select(this).style("stroke",color.orange);
+        })
+        .on("mouseout", function(d){
+          d3.select(this).style("stroke","black");
+        });
+
+  }
+
+  function addSpeakerInteractionChart(){
+    let timeline = d3.select("#timeline-svg").append("g").attr("id","speaker-interaction-chart").attr("transform", "translate(0," + margin.top + ")");
+
+    let height = scale.time.range()[1] - scale.time.range()[0];
+    let cols = d3.scaleBand().domain(["source","action","target"]).range([timelineWidth*0.23,timelineWidth*0.45]);
+
+    d3.selectAll(".mention-img").attr("width", cols.bandwidth() * 1.2).attr("height", cols.bandwidth() * 1.2);
+
+    svg.select("defs").append("svg:marker")
+      .attr("id", "arrowHeadAgree")
+      .attr("refX", 6)
+      .attr("refY", 6)
+      .attr("markerWidth", 30)
+      .attr("markerHeight", 30)
+      .attr("viewBox","0 0 60 60")
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M 0 0 12 6 0 12 3 6")
+      .style("fill", "green")
+
+    svg.select("defs").append("svg:marker")
+      .attr("id", "arrowHeadAttack")
+      .attr("refX", 6)
+      .attr("refY", 6)
+      .attr("markerWidth", 30)
+      .attr("markerHeight", 30)
+      .attr("viewBox","0 0 60 60")
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M 0 0 12 6 0 12 3 6")
+      .style("fill", "red")
+
+    svg.select("defs").append("svg:marker")
+      .attr("id", "arrowHeadBlack")
+      .attr("refX", 6)
+      .attr("refY", 6)
+      .attr("markerWidth", 30)
+      .attr("markerHeight", 30)
+      .attr("viewBox","0 0 60 60")
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M 0 0 12 6 0 12 3 6")
+      .style("fill", "black");
+
+    svg.select("defs").append("svg:marker")
+      .attr("id", "arrowHeadOrange")
+      .attr("refX", 6)
+      .attr("refY", 6)
+      .attr("markerWidth", 30)
+      .attr("markerHeight", 30)
+      .attr("viewBox","0 0 60 60")
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M 0 0 12 6 0 12 3 6")
+      .style("fill", "orange");
+
+  /*  timeline.selectAll(".interaction-filter")
+      .data(cols.domain())
+      .enter()
+      .append("image")
+      .attr("class","interaction-filter")
+      .attr("x", d => cols(d))
+      .attr("width", d => cols.bandwidth() * 0.5)
+      .attr("y", scale.time.range()[0] - cols.bandwidth())
+      .attr("height", cols.bandwidth())
+      .attr("href","img/filter.png");*/
+
+    // filter out lines that don't have interactions.
+    let filtered_interactions = processedData["lines"].filter(function(d){return d.interaction;});
+    let prev_interaction;
+    let source_cluster_start;
+    let source_cluster_end;
+    let target_cluster_start;
+    let target_cluster_end;
+    filtered_interactions.forEach(function(line){
+      if(source_cluster_start == null){
+        source_cluster_start = line.index;
+        source_cluster_end = line.index;
+      }
+      if(target_cluster_start == null){
+        target_cluster_start = line.index;
+        target_cluster_end = line.index;
+      }
+
+      let clustering = false;
+      let clusterSources = false;
+      let clusterTargets = true;
+
+      if(line.attack || line.agree || line.reference || line.interruption){
+        // create interaction icons on timeline.
+        let y1 = line.index;
+        let y2 = line.index;
+
+        if(clustering && prev_interaction != null && line.index - prev_interaction.index < 5){
+          if(line.speaker != prev_interaction.speaker && source_cluster_start != source_cluster_end){
+            // the previous cluster is now finished because the speaker changed.
+            source_cluster_end = prev_interaction.index;
+            let midpoint = (source_cluster_end + source_cluster_start) / 2;
+            d3.select("#interaction-source-" + prev_interaction.index).attr("cy", scale.time(midpoint));
+            d3.select("#interaction-action-" + prev_interaction.index).attr("y1", scale.time(midpoint));
+            source_cluster_start = line.index;
+          }
+          if(line.speaker == prev_interaction.speaker){
+            // same source, different target. Combine prev and current source icons into one.
+            source_cluster_end = line.index;
+            let midpoint = (source_cluster_end + source_cluster_start) / 2;
+            d3.select("#interaction-action-" + prev_interaction.index).attr("y1", scale.time(midpoint));
+            $("#interaction-source-" + prev_interaction.index).remove();
+          }
+
+          let sharedAgree = line.agree && prev_interaction.agree && line.agree_target[0] == prev_interaction.agree_target[0];
+          if(sharedAgree){
+    //        console.log("Shared agree target:", line.agree_target[0]);
+          }
+          sharedAttack = line.attack && prev_interaction.attack && line.attack_target[0] == prev_interaction.attack_target[0];
+          if(sharedAttack){
+    //        console.log("Shared attack target:", line.attack_target[0]);
+          }
+          sharedReference = line.reference && prev_interaction.reference && line.mentions[0] == prev_interaction.mentions[0];
+          if(sharedReference){
+    //        console.log("Shared reference target:", line.mentions[0]);
+          }
+          sharedTarget = sharedReference || sharedAgree || sharedAttack;
+          if(!sharedTarget && target_cluster_start != target_cluster_end){
+            target_cluster_end = prev_interaction.index;
+            let midpoint = (target_cluster_end + target_cluster_start) / 2;
+            d3.select("#interaction-target-" + prev_interaction.index).attr("cy",scale.time(midpoint));
+            d3.select("#interaction-action-" + prev_interaction.index).attr("y2",scale.time(midpoint));
+
+            target_cluster_start = line.index;
+          }
+          if(sharedTarget){
+            // same target, different source. Combine prev and current target icons into one.
+            $("#interaction-target-" + prev_interaction.index).remove();
+            target_cluster_end = line.index;
+            let midpoint = (target_cluster_end + target_cluster_start) / 2;
+            d3.select("#interaction-action-" + prev_interaction.index).attr("y2",scale.time(midpoint));
+          }
+        }
+        else{
+          target_cluster_start = line.index;
+          target_cluster_end = line.index;
+        }
+
+        timeline.append("circle")
+          .datum(line)
+          .attr("class", "interaction interaction-source interaction-source-" + line.speaker)
+          .attr("id","interaction-source-" + line.index)
+          .attr("cx", cols("source") + cols.bandwidth()*0.5)
+          .attr("cy", scale.time(y1))
+          .attr("r", cols.bandwidth() * 0.5)
+          .style("fill", "url(#mention-img-" + line.speaker + ")")
+          .style("cursor","pointer")
+          .on("mouseover", function(d){
+            highlightSpeaker(d.speaker);
+      /*      d3.selectAll(".interaction").style("opacity","0.1");
+            d3.select(this).attr("r", cols.bandwidth() * 0.7).style("opacity", 1);
+            d3.select("#interaction-action-" + d.index).style("opacity", 1);
+            d3.select("#interaction-target-" + d.index).style("opacity", 1);*/
+          })
+          .on("mouseout", function(){
+            removeHighlightSpeaker();
+        /*    d3.selectAll(".interaction").style("opacity","1");
+            d3.select(this).attr("r", cols.bandwidth() * 0.5);*/
+          })
+          .on("click", function(){
+            sessionStorage.setItem('index',line.index);
+            scrollToElement(d3.select("#phrase-" + line.index));
+          });
+
+    /*    timeline.append("image")
+          .attr("class", "interaction-action")
+          .attr('width', cols.bandwidth())
+          .attr('height', cols.bandwidth() * 0.6)
+          .attr("x", cols("action"))
+          .attr("y", scale.time(line.index) - 5)
+          .attr("href",getActionImage(line));*/
+
+
+        // add an invisible rectangle behind each action line to make it easier to click.
+        timeline.append("circle")
+          .datum(line)
+          .attr("cx", cols("action") + cols.bandwidth() * 0.5)
+          .attr("cy", scale.time(y1))
+          .attr("r", cols.bandwidth() * 0.4)
+          .style("stroke", "none")
+          .style("fill", "white")
+          .style("opacity","0.1")
+          .style("cursor","pointer")
+          .on("mouseover", function(d){
+            // highlight all other interactions of the same category.
+        //    let action = d.attack ? "attack" : d.agree ? "agree" : d.defense ? "defense" : "reference";
+      //      d3.selectAll(".interaction-action").style("opacity",0.1);
+      //      d3.selectAll(".interaction-action-" + action).style("opacity",1);
+
+            d3.selectAll(".interaction").style("opacity",0.1);
+            let speaker_interactions = d3.selectAll(".interaction")
+              .filter(function(interaction){
+                if(d.attack && interaction.attack){
+                  return true;
+                }
+                if(d.agree && interaction.agree){
+                  return true;
+                }
+                if(d.defense && interaction.defense){
+                  return true;
+                }
+                if(d.reference && interaction.reference){
+                  return true;
+                }
+                return false;
+              })
+              .style("opacity",1);
+          })
+          .on("mouseout", function(d){
+            // return all interactions to full opacity.
+            d3.selectAll(".interaction").style("opacity",1);
+          })
+          .on("click", function(){
+            sessionStorage.setItem('index',line.index);
+            scrollToElement(d3.select("#phrase-" + line.index));
+          });
+
+        timeline.append("line")
+          .datum(line)
+          .attr("class", function(){
+            let action = line.attack ? "attack" : line.agree ? "agree" : line.defense ? "defense" : "reference";
+            return "interaction interaction-action interaction-action-" + action;
+          })
+          .attr("id", "interaction-action-" + line.index)
+          .attr("x1", cols("action"))
+          .attr("x2", cols("action") + (cols.bandwidth() * 0.8))
+          .attr("y1", scale.time(y1))
+          .attr("y2", scale.time(y2))
+          .style("stroke", getActionColor(line))
+          .attr("marker-end", function(){
+            if(line.agree){
+              return "url(#arrowHeadAgree)";
+            }
+            if(line.attack){
+              return "url(#arrowHeadAttack)";
+            }
+            if(line.defense){
+              return "url(#arrowHeadDefense)";
+            }
+            return "url(#arrowHeadBlack)";
+          })
+          .on("click", function(){
+            sessionStorage.setItem('index',line.index);
+            scrollToElement(d3.select("#phrase-" + line.index));
+          });
+
+
+
+        if(line.interruption){
+          timeline.append("line")
+            .datum(line)
+            .attr("class", "interaction interaction-action")
+            .attr("id", d => "interaction-action-" + line.index)
+            .attr("x1", cols("action") + (cols.bandwidth() * 0.4))
+            .attr("x2", cols("action") + (cols.bandwidth() * 0.2))
+            .attr("y1", scale.time(y1) - 5)
+            .attr("y2", scale.time(y2) + 5)
+            .style("stroke", getActionColor(line))
+        }
+
+        timeline.append("circle")
+          .datum(line)
+          .attr("class", "interaction interaction-target interaction-target-" + getTargetImage(line))
+          .attr("id", "interaction-target-" + line.index) // TODO: Make this more robust so it can handle more than just the first mention.
+          .attr("cx", cols("target") + cols.bandwidth()*0.5)
+          .attr("cy", scale.time(y2))
+          .attr("r", cols.bandwidth() * 0.5)
+          .style("fill", "url(#mention-img-" + getTargetImage(line) + ")")
+          .style("cursor","pointer")
+          .on("mouseover", function(d){
+            highlightSpeaker(getTargetImage(line))
+        /*    d3.selectAll(".interaction").style("opacity","0.5");
+            d3.select(this).attr("r", cols.bandwidth() * 0.7).style("opacity", 1); */
+          })
+          .on("mouseout", function(){
+            removeHighlightSpeaker();
+      /*      d3.selectAll(".interaction").style("opacity","1");
+            d3.select(this).attr("r", cols.bandwidth() * 0.5);*/
+          })
+          .on("click", function(){
+            sessionStorage.setItem('index',line.index);
+            scrollToElement(d3.select("#phrase-" + line.index));
+          });
+      }
+      if(clustering){
+        let target_diff = target_cluster_end - target_cluster_start;
+        if(prev_interaction != null && target_diff < 10){
+          let midpoint = (target_cluster_end + target_cluster_start) / 2;
+          d3.select("#interaction-target-" + line.index).attr("cy",scale.time(midpoint));
+          d3.select("#interaction-action-" + line.index).attr("y2",scale.time(midpoint));
+        }
+      }
+      prev_interaction = line;
+    });
+  }
+
+  function calculateSpeakerMentions(data, speakers){
+    speakers = speakers.filter(d => d != "all");
+    let speaker_mentions = d3.map();
+    // initialize data structure to hold counts for speaker mentions.
+    speakers.forEach(function(speaker1){
+      speaker_mentions.set(speaker1, d3.map());
+      speakers.forEach(function(speaker2){
+        speaker_mentions.get(speaker1).set(speaker2, 0)
+      });
+    });
+
+    data.forEach(function(line){
+      speakers.forEach(function(speaker){
+        let split = scale.speaker(speaker).split(" ");
+        split.forEach(function(word){
+          if(line.text.includes(word)){
+            let speaker_map = speaker_mentions.get(line.speaker);
+            let current_count = speaker_map.get(speaker);
+            speaker_map.set(speaker, ++current_count);
+          }
+        });
+      });
+    });
+    return speaker_mentions;
+  }
+
+  function calculateTopicTransitionsMatrix(data,included_topics, speaker){
+    let topic_matrix = d3.map();
+    included_topics.forEach(function(included_topic1){
+      topic_matrix.set(included_topic1, d3.map())
+      included_topics.forEach(function(included_topic2){
+        topic_matrix.get(included_topic1).set(included_topic2, 0);
+      });
+    });
+
+    prev_topics = data[0].topic;
+    prev_speaker = data[0].speaker;
+    current_topics = data[0].topic;
+    data.forEach(function(line){
+      if(speaker == "all" || line.speaker == speaker){
+        current_topics = line.topic.filter(function(d){return included_topics.includes(d);});
+        // first, count co-occurances of topics in current line.
+        current_topics.forEach(function(topic1){
+          let topic_map = topic_matrix.get(topic1);
+          current_topics.forEach(function(topic2){
+            let count = topic_map.get(topic2);
+            topic_map.set(topic2, ++count);
+          });
+        });
+        if(line.speaker == prev_speaker){
+          prev_topics.forEach(function(prev_topic){
+            let topic_map = topic_matrix.get(prev_topic);
+            current_topics.forEach(function(current_topic){
+              let current_count = topic_map.get(current_topic);
+              topic_map.set(current_topic, ++current_count);
+            });
+          });
+        }
+        prev_topics = current_topics;
+        prev_speaker = line.speaker;
+      }
+    });
+
+    let result = [];
+    topic_matrix.keys().forEach(function(topic){
+      result.push(topic_matrix.get(topic).values());
+    });
+
+    return result;
+  }
+
+  function getMatrixOrdering(matrix){
+    // sort topics so more closely connected topics are next to each other.
+    let w = math.matrix(Array.apply(null, Array(matrix[0].length)).map(d => 1));
+    let m = math.matrix(matrix);
+    for(var i = 0; i < 20; i++){
+      m_t = math.transpose(m);
+      let v = math.multiply(m_t, w);
+      v = math.divide(v, math.norm(v));
+      w = math.multiply(m, v);
+      w = math.divide(w, math.norm(w));
+    }
+
+    w = w.toArray();
+
+    return w;
+  }
+
+  function addVideoPlayer(){
+    let tag = document.createElement('script');
+    tag.class = "embed-responsive-item";
+    tag.src = "https://www.youtube.com/iframe_api";
+    tag.id = "video-player";
+    let firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    d3.select("#video-btn").attr("onclick","hideVideoPlayer()").text("Hide video");
+    d3.select("#player").style("visibility","visible").attr("x", 0);
+  }
+
+  function hideVideoPlayer(){
+    d3.select("#video-btn").attr("onclick","showVideoPlayer()").text("Show video");
+    d3.select("#player").style("visibility","hidden");
+  }
+
+  function showVideoPlayer(){
+    d3.select("#video-btn").attr("onclick","hideVideoPlayer()").text("Hide video");
+    d3.select("#player").style("visibility","visible");
+  }
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      //  height: 285 * 0.7,
+      //  width: 530 * 0.7,
+    //    width: visWidth * 0.3,
+    //    height: visWidth * 0.3 / 1.86, //maintain original width:height ratio
+        videoId: currentDebate.video.id,
+        playerVars: {
+         autoplay: 0,
+         controls: 1,
+         disablekb: 1,
+         loop: 1,
+         modestbranding: 1,
+         showinfo: 0,
+         autohide: 1,
+         color: 'white',
+         iv_load_policy: 3,
+         theme: 'light',
+         rel: 0
+       },
+        events: {
+          'onReady': onPlayerReady,
+        }
+    });
+    d3.select("#player").attr("transform","translate(100,100)")
+  }
+
+  function onPlayerReady(event) {
+    player.seekTo(currentDebate.video.start);
+    player.mute();
+    player.stopVideo();
+  }
+
+  var done = false;
+  function onPlayerStateChange(event) {
+      if(event.data == YT.PlayerState.PLAYING && !done) {
+        setTimeout(stopVideo, 1000);
+        done = true;
+      }
+  }
+
+  function stopVideo() {
+      player.stopVideo();
+  }
+
+  function toTitleCase(str) {
+        return str.replace(
+            /\w\S*/g,
+            function(txt) {
+                if(txt.toLowerCase() == "omalley" || txt.toLowerCase() == "o'malley"){
+                  txt = "O'MALLEY";
+                }
+                if(txt.toLowerCase() == "orourke" || txt.toLowerCase() == "o'rourke"){
+                  txt = "O'ROURKE";
+                }
+                if(txt == "O'ROURKE" || txt == "O'MALLEY"){
+                  return txt.charAt(0).toUpperCase() + txt.charAt(1) + txt.charAt(2).toUpperCase() +  txt.substr(3).toLowerCase();
+                }
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            }
+        );
+  }
+
+  function getUrlVars() {
+    // read URL parameters and put them into a data structure.
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+  }
+
+  function setUrlVars(url, key, value) {
+    let baseUrl = url.split('?')[0],
+        urlQueryString = url.split('?')[1],
+        newParam = key + '=' + value,
+        params = '?' + newParam;
+    // If the "search" string exists, then build params from it
+    if (urlQueryString) {
+      urlQueryString = '?' + url.split('?')[1];
+        var updateRegex = new RegExp('([\?&])' + key + '[^&]*');
+        var removeRegex = new RegExp('([\?&])' + key + '=[^&;]+[&;]?');
+
+        if (typeof value === 'undefined' || value === null || value === '') { // Remove param if value is empty
+            params = urlQueryString.replace(removeRegex, "$1");
+            params = params.replace(/[&;]$/, "");
+
+        } else if (urlQueryString.match(updateRegex) !== null) { // If param exists already, update it
+            params = urlQueryString.replace(updateRegex, "$1" + newParam);
+
+        } else { // Otherwise, add it to end of query string
+            params = urlQueryString + '&' + newParam;
+        }
+    }
+
+    // no parameter was set so we don't need the question mark
+    params = params === '?' ? '' : params;
+    return baseUrl + params;
+  }
+
+  function createShareableLink(){
+    let baseUrl = window.location.href;
+    let link = setUrlVars(baseUrl,'debate', currentDebate.id);
+    link = setUrlVars(link, 'index', current);
+    $('#shareable-link').attr("value",link);
+  }
+
+  function copyLink(){
+    var copyText = document.getElementById("shareable-link");
+    copyText.select();
+    document.execCommand("copy");
+  }
+
+  function dragStartPlaceMarker() {
+    d3.select("#place-marker").attr("stroke", "black");
+    $("#place-marker-triangle").css("cursor","grabbing");
+    $("#place-marker").css("cursor","grabbing");
+  }
+
+  function draggingPlaceMarker() {
+    let location = d3.event.y;
+    location = Math.max(scale.time.range()[0] - 10, location);
+    location = Math.min(scale.time.range()[1] + 10, location);
+    d3.select("#mini-place-marker").attr("cy", location + 10);
+    d3.select("#place-marker").attr("y", location);
+    d3.select("#place-marker-triangle").attr("transform", "translate(0," + location + ")");
+  }
+
+  function dragEndPlaceMarker() {
+    d3.select("#place-marker").attr("stroke", "none");
+    let offset = Math.floor(scale.time.invert(d3.event.y + 10));
+    let element = d3.select("#phrase-" + offset);
+    sessionStorage.setItem('index',offset)
+    scrollToElement(element);
+    $("#place-marker-triangle").css("cursor","grab");
+    $("#place-marker").css("cursor","grab");
+  }
+
+  dragPlaceMarker = d3.drag()
+      .on("start", dragStartPlaceMarker)
+      .on("drag", draggingPlaceMarker)
+      .on("end", dragEndPlaceMarker);
+
+  function dragStartMiniPlaceMarker() {
+    d3.select("#mini-place-marker").style("fill", color.orange);
+    $("#mini-place-marker").css("cursor","grabbing");
+  }
+
+  function draggingMiniPlaceMarker() {
+    let location = d3.event.y;
+    location = Math.max(scale.time.range()[0] - 10, location);
+    location = Math.min(scale.time.range()[1] + 10, location);
+    d3.select("#mini-place-marker").attr("cy", location);
+  }
+
+  function dragEndMiniPlaceMarker() {
+    d3.select("#mini-place-marker").style("fill", "black");
+//    let offset = Math.ceil(scale.time.invert(d3.event.y));
+    let offset = Math.ceil(scale.time.invert(d3.select("#mini-place-marker").attr("cy")));
+    console.log("End drag at ", offset);
+    let element = d3.select("#phrase-" + offset);
+    sessionStorage.setItem('index',offset);
+    scrollToElement(element);
+    $("#mini-place-marker").css("cursor","grab");
+  }
+
+  dragMiniPlaceMarker = d3.drag()
+      .on("start", dragStartMiniPlaceMarker)
+      .on("drag", draggingMiniPlaceMarker)
+      .on("end", dragEndMiniPlaceMarker);
+
+  function dragSpeakerCircles(d) {
+    let circle = d3.select("#speaker-circle-" + d);
+    let radius = arc.innerRadius()(d);
+    let x = d3.event.x;
+    let y = d3.event.y;
+
+    let dist = Math.sqrt((x * x) + (y * y));
+    if(dist < radius){
+      circle.attr("cx", x).attr("cy", y);
+    }
+  }
+
+  dragSpeakerCircles = d3.drag().on("drag", dragSpeakerCircles);
+
+</script>

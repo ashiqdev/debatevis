@@ -1,0 +1,1239 @@
+index,speaker,speaker_name,topic,text
+1,moderator,MODERATOR,misc," Good evening from the Thomas and Mack Center at the University of Nevada, Las Vegas."
+2,moderator,,"h-clinton, trump","I’m Chris Wallace of Fox News, and I welcome you to the third and final of the 2016 presidential debates between Secretary of State Hillary Clinton and Donald J."
+3,moderator,,election, This debate is sponsored by the Commission on Presidential Debates.
+4,moderator,,misc,"The commission has designed the format: Six roughly 15-minute segments with two-minute answers to the first question, then open discussion for the rest of each segment."
+5,moderator,,election,Both campaigns have agreed to those rules.
+6,moderator,,question,"For the record, I decided the topics and the questions in each topic."
+7,moderator,,question,None of those questions has been shared with the commission or the two candidates.
+8,moderator,,misc,The audience here in the hall has promised to remain silent.
+9,moderator,,misc,"No cheers, boos, or other interruptions so we and you can focus on what the candidates have to say."
+10,moderator,,"h-clinton, trump"," No noise, except right now, as we welcome the Democratic nominee for president, Secretary Clinton, and the Republican nominee for president, Mr. Trump."
+11,moderator,,"h-clinton, trump","(APPLAUSE)  Secretary Clinton, Mr. Trump, welcome."
+12,moderator,,misc,Let’s get right to it.
+13,moderator,,supreme-court,The first topic is the Supreme Court.
+14,moderator,,"supreme-court, election","You both talked briefly about the court in the last debate, but I want to drill down on this, because the next president will almost certainly have at least one appointment and likely or possibly two or three appointments."
+15,moderator,,supreme-court," Which means that you will, in effect, determine the balance of the court for what could be the next quarter century."
+16,moderator,,"question, supreme-court, america","First of all, where do you want to see the court take the country?"
+17,moderator,,"question, supreme-court","And secondly, what’s your view on how the Constitution should be interpreted?"
+18,moderator,,"question, past",Do the founders’ words mean what they say or is it a living document to be applied flexibly according to changing circumstances?
+19,moderator,,h-clinton,"In this segment, Secretary Clinton, you go first."
+20,moderator,,misc,You have two minutes.
+21,clinton,,misc," Thank you very much, Chris."
+22,clinton,,misc,And thanks to UNLV for hosting us.
+23,clinton,,"supreme-court, election, america","You know, I think when we talk about the Supreme Court, it really raises the central issue in this election, namely, what kind of country are we going to be?"
+24,clinton,,america,What kind of opportunities will we provide for our citizens?
+25,clinton,,america,What kind of rights will Americans have?
+26,clinton,,"supreme-court, america","And I feel strongly that the Supreme Court needs to stand on the side of the American people, not on the side of the powerful corporations and the wealthy."
+27,clinton,,"supreme-court, women, diversity","For me, that means that we need a Supreme Court that will stand up on behalf of women's rights, on behalf of the rights of the LGBT community, that will stand up and say no to Citizens United, a decision that has undermined the election system in our country because of the way it permits dark, unaccountable money to come into our electoral system."
+28,clinton,,"trump, supreme-court",I have major disagreements with my opponent about these issues and others that will be before the Supreme Court.
+29,clinton,,equality,"But I feel that at this point in our country's history, it is important that we not reverse marriage equality, that we not reverse Roe v."
+30,clinton,,"america, past, equality","Wade, that we stand up against Citizens United, we stand up for the rights of people in the workplace, that we stand up and basically say: The Supreme Court should represent all of us."
+31,clinton,,"supreme-court, america","That's how I see the court, and the kind of people that I would be looking to nominate to the court would be in the great tradition of standing up to the powerful, standing up on behalf of our rights as Americans."
+32,clinton,,future,And I look forward to having that opportunity.
+33,clinton,,"obama, supreme-court",I would hope that the Senate would do its job and confirm the nominee that President Obama has sent to them.
+34,clinton,,misc,That's the way the Constitution fundamentally should operate.
+35,clinton,,misc,"The president nominates, and then the Senate advises and consents, or not, but they go forward with the process."
+36,moderator,,h-clinton," Secretary Clinton, thank you."
+37,moderator,,trump," Mr. Trump, same question."
+38,moderator,,"question, supreme-court, america",Where do you want to see the court take the country?
+39,moderator,,"question, supreme-court",And how do you believe the Constitution should be interpreted?
+40,trump,,misc," Well, first of all, its great to be with you, and thank you, everybody."
+41,trump,,supreme-court,The Supreme Court: It’s what it’s all about.
+42,trump,,"america, supreme-court","Our country is so, so it’s just so imperative that we have the right justices."
+43,trump,,"supreme-court, trump","Something happened recently where Justice Ginsburg made some very, very inappropriate statements toward me and toward a tremendous number of people, many, many millions of people that I represent."
+44,trump,,misc,And she was forced to apologize.
+45,trump,,misc,And apologize she did.
+46,trump,,misc,"But these were statements that should never, ever have been made."
+47,trump,,"supreme-court, guns","We need a Supreme Court that in my opinion is going to uphold the Second Amendment, and all amendments, but the Second Amendment, which is under absolute siege."
+48,trump,,"h-clinton, guns","I believe if my opponent should win this race, which I truly don't think will happen, we will have a Second Amendment which will be a very, very small replica of what it is right now."
+49,trump,,guns,"But I feel that it's absolutely important that we uphold, because of the fact that it is under such trauma."
+50,trump,,"supreme-court, safety",I feel that the justices that I am going to appoint and I've named 20 of them the justices that I'm going to appoint will be pro-life.
+51,trump,,supreme-court,They will have a conservative bent.
+52,trump,,"guns, supreme-court",They will be protecting the Second Amendment.
+53,trump,,supreme-court,"They are great scholars in all cases, and theyre people of tremendous respect."
+54,trump,,past,They will interpret the Constitution the way the founders wanted it interpreted.
+55,trump,,past,"And I believe that’s very, very important."
+56,trump,,supreme-court,I don’t think we should have justices appointed that decide what they want to hear.
+57,trump,,past,"It’s all about the Constitution of of and so important, the Constitution the way it was meant to be."
+58,trump,,supreme-court,And those are the people that I will appoint.
+59,moderator,,misc," Mr. Trump, thank you."
+60,moderator,,misc,We now have about 10 minutes for an open discussion.
+61,moderator,,supreme-court,"I want to focus on two issues that, in fact, by the justices that you name could end up changing the existing law of the land."
+62,moderator,,"guns, trump","First is one that you mentioned, Mr. Trump, and that is guns."
+63,moderator,,"h-clinton, guns","Secretary Clinton, you said last year, let me quote, The Supreme Court is wrong on the Second Amendment."
+64,moderator,,"supreme-court, guns, safety","And now, in fact, in the 2008 Heller case, the court ruled that there is a constitutional right to bear arms, but a right that is reasonably limited."
+65,moderator,,supreme-court,Those were the words of the Judge Antonin Scalia who wrote the decision.
+66,moderator,,question,What’s wrong with that?
+67,clinton,,guns," Well, first of all, I support the Second Amendment."
+68,clinton,,past,I lived in Arkansas for 18 wonderful years.
+69,clinton,,past,I represented upstate New York.
+70,clinton,,guns,I understand and respect the tradition of gun ownership.
+71,clinton,,america,It goes back to the founding of our country.
+72,clinton,,"guns, safety",But I also believe that there can be and must be reasonable regulation.
+73,clinton,,"guns, safety","Because I support the Second Amendment doesn't mean that I want people who shouldn't have guns to be able to threaten you, kill you or members of your family."
+74,clinton,,"guns, safety","And so when I think about what we need to do, we have 33,000 people a year who die from guns."
+75,clinton,,guns,"I think we need comprehensive background checks, need to close the online loophole, close the gun show loophole."
+76,clinton,,guns,There's other matters that I think are sensible that are the kind of reforms that would make a difference that are not in any way conflicting with the Second Amendment.
+77,clinton,,"supreme-court, guns",You mentioned the Heller decision.
+78,clinton,,"children, safety, guns","And what I was saying that you referenced, Chris, was that I disagreed with the way the court applied the Second Amendment in that case, because what the District of Columbia was trying to do was to protect toddlers from guns and so they wanted people with guns to safely store them."
+79,clinton,,supreme-court,"And the court didn't accept that reasonable regulation, but they've accepted many others."
+80,clinton,,"safety, guns",So I see no conflict between saving people's lives and defending the Second Amendment.
+81,moderator,,trump, Let me bring Mr. Trump in here.
+82,moderator,,"question, guns","The bipartisan  Open Debate Coalition got millions of votes on questions to ask here, and this was, in fact, one of the top questions that they got."
+83,moderator,,"question, guns",How will you ensure the Second Amendment is protected?
+84,moderator,,h-clinton,You just heard Secretary Clinton's answer.
+85,moderator,,"question, guns","Does she persuade you that, while you may disagree on regulation, that, in fact, she supports a Second Amendment right to bear arms?"
+86,trump,,h-clinton,Heller decision was very strongly and she was extremely angry about it.
+87,trump,,h-clinton,"I mean, she was very, very angry when upheld."
+88,trump,,supreme-court,And Justice Scalia was so involved.
+89,trump,,supreme-court,And it was a well-crafted decision.
+90,trump,,h-clinton,"But Hillary was extremely upset, extremely angry."
+91,trump,,"guns, h-clinton",And people that believe in the Second Amendment and believe in it very strongly were very upset with what she had to say.
+92,moderator,,h-clinton," Well, let me bring in Secretary Clinton."
+93,moderator,,"question, past",Were you extremely upset?
+94,clinton,,"children, safety, guns"," Well, I was upset because, unfortunately, dozens of toddlers injure themselves, even kill people with guns, because, unfortunately, not everyone who has loaded guns in their homes takes appropriate precautions."
+95,clinton,,"guns, freedom","But there's no doubt that I respect the Second Amendment, that I also believe there's an individual right to bear arms."
+96,clinton,,guns,"That is not in conflict with sensible, commonsense regulation."
+97,clinton,,trump,"And, you know, look, I understand that Donald's been strongly supported by the NRA."
+98,clinton,,guns,The gun lobby's on his side.
+99,clinton,,election,They're running millions of dollars of ads against me.
+100,clinton,,guns,"And I regret that, because what I would like to see is for people to come together and say:  Of course we're going to protect and defend the Second Amendment."
+101,clinton,,"safety, guns","But we're going to do it in a way that tries to save some of these 33,000 lives that we lose every year."
+102,moderator,,"trump, guns"," Let me bring Mr. Trump back into this, because, in fact, you oppose any limits on assault weapons, any limits on high- capacity magazines."
+103,moderator,,guns,You support a national right to carry law.
+104,trump,,"crime, guns","In Chicago, which has the toughest gun laws in the United States, probably you could say by far, they have more gun violence than any other city."
+105,trump,,"crime, guns","So we have the toughest laws, and you have tremendous gun violence."
+106,trump,,guns,I am a very strong supporter of the Second Amendment.
+107,trump,,"h-clinton, guns","And I am I don't know if Hillary was saying it in a sarcastic manner, but I'm very proud to have the endorsement of the NRA."
+108,trump,,election,And it's the earliest endorsement they've ever given to anybody who ran for president.
+109,trump,,misc,So I'm very honored by all of that.
+110,trump,,"supreme-court, guns",We are going to appoint justices this is the best way to help the Second Amendment.
+111,trump,,"supreme-court, guns","We are going to appoint justices that will feel very strongly about the Second Amendment, that will not do damage to the Second Amendment."
+112,moderator,,"supreme-court, women"," Well, let's pick up on another issue which divides you and the justices that whoever ends up winning this election appoints could have a dramatic effect there, and that's the issue of abortion."
+113,moderator,,"question, trump"," Mr. Trump, you're pro-life."
+114,moderator,,"question, supreme-court, women","But I want to ask you specifically: Do you want the court, including the justices that you will name, to overturn Roe v."
+115,moderator,,"question, supreme-court, women","Wade, which includes in fact, states a woman's right to abortion?"
+116,trump,,"supreme-court, women"," Well, if that would happen, because I am pro-life, and I will be appointing pro-life judges, I would think that that will go back to the individual states."
+117,moderator,,trump, But I'm asking you specifically.
+118,trump,,"supreme-court, women"," If they overturned it, it will go back to the states."
+119,moderator,,"supreme-court, guns, women"," But what I'm asking you, sir, is, do you want to see the court overturn you just said you want to see the court protect the Second Amendment."
+120,moderator,,"supreme-court, women, past",Do you want to see the court overturn Roe v.
+121,trump,,"supreme-court, women"," Well, if we put another two or perhaps three justice on, that's really what's going to be that will happen."
+122,trump,,"supreme-court, women","And that'll happen automatically, in my opinion, because I am putting pro-life justices on the court."
+123,trump,,misc,"I will say this: It will go back to the states, and the states will then make a determination."
+124,moderator,,h-clinton, Secretary Clinton?
+125,clinton,,"supreme-court, women, healthcare, past"," Well, I strongly support Roe v. Wade, which guarantees a constitutional right to a woman to make the most intimate, most difficult, in many cases, decisions about her health care that one can imagine."
+126,clinton,,"women, healthcare, past","And in this case, it's not only about Roe v. Wade."
+127,clinton,,america,It is about what's happening right now in America.
+128,clinton,,"women, healthcare","So many states are putting very stringent regulations on women that block them from exercising that choice to the extent that they are defunding Planned Parenthood, which, of course, provides all kinds of cancer screenings and other benefits for women in our country."
+129,clinton,,"trump, healthcare",Donald has said he's in favor of defunding Planned Parenthood.
+130,clinton,,"trump, healthcare",He even supported shutting the government down to defund Planned Parenthood.
+131,clinton,,healthcare,I will defend Planned Parenthood.
+132,clinton,,"past, women, healthcare",I will defend Roe v.
+133,clinton,,"women, healthcare","Wade, and I will defend women's rights to make their own health care decisions."
+134,moderator,,h-clinton, Secretary Clinton...
+135,clinton,,misc, And we have come too far to have that turned back now.
+136,clinton,,"women, healthcare","And, indeed, he said women should be punished, that there should be some form of punishment for women who obtain abortions."
+137,clinton,,"women, healthcare",And I could just not be more opposed to that kind of thinking.
+138,moderator,,"supreme-court, healthcare"," I'm going to give you a chance to respond, but I want to ask you, Secretary Clinton, I want to explore how far you believe the right to abortion goes."
+139,moderator,,equality,You have been quoted as saying that the fetus has no constitutional rights.
+140,moderator,,healthcare,"You also voted against a ban on late-term, partial-birth abortions."
+141,clinton,,"past, women, healthcare", Because Roe v. Wade very clearly sets out that there can be regulations on abortion so long as the life and the health of the mother are taken into account.
+142,clinton,,healthcare,"And when I voted as a senator, I did not think that that was the case."
+143,clinton,,women,"The kinds of cases that fall at the end of pregnancy are often the most heartbreaking, painful decisions for families to make."
+144,clinton,,women,"I have met with women who toward the end of their pregnancy get the worst news one could get, that their health is in jeopardy if they continue to carry to term or that something terrible has happened or just been discovered about the pregnancy."
+145,clinton,,america,I do not think the United States government should be stepping in and making those most personal of decisions.
+146,clinton,,"women, healthcare",So you can regulate if you are doing so with the life and the health of the mother taken into account.
+147,moderator,,trump," Mr. Trump, your reaction?"
+148,moderator,,healthcare,"And particularly on this issue of late-term, partial-birth abortions."
+149,trump,,misc," Well, I think it's terrible."
+150,trump,,h-clinton,"If you go with what Hillary is saying, in the ninth month, you can take the baby and rip the baby out of the womb of the mother just prior to the birth of the baby."
+151,trump,,h-clinton,"Now, you can say that that's  OK and Hillary can say that that's  OK."
+152,trump,,women,"But it's not  OK with me, because based on what she's saying, and based on where she's going, and where she's been, you can take the baby and rip the baby out of the womb in the ninth month on the final day."
+153,trump,,misc,And that's not acceptable.
+154,clinton,,past," Well, that is not what happens in these cases."
+155,clinton,,misc,And using that kind of scare rhetoric is just terribly unfortunate.
+156,clinton,,misc,"You should meet with some of the women that I have met with, women I have known over the course of my life."
+157,clinton,,women,This is one of the worst possible choices that any woman and her family has to make.
+158,clinton,,america,And I do not believe the government should be making it.
+159,clinton,,america,"You know, I've had the great honor of traveling across the world on behalf of our country."
+160,clinton,,"women, china","I've been to countries where governments either forced women to have abortions, like they used to do in China, or forced women to bear children, like they used to do in Romania."
+161,clinton,,women,"And I can tell you: The government has no business in the decisions that women make with their families in accordance with their faith, with medical advice."
+162,clinton,,misc,And I will stand up for that right.
+163,moderator,,misc,"But just briefly, I want to move on to another segment..."
+164,trump,,misc," And, honestly, nobody has business doing what I just said, doing that, as late as one or two or three or four days prior to birth."
+165,moderator,,immigration,Let's move on to the subject of immigration.
+166,moderator,,immigration,And there is almost no issue that separates the two of you more than the issue of immigration.
+167,moderator,,question,"Actually, there are a lot of issues that separate the two of you."
+168,moderator,,"question, border","Mr. Trump, you want to build a wall."
+169,moderator,,"question, h-clinton, border","Secretary Clinton, you have offered no specific plan for how you want to secure our southern border."
+170,moderator,,"question, trump","Mr. Trump, you are calling for major deportations."
+171,moderator,,"question, h-clinton, immigration","Secretary Clinton, you say that within your first 100 days as president you're going to offer a package that includes a pathway to citizenship."
+172,moderator,,question,"The question, really, is, why are you right and your opponent wrong?"
+173,moderator,,"question, trump","Mr. Trump, you go first in this segment."
+174,moderator,,misc,You have two minutes.
+175,trump,,"h-clinton, immigration"," Well, first of all, she wants to give amnesty, which is a disaster and very unfair to all of the people that are waiting on line for many, many years."
+176,trump,,border,We need strong borders.
+177,trump,,"children, crime, immigration","In the audience tonight, we have four mothers of I mean, these are unbelievable people that I've gotten to know over a period of years whose children have been killed, brutally killed by people that came into the country illegally."
+178,trump,,america,You have thousands of mothers and fathers and relatives all over the country.
+179,trump,,immigration,They're coming in illegally.
+180,trump,,"drugs, border",Drugs are pouring in through the border.
+181,trump,,"america, border",We have no country if we have no border.
+182,trump,,h-clinton,Hillary wants to give amnesty.
+183,trump,,border,She wants to have open borders.
+184,trump,,border,"The border as you know, the Border Patrol agents, 16,500-plus ICE last week, endorsed me."
+185,trump,,election,First time they've ever endorsed a candidate.
+186,trump,,border,It means their job is tougher.
+187,trump,,misc,But they know what's going on.
+188,trump,,border,They want strong borders.
+189,trump,,border,They feel we have to have strong borders.
+190,trump,,misc,I was up in New Hampshire the other day.
+191,trump,,"h-clinton, obama","The biggest complaint they have it's with all of the problems going on in the world, many of the problems caused by Hillary Clinton and by Barack Obama."
+192,trump,,"drugs, border",All of the problems the single biggest problem is heroin that pours across our southern border.
+193,trump,,"children, drugs",It's just pouring and destroying their youth.
+194,trump,,"children, drugs",It's poisoning the blood of their youth and plenty of other people.
+195,trump,,border,We have to have strong borders.
+196,trump,,"drugs, america",We have to keep the drugs out of our country.
+197,trump,,drugs,"We are right now, we're getting the drugs, they're getting the cash."
+198,trump,,border,We need strong borders.
+199,trump,,crime,We need absolute we cannot give amnesty.
+200,trump,,border,"Now, I want to build the wall."
+201,trump,,border,We need the wall.
+202,trump,,border,"And the Border Patrol, ICE, they all want the wall."
+203,trump,,border,We stop the drugs.
+204,trump,,border,We shore up the border.
+205,trump,,"drugs, crime, immigration","One of my first acts will be to get all of the drug lords, all of the bad ones we have some bad, bad people in this country that have to go out."
+206,trump,,"immigration, border",We're going to get them out; we're going to secure the border.
+207,trump,,border,"And once the border is secured, at a later date, we'll make a determination as to the rest."
+208,trump,,"border, racism","But we have some bad hombres here, and we're going to get them out."
+209,moderator,,trump," Mr. Trump, thank you."
+210,moderator,,"question, h-clinton","Same question to you, Secretary Clinton."
+211,moderator,,"question, trump","Basically, why are you right and Mr. Trump is wrong?"
+212,clinton,,"immigration, children"," Well, as he was talking, I was thinking about a young girl I met here in Las Vegas, Carla, who is very worried that her parents might be deported, because she was born in this country but they were not."
+213,clinton,,immigration,"They work hard, they do everything they can to give her a good life."
+214,clinton,,misc,And you're right.
+215,clinton,,children,I don't want to rip families apart.
+216,clinton,,children,I don't want to be sending parents away from children.
+217,clinton,,"trump, america",I don't want to see the deportation force that Donald has talked about in action in our country.
+218,clinton,,immigration,We have 11 million undocumented people.
+219,clinton,,children,"They have 4 million American citizen children, 15 million people."
+220,clinton,,immigration,He said as recently as a few weeks ago in Phoenix that every undocumented person would be subject to deportation.
+221,clinton,,misc,"Now, here's what that means."
+222,clinton,,police,"It means you would have to have a massive law enforcement presence, where law enforcement officers would be going school to school, home to home, business to business, rounding up people who are undocumented."
+223,clinton,,"immigration, america","And we would then have to put them on trains, on buses to get them out of our country."
+224,clinton,,america,I think that is an idea that is not in keeping with who we are as a nation.
+225,clinton,,america,I think it's an idea that would rip our country apart.
+226,clinton,,border,I have been for border security for years.
+227,clinton,,"border, america",I voted for border security in the United States Senate.
+228,clinton,,"immigration, border",And my comprehensive immigration reform plan of course includes border security.
+229,clinton,,crime,But I want to put our resources where I think they're most needed: Getting rid of any violent person.
+230,clinton,,immigration,"Anybody who should be deported, we should deport them."
+231,clinton,,"trump, border","When it comes to the wall that Donald talks about building, he went to Mexico, he had a meeting with the Mexican president."
+232,clinton,,misc,Didn't even raise it.
+233,clinton,,"trump, border",He choked and then got into a Twitter war because the Mexican president said we're not paying for that wall.
+234,clinton,,immigration,So I think we are both a nation of immigrants and we are a nation of laws and that we can act accordingly.
+235,clinton,,immigration,And that's why I'm introducing comprehensive immigration reform within the first 100 days with the path to citizenship.
+236,moderator,,h-clinton," Thank you, Secretary Clinton."
+237,moderator,,misc,I want to follow up...
+238,trump,,misc," Chris, I think it's..."
+239,trump,,misc, I think I should respond to that.
+240,trump,,trump,"First of all, I had a very good meeting with the president of Mexico."
+241,trump,,misc,Very nice man.
+242,trump,,trade,We will be doing very much better with Mexico on trade deals.
+243,trump,,"trade, h-clinton","The NAFTA deal signed by her husband is one of the worst deals ever made of any kind, signed by anybody."
+244,trump,,misc,It's a disaster.
+245,trump,,"h-clinton, border",Hillary Clinton wanted the wall.
+246,trump,,"h-clinton, border",Hillary Clinton fought for the wall in 2006 or thereabouts.
+247,trump,,"h-clinton, border","Now, she never gets anything done, so naturally the wall wasn't built."
+248,trump,,"h-clinton, border",But Hillary Clinton wanted the wall.
+249,moderator,,misc," Well, let me wait, wait, sir, let me..."
+250,trump,,america, We are a country of laws.
+251,moderator,,misc," Now, wait."
+252,moderator,,misc,I'd like to hear from...
+253,trump,,h-clinton," Well well, but she said one thing."
+254,moderator,,h-clinton, I'd like to hear I'd like to hear from Secretary Clinton.
+255,clinton,,"border, security"," I voted for border security, and there are..."
+256,trump,,border, And the wall.
+257,clinton,,border, There are some limited places where that was appropriate.
+258,clinton,,border,There also is necessarily going to be new technology and how best to deploy that.
+259,clinton,,"trump, immigration, drugs, crime","But it is clear, when you look at what Donald has been proposing, he started his campaign bashing immigrants, calling Mexican immigrants rapists and criminals and drug dealers, that he has a very different view about what we should do to deal with immigrants."
+260,clinton,,"immigration, jobs, economy","Now, what I am also arguing is that bringing undocumented immigrants out from the shadows, putting them into the formal economy will be good, because then employers can't exploit them and undercut Americans' wages."
+261,clinton,,trump,And Donald knows a lot about this.
+262,clinton,,"trump, jobs",He used undocumented labor to build the Trump Tower.
+263,clinton,,"trump, jobs, immigration","He underpaid undocumented workers, and when they complained, he basically said what a lot of employers do: You complain, I'll get you deported."
+264,clinton,,"economy, jobs, immigration, trump","I want to get everybody out of the shadows, get the economy working, and not let employers like Donald exploit undocumented workers, which hurts them, but also hurts American workers."
+265,moderator,,trump, Mr. Trump?
+266,trump,,"obama, immigration", President Obama has moved millions of people out.
+267,trump,,misc,"Nobody knows about it, nobody talks about it."
+268,trump,,"obama, immigration","But under Obama, millions of people have been moved out of this country."
+269,trump,,immigration,They've been deported.
+270,trump,,h-clinton,"She doesn't want to say that, but that's what's happened, and that's what happened big league."
+271,trump,,"immigration, america",As far as moving these people out and moving we either have a country or we don't.
+272,trump,,america,We're a country of laws.
+273,trump,,border,We either have a border or we don't.
+274,trump,,immigration,"Now, you can come back in and you can become a citizen."
+275,trump,,misc,But it's very unfair.
+276,trump,,immigration,We have millions of people that did it the right way.
+277,trump,,misc,They're on line.
+278,trump,,misc,They're waiting.
+279,trump,,immigration,"We're going to speed up the process, big league, because it's very inefficient."
+280,trump,,immigration,But they're on line and they're waiting to become citizens.
+281,trump,,border,"Very unfair that somebody runs across the border, becomes a citizen, under her plan, you have open borders."
+282,trump,,"trade, border","You would have a disaster on trade, and you will have a disaster with your open borders."
+283,trump,,"obama, immigration", But what she doesn't say is that President Obama has deported millions and millions of people just the way it is.
+284,moderator,,h-clinton," Secretary Clinton, I want to..."
+285,clinton,,border, We will not have open borders.
+286,moderator,,h-clinton," Well, let me Secretary..."
+287,moderator,,h-clinton, Secretary Clinton...
+288,clinton,,border," We will have secure borders, but we'll also have reform."
+289,clinton,,misc,And this used to be a bipartisan issue.
+290,clinton,,past,Ronald Reagan was the last president...
+291,moderator,,h-clinton," Secretary Clinton, excuse me."
+292,moderator,,h-clinton,Secretary Clinton.
+293,clinton,,"immigration, past"," ... to sign immigration reform, and George W."
+294,clinton,,immigration,"Bush supported it, as well."
+295,moderator,,h-clinton,"Secretary Clinton, I want to clear up your position on this issue, because in a speech you gave to a Brazilian bank, for which you were paid $225,000, we've learned from the WikiLeaks, that you said this, and I want to quote."
+296,moderator,,"economy, trade, border",My dream is a hemispheric common market with open trade and open borders.’
+297,moderator,,question,So that's the question...
+298,moderator,,question, That's the question.
+299,moderator,,misc,"Please quiet, everybody."
+300,moderator,,"question, border","Is that your dream, open borders?"
+301,clinton,,energy," Well, if you went on to read the rest of the sentence, I was talking about energy."
+302,clinton,,"energy, trade","You know, we trade more energy with our neighbors than we trade with the rest of the world combined."
+303,clinton,,"energy, border","And I do want us to have an electric grid, an energy system that crosses borders."
+304,clinton,,trade,I think that would be a great benefit to us.
+305,clinton,,misc,But you are very clearly quoting from WikiLeaks.
+306,clinton,,russia,And what's really important about WikiLeaks is that the Russian government has engaged in espionage against Americans.
+307,clinton,,america,"They have hacked American websites, American accounts of private people, of institutions."
+308,clinton,,america,Then they have given that information to WikiLeaks for the purpose of putting it on the Internet.
+309,clinton,,"america, election","This has come from the highest levels of the Russian government, clearly, from Putin himself, in an effort, as 17 of our intelligence agencies have confirmed, to influence our election."
+310,clinton,,"russia, trump, election"," So I actually think the most important question of this evening, Chris, is, finally, will Donald Trump admit and condemn that the Russians are doing this and make it clear that he will not have the help of Putin in in this election, that he rejects Russian espionage against Americans, which he actually encouraged in the past?"
+311,clinton,,question,Those are the questions we need answered.
+312,clinton,,election,We've never had anything like this happen in any of our elections before.
+313,trump,,"border, h-clinton"," That was a great pivot off the fact that she wants open borders,  OK?"
+314,trump,,putin,How did we get on to Putin?
+315,moderator,,misc," Hold on hold on, wait."
+316,moderator,,misc,"Hold on, folks."
+317,moderator,,misc,Because we this is going to end up getting out of control.
+318,moderator,,america,Let's try to keep it quiet so for the candidates and for the American people.
+319,trump,,border, So just to finish on the borders...
+320,trump,,"border, h-clinton", She wants open borders.
+321,trump,,"america, immigration",People are going to pour into our country.
+322,trump,,syria,People are going to come in from Syria.
+323,trump,,"h-clinton, obama, immigration","She wants 550 percent more people than Barack Obama, and he has thousands and thousands of people."
+324,trump,,misc,They have no idea where they come from.
+325,trump,,terrorism,"And you see, we are going to stop radical Islamic terrorism in this country."
+326,trump,,obama,"She won't even mention the words, and neither will President Obama."
+327,trump,,border,"So I just want to tell you, she wants open borders."
+328,trump,,putin,Now we can talk about Putin.
+329,trump,,putin,I don't know Putin.
+330,trump,,putin,He said nice things about me.
+331,trump,,putin,"If we got along well, that would be good."
+332,trump,,"russia, isis","If Russia and the United States got along well and went after ISIS, that would be good."
+333,trump,,"putin, h-clinton",He has no respect for her.
+334,trump,,"putin, obama",He has no respect for our president.
+335,trump,,military,"And I'll tell you what: We're in very serious trouble, because we have a country with tremendous numbers of nuclear warheads 1,800, by the way where they expanded and we didn't, 1,800 nuclear warheads."
+336,trump,,h-clinton,And she's playing chicken.
+337,trump,,putin,"Look, Putin..."
+338,moderator,,misc," Wait, but..."
+339,trump,,h-clinton," ... from everything I see, has no respect for this person."
+340,clinton,,"putin, america"," Well, that's because he'd rather have a puppet as president of the United States."
+341,trump,,misc, No puppet.
+342,clinton,,misc, And it's pretty clear...
+343,trump,,misc, You're the puppet!
+344,clinton,,misc, It's pretty clear you won't admit...
+345,trump,,misc," No, you're the puppet."
+346,clinton,,"russia, crime, america, putin"," ... that the Russians have engaged in cyberattacks against the United States of America, that you encouraged espionage against our people, that you are willing to spout the Putin line, sign up for his wish list, break up NATO, do whatever he wants to do, and that you continue to get help from him, because he has a very clear favorite in this race."
+347,clinton,,misc,So I think that this is such an unprecedented situation.
+348,clinton,,election,We've never had a foreign government trying to interfere in our election.
+349,clinton,,"russia, election","We have 17 17 intelligence agencies, civilian and military, who have all concluded that these espionage attacks, these cyberattacks, come from the highest levels of the Kremlin and they are designed to influence our election."
+350,clinton,,misc,I find that deeply disturbing.
+351,moderator,,h-clinton, Secretary Clinton...
+352,clinton,,misc, And I think it's time you take a stand...
+353,trump,,"russia, china"," She has no idea whether it's Russia, China, or anybody else."
+354,clinton,,misc, I am not quoting myself.
+355,trump,,h-clinton, She has no idea.
+356,clinton,,military,I am quoting 17...
+357,trump,,h-clinton," Hillary, you have no idea."
+358,clinton,,military,... 17 intelligence do you doubt 17 military and civilian...
+359,trump,,america, And our country has no idea.
+360,clinton,,misc, ... agencies.
+361,trump,,misc," Yeah, I doubt it."
+362,trump,,misc,I doubt it.
+363,clinton,,"putin, military"," Well, he'd rather believe Vladimir Putin than the military and civilian intelligence professionals who are sworn to protect us."
+364,clinton,,misc,I find that just absolutely...
+365,trump,,putin,(CROSSTALK)  TRUMP: She doesn't like Putin because Putin has outsmarted her at every step of the way.
+366,moderator,,trump, Mr. Trump...
+367,trump,,misc, Excuse me.
+368,trump,,"putin, syria",Putin has outsmarted her in Syria.
+369,moderator,,trump, Mr. Trump...
+370,trump,,putin,(CROSSTALK)  TRUMP: He's outsmarted her every step of the way.
+371,moderator,,misc, I do get to ask some questions.
+372,trump,,misc," Yes, that's fine."
+373,moderator,,misc, And I would like to ask you this direct question.
+374,moderator,,russia,The top national security officials of this country do believe that Russia has been behind these hacks.
+375,moderator,,"russia, election","Even if you don't know for sure whether they are, do you condemn any interference by Russia in the American election?"
+376,trump,,russia, By Russia or anybody else.
+377,moderator,,russia, You condemn their interference?
+378,trump,,election,Of course I condemn.
+379,trump,,putin,Of course I I don't know Putin.
+380,trump,,misc,I have no idea.
+381,moderator,,election, I'm not asking I'm asking do you condemn?
+382,trump,,putin, I never met Putin.
+383,trump,,"russia, america","But if the United States got along with Russia, wouldn't be so bad."
+384,trump,,"putin, h-clinton, obama","Let me tell you, Putin has outsmarted her and Obama at every single step of the way."
+385,trump,,syria,"Whether it's Syria, you name it."
+386,trump,,russia,Take a look at the start up' that they signed.
+387,trump,,russia,"The Russians have said, according to many, many reports, I can't believe they allowed us to do this."
+388,trump,,military,"They create warheads, and we can't."
+389,trump,,russia,The Russians can't believe it.
+390,trump,,"h-clinton, putin",She has been outsmarted by Putin.
+391,trump,,m-east,And all you have to do is look at the Middle East.
+392,trump,,misc,They've taken over.
+393,trump,,deficit,We've spent $6 trillion.
+394,trump,,m-east,They've taken over the Middle East.
+395,trump,,h-clinton,She has been outsmarted and outplayed worse than anybody I've ever seen in any government whatsoever.
+396,moderator,,immigration," We're a long way away from immigration, but I'm going to let you finish this topic."
+397,clinton,,military, I I find it ironic that he's raising nuclear weapons.
+398,clinton,,military,"This is a person who has been very cavalier, even casual about the use of nuclear weapons."
+399,clinton,,misc,Fact Checks of the Third Presidential Debate Reporters for The New York Times fact-checked the statements made by Hillary Clinton and Donald J.
+400,clinton,,misc,Trump during Wednesday's presidential debate.
+401,clinton,,misc,"19, 2016 TRUMP: Wrong."
+402,clinton,,military," ... advocated more countries getting them, Japan, Korea, even Saudi Arabia."
+403,clinton,,military,"He said, well, if we have them, why don't we use them, which I think is terrifying."
+404,clinton,,misc,But here's the deal.
+405,clinton,,military,"The bottom line on nuclear weapons is that when the president gives the order, it must be followed."
+406,clinton,,military,There's about four minutes between the order being given and the people responsible for launching nuclear weapons to do so.
+407,clinton,,trump,"And that's why 10 people who have had that awesome responsibility have come out and, in an unprecedented way, said they would not trust Donald Trump with the nuclear codes or to have his finger on the nuclear button."
+408,trump,,misc,I have 200 generals...
+409,moderator,,misc, Very quickly.
+410,trump,,misc,"... and admirals, 21 endorsing me, 21 congressional Medal of Honor recipients."
+411,trump,,"military, trade","As far as Japan and other countries, we are being ripped off by everybody in the we're defending other countries."
+412,trump,,deficit,We are spending a fortune doing it.
+413,trump,,deficit,They have the bargain of the century.
+414,trump,,deficit,"All I said is, we have to renegotiate these agreements, because our country cannot afford to defend Saudi Arabia, Japan, Germany, South Korea, and many other places."
+415,trump,,"h-clinton, military",We cannot continue to afford she took that as saying nuclear weapons.
+416,trump,,h-clinton," Look, she's been proven to be a liar on so many different ways."
+417,clinton,,misc," Well, I'm just quoting you when you were asked..."
+418,trump,,misc, There's no quote.
+419,trump,,misc,You're not going to find a quote from me.
+420,clinton,,military," ... about a potential nuclear nuclear competition in Asia, you said, you know, go ahead, enjoy yourselves, folks."
+421,clinton,,misc,That kind...
+422,trump,,misc, And defend yourselves.
+423,trump,,msic, And defend yourselves.
+424,trump,,misc,I didn't say nuclear.
+425,trump,,misc,And defend yourself.
+426,clinton,,safety, The United States has kept the peace the United States has kept the peace through our alliances.
+427,clinton,,safety,Donald wants to tear up our alliances.
+428,clinton,,america,"I think it makes the world safer and, frankly, it makes the United States safer."
+429,clinton,,america,"I would work with our allies in Asia, in Europe, in the Middle East, and elsewhere."
+430,clinton,,safety,That's the only way we're going to be able to keep the peace.
+431,moderator,,economy," We're going to no, we are going to move on to the next topic, which is the economy."
+432,moderator,,immigration,And I hope we handle that as well as we did immigration.
+433,moderator,,"question, economy",You also have very different ideas about how to get the economy growing faster.
+434,moderator,,"question, h-clinton, economy","Secretary Clinton, in your plan, government plays a big role."
+435,moderator,,"question, economy, taxes","You see more government spending, more entitlements, more tax credits, more tax penalties."
+436,moderator,,"question, taxes, deregulation","Mr. Trump, you want to get government out with lower taxes and less regulation."
+437,moderator,,question, We're going to drill down into this a little bit more.
+438,moderator,,"question, jobs, economy","But in this overview, please explain to me why you believe that your plan will create more jobs and growth for this country and your opponent's plan will not."
+439,moderator,,h-clinton,"In this round, you go first, Secretary Clinton."
+440,clinton,,middle-class," Well, I think when the middle class thrives, America thrives."
+441,clinton,,"economy, middle-class","And so my plan is based on growing the economy, giving middle-class families many more opportunities."
+442,clinton,,"jobs, ww2, infrastructure","I want us to have the biggest jobs program since World War II, jobs in infrastructure and advanced manufacturing."
+443,clinton,,jobs,"I think we can compete with high-wage countries, and I believe we should."
+444,clinton,,"c-energy, jobs, climate","New jobs and clean energy, not only to fight climate change, which is a serious problem, but to create new opportunities and new businesses."
+445,clinton,,economy,I want us to do more to help small business.
+446,clinton,,jobs,That's where two- thirds of the new jobs are going to come from.
+447,clinton,,jobs,"I want us to raise the national minimum wage, because people who live in poverty should not who work full-time should not still be in poverty."
+448,clinton,,women,And I sure do want to make sure women get equal pay for the work we do.
+449,clinton,,education,I feel strongly that we have to have an education system that starts with preschool and goes through college.
+450,clinton,,"education, children","That's why I want more technical education in high schools and in community colleges, real apprenticeships to prepare young people for the jobs of the future."
+451,clinton,,education,"I want to make college debt-free and for families making less than $125,000, you will not get a tuition bill from a public college or university if the plan that I worked on with Bernie Sanders is enacted."
+452,clinton,,education,"And we're going to work hard to make sure that it is, because we are going to go where the money is."
+453,clinton,,past,Most of the gains in the last years since the Great Recession have gone to the very top.
+454,clinton,,taxes,So we are going to have the wealthy pay their fair share.
+455,clinton,,taxes,We're going to have corporations make a contribution greater than they are now to our country.
+456,clinton,,jobs,That is a plan that has been analyzed by independent experts which said that it could produce 10 million new jobs.
+457,clinton,,"jobs, trump","By contrast, Donald's plan has been analyzed to conclude it might lose 3.5 million jobs."
+458,clinton,,"taxes, deficit","Because his whole plan is to cut taxes, to give the biggest tax breaks ever to the wealthy and to corporations, adding $20 trillion to our debt, and causing the kind of dislocation that we have seen before, because it truly will be trickle-down economics on steroids."
+459,clinton,,economy,So the plan I have I think will actually produce greater opportunities.
+460,clinton,,"jobs, economy",The plan he has will cost us jobs and possibly lead to another Great Recession.
+461,moderator,,h-clinton," Secretary, thank you."
+462,moderator,,"jobs, economy","Mr. Trump, why will your plan create more jobs and growth than Secretary Clinton's?"
+463,trump,,taxes," Well, first of all, before I start on my plan, her plan is going to raise taxes and even double your taxes."
+464,trump,,taxes,Her tax plan is a disaster.
+465,trump,,education,And she can say all she wants about college tuition.
+466,trump,,misc,And I'm a big proponent.
+467,trump,,education,We're going to do a lot of things for college tuition.
+468,trump,,taxes,But the rest of the public's going to be paying for it.
+469,trump,,taxes,"We will have a massive, massive tax increase under Hillary Clinton's plan."
+470,trump,,trade," But I'd like to start off where we left, because when I said Japan and Germany, and I'm not to single them out, but South Korea, these are very rich, powerful countries."
+471,trump,,trade,"Saudi Arabia, nothing but money."
+472,trump,,trade,We protect Saudi Arabia.
+473,trump,,trade,Why aren't they paying?
+474,trump,,h-clinton,"She immediately when she heard this, I questioned it, and I questioned NATO."
+475,trump,,"trade, deficit",Why aren't the NATO questioned why aren't they paying?
+476,trump,,deficit,Because they weren't paying.
+477,trump,,trade,"Since I did this this was a year ago all of a sudden, they're paying."
+478,trump,,trump,And I've been given a lot a lot of credit for it.
+479,trump,,trade,"All of a sudden, they're starting to pay up."
+480,trump,,trade,They have to pay up.
+481,trump,,military,"We're protecting people, they have to pay up."
+482,trump,,military,And I'm a big fan of NATO.
+483,trump,,trade,But they have to pay up.
+484,trump,,trade,"She comes out and said, we love our allies, we think our allies are great."
+485,trump,,trade,"Well, it's awfully hard to get them to pay up when you have somebody saying we think how great they are."
+486,trump,,trade,"We have to tell Japan in a very nice way, we have to tell Germany, all of these countries, South Korea, we have to say, you have to help us out."
+487,trump,,"obama, deficit","We have, during his regime, during President Obama's regime, we've doubled our national debt."
+488,trump,,deficit,We're up to $20 trillion.
+489,trump,,trade,So my plan we're going to renegotiate trade deals.
+490,trump,,trade,We're going to have a lot of free trade.
+491,trump,,trade,"We're going to have free trade, more free trade than we have right now."
+492,trump,,trade,But we have horrible deals.
+493,trump,,"jobs, h-clinton, trade","Our jobs are being taken out by the deal that her husband signed, NAFTA, one of the worst deals ever."
+494,trump,,"jobs, economy",Our jobs are being sucked out of our economy.
+495,trump,,misc,"You look at all of the places that I just left, you go to Pennsylvania, you go to Ohio, you go to Florida, you go to any of them."
+496,trump,,misc,You go upstate New York.
+497,trump,,jobs,Our jobs have fled to Mexico and other places.
+498,trump,,jobs,We're bringing our jobs back.
+499,trump,,trade,I am going to renegotiate NAFTA.
+500,trump,,trade,And if I can't make a great deal then we're going to terminate NAFTA and we're going to create new deals.
+501,trump,,trade,"We're going to have trade, but we're going we're going to terminate it, we're going to make a great trade deal."
+502,trump,,trade,"And if we can't, we're going to do it we're going to go a separate way, because it has been a disaster."
+503,trump,,taxes,We are going to cut taxes massively.
+504,trump,,taxes,We're going to cut business taxes massively.
+505,trump,,jobs,They're going to start hiring people.
+506,trump,,deficit,We're going to bring the $2.5 trillion...
+507,moderator,,trump," Time, Mr. Trump."
+508,trump,,america, ... that's offshore back into the country.
+509,trump,,economy,"We are going to start the engine rolling again, because..."
+510,moderator,,trump, Mr. Trump?
+511,trump,,"america, economy","... right now, our country is dying at 1 percent GDP."
+512,clinton,,misc," Well, let me translate that, if I can, Chris, because..."
+513,trump,,misc, You can't.
+514,clinton,,taxes," ... the fact is, he's going to advocate for the largest tax cuts we've ever seen, three times more than the tax cuts under the Bush administration."
+515,clinton,,taxes,"I have said repeatedly throughout this campaign: I will not raise taxes on anyone making $250,000 or less."
+516,clinton,,deficit,I also will not add a penny to the debt.
+517,clinton,,deficit,I have costed out what I'm going to do.
+518,clinton,,"taxes, deficit","He will, through his massive tax cuts, add $20 trillion to the debt."
+519,clinton,,deficit,"Well, he mentioned the debt."
+520,clinton,,deficit,We know how to get control of the debt.
+521,clinton,,"trade, deficit","When my husband was president, we went from a $300 billion deficit to a $200 billion surplus and we were actually on the path to eliminating the national debt."
+522,clinton,,"obama, economy","When President Obama came into office, he inherited the worst economic disaster since the Great Depression."
+523,clinton,,deficit,He has cut the deficit by two-thirds.
+524,clinton,,"deficit, jobs","So, yes, one of the ways you go after the debt, one of the ways you create jobs is by investing in people."
+525,clinton,,"jobs, education","So I do have investments, investments in new jobs, investments in education, skill training, and the opportunities for people to get ahead and stay ahead."
+526,clinton,,misc,That's the kind of approach that will work.
+527,moderator,,h-clinton, Secretary...
+528,clinton,,taxes," Cutting taxes on the wealthy, we've tried that."
+529,clinton,,misc,It has not worked the way that it has been promised.
+530,moderator,,h-clinton,"Secretary Clinton, I want to pursue your plan, because in many ways it is similar to the Obama stimulus plan in 2009, which has led to the slowest GDP growth since 1949."
+531,clinton,,misc," Thank you, sir."
+532,moderator,,"question, obama, economy",You told me in July when we spoke that the problem is that President Obama didn't get to do enough in what he was trying to do with his stimulus.
+533,moderator,,"question, obama, economy",So is your plan basically more even more of the Obama stimulus?
+534,clinton,,misc," Well, it's a combination, Chris."
+535,clinton,,"obama, economy","And let me say that when you inherit the level of economic catastrophe that President Obama inherited, it was a real touch-and-go situation."
+536,clinton,,misc,I was in the Senate before I became secretary of state.
+537,clinton,,economy,I've never seen people as physically distraught as the Bush administration team was because of what was happening to the economy.
+538,clinton,,"obama, economy",I personally believe that the steps that President Obama took saved the economy.
+539,clinton,,obama,He doesn't get the credit he deserves for taking some very hard positions.
+540,clinton,,economy,But it was a terrible recession.
+541,clinton,,economy,"So now we've dug ourselves out of it, we're standing, but we're not yet running."
+542,clinton,,economy,"So what I am proposing is that we invest from the middle out and the ground up, not the top down."
+543,clinton,,misc,That is not going to work.
+544,clinton,,"deficit, jobs","That's why what I have put forward doesn't add a penny to the debt, but it is the kind of approach that will enable more people to take those new jobs, higher-paying jobs."
+545,clinton,,jobs,"We're beginning to see some increase in incomes, and we certainly have had a long string of increasing jobs."
+546,clinton,,economy,"We've got to do more to get the whole economy moving, and that's what I believe I will be able to do."
+547,moderator,,"jobs, ecnomy","Mr. Trump, even conservative economists who have looked at your plan say that the numbers don't add up, that your idea, and you've talked about 25 million jobs created, 4 percent..."
+548,trump,,future,Over a 10-year period.
+549,moderator,,future, ... growth is unrealistic.
+550,moderator,,"question, energy",And they say you talk a lot about growing the energy industry.
+551,moderator,,"question, oil","They say with oil prices as low as they are right now, that's unrealistic, as well."
+552,moderator,,question,"Your response, sir?"
+553,trump,,misc, So I just left some high representatives of India.
+554,trump,,economy,They're growing at 8 percent.
+555,trump,,"china, economy",China is growing at 7 percent.
+556,trump,,economy,And that for them is a catastrophically low number.
+557,trump,,"economy, america",We are growing our last report came out and it's right around the 1 percent level.
+558,trump,,economy,And I think it's going down.
+559,trump,,jobs,"Last week, as you know, the end of last week, they came out with an anemic jobs report."
+560,trump,,jobs,A terrible jobs report.
+561,trump,,"jobs, election","In fact I said, is that the last jobs report before the election?"
+562,trump,,election,"Because if it is, I should win easily, it was so bad."
+563,trump,,jobs,The report was so bad.
+564,trump,,"america, economy","Look, our country is stagnant."
+565,trump,,jobs,We've lost our jobs.
+566,trump,,economy,We've lost our businesses.
+567,trump,,trade,"We're not making things anymore, relatively speaking."
+568,trump,,"china, trade","Our product is pouring in from China, pouring in from Vietnam, pouring in from all over the world."
+569,trump,,misc,I've visited so many communities.
+570,trump,,misc,"This has been such an incredible education for me, Chris."
+571,trump,,misc,I've gotten to know so many I've developed so many friends over the last year.
+572,trump,,msic,And they cry when they see what's happened.
+573,trump,,economy,"I pass factories that were thriving 20, 25 years ago, and because of the bill that her husband signed and she blessed 100 percent, it is just horrible what's happened to these people in these communities."
+574,trump,,economy,"Now, she can say that her husband did well, but, boy, did they suffer as NAFTA kicked in, because it didn't really kick in very much, but it kicked in after they left."
+575,trump,,misc,"Boy, did they suffer."
+576,trump,,trade,That was one of the worst things that's ever been signed by our country.
+577,trump,,trade,Now she wants to sign Trans-Pacific Partnership.
+578,trump,,"h-clinton, trade",She lied when she said she didn't call it the gold standard in one of the debates.
+579,trump,,h-clinton,She totally lied.
+580,trump,,"h-clinton, trade",She did call it the gold standard.
+581,trump,,trump,"And they actually fact checked, and they said I was right."
+582,trump,,trump,I was so honored.
+583,moderator,,economy," I want you to give you a chance to briefly speak to that, and then I want to pivot to one-sixth of the economy..."
+584,trump,,trade, And that will be as bad as NAFTA.
+585,moderator,,obamacare, ... which is Obamacare.
+586,moderator,,misc,"But go ahead, briefly."
+587,clinton,,trade," Well, first, let me say, number one, when I saw the final agreement for TPP, I said I was against it."
+588,clinton,,trade,It didn't meet my test.
+589,clinton,,misc,I've had the same test.
+590,clinton,,"jobs, economy","Does it create jobs, raise incomes, and further our national security?"
+591,clinton,,misc,I'm against it now.
+592,clinton,,election,I'll be against it after the election.
+593,clinton,,future,I'll be against it when I'm president.
+594,clinton,,"jobs, trump","There's only one of us on this stage who's actually shipped jobs to Mexico, because that's Donald."
+595,clinton,,jobs,"He's shipped jobs to 12 countries, including Mexico."
+596,clinton,,china,But he mentioned China.
+597,clinton,,"china, steel","And, you know, one of the biggest problems we have with China is the illegal dumping of steel and aluminum into our markets."
+598,clinton,,steel,I have fought against that as a senator.
+599,clinton,,steel,I've stood up against it as secretary of state.
+600,clinton,,"china, steel",Donald has bought Chinese steel and aluminum.
+601,clinton,,steel,"In fact, the Trump Hotel right here in Las Vegas was made with Chinese steel."
+602,clinton,,"jobs, china, steel","So he goes around with crocodile tears about how terrible it is, but he has given jobs to Chinese steelworkers, not American steelworkers."
+603,moderator,,trump, Mr. Trump?
+604,clinton,,economy, That's the kind of approach that is just not going to work.
+605,clinton,,america, We're going to pull the country together.
+606,clinton,,trade,We're going to have trade agreements that we enforce.
+607,clinton,,trade,That's why I'm going to have a trade prosecutor for the first time in history.
+608,clinton,,trade,"And we're going to enforce those agreements, and we're going to look for businesses to help us by buying American products."
+609,trump,,h-clinton, Secretary Clinton?
+610,moderator,,trump,"Go ahead, Mr. Trump."
+611,trump,,question, Let me ask a simple question.
+612,trump,,"h-clinton, past",She's been doing this for 30 years.
+613,trump,,past,"Why the hell didn't you do it over the last 15, 20 years?"
+614,trump,,misc,Trump and Clinton's Last Debate: Analysis Here's how we analyzed in real time the last presidential debate between Hillary Clinton and Donald J.
+615,trump,,misc,"19, 2016 CLINTON: No, I voted."
+616,trump,,trade, You were very much involved excuse me.
+617,trump,,america,You were very much involved in every aspect of this country.
+618,trump,,h-clinton,And you do have experience.
+619,trump,,h-clinton,"I say the one thing you have over me is experience, but it's bad experience, because what you've done has turned out badly."
+620,trump,,steel,"For 30 years, you've been in a position to help, and if you say that I use steel or I use something else, I make it impossible for me to do that."
+621,trump,,misc,I wouldn't mind.
+622,trump,,h-clinton,"The problem is, you talk, but you don't get anything done, Hillary."
+623,trump,,deficit,"Just like when you ran the State Department, $6 billion was missing."
+624,trump,,deficit,How do you miss $6 billion?
+625,trump,,deficit,"You ran the State Department, $6 billion was either stolen."
+626,trump,,deficit,They don't know.
+627,trump,,deficit,"It's gone, $6 billion."
+628,trump,,"election, america","If you become president, this country is going to be in some mess."
+629,clinton,,deficit," Well, first of all, what he just said about the State Department is not only untrue, it's been debunked numerous times."
+630,clinton,,deficit, But I think it's really an important issue.
+631,clinton,,"trump, past","He raised the 30 years of experience, so let me just talk briefly about that."
+632,clinton,,"past, children","You know, back in the 1970s, I worked for the Children's Defense Fund."
+633,clinton,,"racism, education, past",And I was taking on discrimination against African-American kids in schools.
+634,clinton,,"trump, racism, past",He was getting sued by the Justice Department for racial discrimination in his apartment buildings.
+635,clinton,,"education, past","In the 1980s, I was working to reform the schools in Arkansas."
+636,clinton,,"trump, deficit, past",He was borrowing $14 million from his father to start his businesses.
+637,clinton,,"china, women, past","In the 1990s, I went to Beijing and I said women's rights are human rights."
+638,clinton,,"trump, , past","He insulted a former Miss Universe, Alicia Machado, called her an eating machine."
+639,trump,,misc, Give me a break.
+640,clinton,,"justice, terrorism","And on the day when I was in the Situation Room, monitoring the raid that brought  Osama bin Laden to justice, he was hosting the Celebrity Apprentice."
+641,clinton,,"america, education","So I'm happy to compare my 30 years of experience, what I've done for this country, trying to help in every way I could, especially kids and families get ahead and stay ahead, with your 30 years, and I'll let the American people make that decision."
+642,trump,,past,"Well, I think I did a much better job."
+643,trump,,economy,"I built a massive company, a great company, some of the greatest assets anywhere in the world, worth many, many billions of dollars."
+644,trump,,deficit,I started with a $1 million loan.
+645,trump,,misc,I agree with that.
+646,trump,,deficit,It's a $1 million loan.
+647,trump,,economy,But I built a phenomenal company.
+648,trump,,america,"And if we could run our country the way I've run my company, we would have a country that you would be so proud of."
+649,trump,,america,You would even be proud of it.
+650,trump,,h-clinton,"And frankly, when you look at her real record, take a look at Syria."
+651,trump,,immigration,Take a look at the migration.
+652,trump,,iraq,Take a look at Iraq.
+653,trump,,"isis, obama, iraq","She gave us ISIS, because her and Obama created this huge vacuum, and a small group came out of that huge vacuum because when we should never have been in Iraq, but once we were there, we should have never got out the way they wanted to get out."
+654,trump,,isis,She gave us ISIS as sure as you are sitting there.
+655,trump,,isis,And what happened is now ISIS is in 32 countries.
+656,trump,,"isis, h-clinton",And now I listen how she's going to get rid of ISIS.
+657,trump,,h-clinton,She's going to get rid of nobody.
+658,moderator,,election,"We are going to get to foreign hot spots in a few moments, but the next segment is fitness to be president of the United States."
+659,moderator,,"question, trump, women","Mr. Trump, at the last debate, you said your talk about grabbing women was just that, talk, and that you'd never actually done it."
+660,moderator,,"question, women","And since then, as we all know, nine women have come forward and have said that you either groped them or kissed them without their consent."
+661,moderator,,"question, women","Why would so many different women from so many different circumstances over so many different years, why would they all in this last couple of weeks make up you deny this why would they all make up these stories?"
+662,moderator,,"question, h-clinton","Since this is a question for both of you, Secretary Clinton, Mr. Trump says what your husband did and that you defended was even worse."
+663,moderator,,trump,"Mr. Trump, you go first."
+664,trump,,past," Well, first of all, those stories have been largely debunked."
+665,trump,,past,Those people I don't know those people.
+666,trump,,election,Just like if you look at what came out today on the clips where I was wondering what happened with my rally in Chicago and other rallies where we had such violence?
+667,trump,,"h-clinton, obama",She's the one and Obama that caused the violence.
+668,trump,,crime,"They hired people they paid them $1,500, and they're on tape saying be violent, cause fights, do bad things."
+669,trump,,crime,"I would say the only way because those stories are all totally false, I have to say that."
+670,trump,,trump,"And I didn't even apologize to my wife, who's sitting right here, because I didn't do anything."
+671,trump,,women,I didn't know any of these I didn't see these women.
+672,trump,,women,"These women the woman on the plane, the I think they want either fame or her campaign did it."
+673,trump,,h-clinton,And I think it's her campaign.
+674,trump,,crime,"Because what I saw what they did, which is a criminal act, by the way, where they're telling people to go out and start fist-fights and start violence."
+675,trump,,crime,"And I'll tell you what, in particular in Chicago, people were hurt and people could have been killed in that riot."
+676,trump,,h-clinton,"And that was now all on tape, started by her."
+677,trump,,misc,"I believe, Chris, that she got these people to step forward."
+678,trump,,misc,"If it wasn't, they get their 10 minutes of fame."
+679,trump,,misc,But they were all totally it was all fiction.
+680,trump,,misc,"It was lies, and it was fiction."
+681,moderator,,"question, h-clinton", Secretary Clinton?
+682,clinton,,"trump, women"," At the last debate, we heard Donald talking about what he did to women."
+683,clinton,,women,"And after that, a number of women have come forward saying that's exactly what he did to them."
+684,clinton,,trump,"Now, what was his response?"
+685,clinton,,women,"Well, he held a number of big rallies where he said that he could not possibly have done those things to those women because they were not attractive enough for them to be assaulted."
+686,clinton,,trump," In fact, he went on to say..."
+687,moderator,,misc," Her two minutes sir, her two minutes."
+688,moderator,,misc,Her two minutes.
+689,moderator,,misc, It's her two minutes.
+690,clinton,,misc,I don't think so.
+691,clinton,,women,"About another woman, he said, that wouldn't be my first choice."
+692,clinton,,"women, election","He attacked the woman reporter writing the story, called her disgusting, as he has called a number of women during this campaign."
+693,clinton,,"trump, women",Donald thinks belittling women makes him bigger.
+694,clinton,,"women, trump","He goes after their dignity, their self-worth, and I don't think there is a woman anywhere who doesn't know what that feels like."
+695,clinton,,"trump, women",So we now know what Donald thinks and what he says and how he acts toward women.
+696,clinton,,trump,That's who Donald is.
+697,clinton,,america,"I think it's really up to all of us to demonstrate who we are and who our country is, and to stand up and be very clear about what we expect from our next president, how we want to bring our country together, where we don't want to have the kind of pitting of people one against the other, where instead we celebrate our diversity, we lift people up, and we make our country even greater."
+698,clinton,,america,"America is great, because America is good."
+699,clinton,,"future, children","And it really is up to all of us to make that true, now and in the future, and particularly for our children and our grandchildren."
+700,moderator,,trump, Mr. Trump...
+701,trump,,women, Nobody has more respect for women than I do.
+702,trump,,misc,(LAUGHTER)  Nobody has more respect...
+703,trump,,women," And frankly, those stories have been largely debunked."
+704,trump,,misc,And I really want to just talk about something slightly different.
+705,trump,,h-clinton,"She mentions this, which is all fiction, all fictionalized, probably or possibly started by her and her very sleazy campaign."
+706,trump,,"h-clinton, crime","But I will tell you what isn't fictionalized are her e-mails, where she destroyed 33,000 e-mails criminally, criminally, after getting a subpoena from the United States Congress."
+707,trump,,security,"What happened to the FBI, I don't know."
+708,trump,,crime,"We have a great general, four-star general, today you read it in all of the papers, going to potentially serve five years in jail for lying to the FBI."
+709,trump,,crime,"She's lied hundreds of times to the people, to Congress, and to the FBI."
+710,trump,,crime,He's going to probably go to jail.
+711,trump,,misc,This is a four-star general.
+712,trump,,"h-clinton, election","And she gets away with it, and she can run for the presidency of the United States?"
+713,trump,,h-clinton,"That's really what you should be talking about, not fiction, where somebody wants fame or where they come out of her crooked campaign."
+714,moderator,,h-clinton, Secretary Clinton?
+715,clinton,,trump," Well, every time Donald is pushed on something which is obviously uncomfortable, like what these women are saying, he immediately goes to denying responsibility."
+716,clinton,,women,And it's not just about women.
+717,clinton,,trump,He never apologizes or says he's sorry for anything.
+718,clinton,,"trump, women",So we know what he has said and what he's done to women.
+719,clinton,,"trump, ableism","But he also went after a disabled reporter, mocked and mimicked him on national television."
+720,clinton,,"trump, religion"," He went after Mr. and Mrs. Khan, the parents of a young man who died serving our country, a Gold Star family, because of their religion."
+721,clinton,,trump,"He went after John McCain, a prisoner of war, said he prefers people who aren't captured."
+722,clinton,,"trump, racism","He went after a federal judge, born in Indiana, but who Donald said couldn't be trusted to try the fraud and racketeering case against Trump University because his parents were Mexican."
+723,clinton,,misc,So it's not one thing.
+724,clinton,,"trump, america","This is a pattern, a pattern of divisiveness, of a very dark and in many ways dangerous vision of our country, where he incites violence, where he applauds people who are pushing and pulling and punching at his rallies."
+725,clinton,,america,That is not who America is.
+726,clinton,,election,"And I hope that as we move in the last weeks of this campaign, more and more people will understand what's at stake in this election."
+727,clinton,,america,It really does come down to what kind of country we are going to have.
+728,trump,,"h-clinton, crime"," So sad when she talks about violence at my rallies, and she caused the violence."
+729,trump,,misc,It's on tape.
+730,trump,,isis," The other things are false, but honestly, I'd love to talk about getting rid of ISIS, and I'd love to talk about other things..."
+731,trump,,misc," ... but those other charges, as she knows, are false."
+732,moderator,,"question, election","In this bucket about fitness to be president, there's been a lot of developments over the last 10 days since the last debate."
+733,moderator,,question,I'd like to ask you about them.
+734,moderator,,"question, america",These are questions that the American people have.
+735,moderator,,"question, h-clinton","Secretary Clinton, during your 2009 Senate confirmation hearing, you promised to avoid even the appearance of a conflict of interest with your dealing with the Clinton Foundation while you were secretary of state, but e-mails show that donors got special access to you."
+736,moderator,,"question, h-clinton","Those seeking grants for Haiti relief were considered separately from non-donors, and some of those donors got contracts, government contracts, taxpayer money."
+737,moderator,,"question, h-clinton",Can you really say that you kept your pledge to that Senate committee?
+738,moderator,,"question, trump","And why isn't what happened and what went on between you and the Clinton Foundation, why isn't it what Mr. Trump calls pay to play?"
+739,clinton,,america," Well, everything I did as secretary of state was in furtherance of our country's interests and our values."
+740,clinton,,misc,The State Department has said that.
+741,clinton,,misc,I think that's been proven.
+742,clinton,,h-clinton,"But I am happy, in fact I'm thrilled to talk about the Clinton Foundation, because it is a world-renowned charity and I am so proud of the work that it does."
+743,clinton,,misc,"You know, I could talk for the rest of the debate I know I don't have the time to do that."
+744,clinton,,healthcare,"But just briefly, the Clinton Foundation made it possible for 11 million people around the world with HIV-AIDS to afford treatment, and that's about half all the people in the world who are getting treatment."
+745,clinton,,healthcare,In partnership with the American Health Association...
+746,moderator,,h-clinton, Secretary Clinton...
+747,clinton,,"children, education"," ... we have made environments in schools healthier for kids, including healthier lunches..."
+748,moderator,,h-clinton," Secretary Clinton, respectfully, this is this is an open discussion."
+749,clinton,,misc,"Well, it is an open discussion."
+750,moderator,,question, And the specific question went to pay for play.
+751,moderator,,misc,Do you want to talk about that?
+752,clinton,,misc," Well, but there is no but there is no evidence but there is..."
+753,trump,,trump,(CROSSTALK)  TRUMP: I think that it's been very well...
+754,moderator,,trump, Let's ask Mr. Trump.
+755,clinton,,misc, There is a lot of evidence about the very good work...
+756,trump,,misc, It's been very well studied.
+757,clinton,,misc, ... and the high rankings...
+758,moderator,,trump,(CROSSTALK)  WALLACE: Please let me Mr. Trump speak.
+759,trump,,crime," ... and it's a criminal enterprise, and so many people know it."
+760,moderator,,trump, Please let Mr. Trump speak.
+761,trump,,crime,(CROSSTALK)  TRUMP: It's a criminal enterprise.
+762,trump,,trade,"Saudi Arabia giving $25 million, Qatar, all of these countries."
+763,trump,,women,You talk about women and women's rights?
+764,trump,,equality,So these are people that push gays off business off buildings.
+765,trump,,women,These are people that kill women and treat women horribly.
+766,trump,,women,And yet you take their money.
+767,trump,,equality,"So I'd like to ask you right now, why don't you give back the money that you've taken from certain countries that treat certain groups of people so horribly?"
+768,trump,,misc,Why don't you give back the money?
+769,trump,,misc,I think it would be a great gesture.
+770,trump,,h-clinton,Because she takes a tremendous amount of money.
+771,trump,,misc,And you take a look at the people of Haiti.
+772,trump,,misc,I was at a little Haiti the other day in Florida.
+773,trump,,h-clinton,"And I want to tell you, they hate the Clintons, because what's happened in Haiti with the Clinton Foundation is a disgrace."
+774,moderator,,h-clinton, Secretary Clinton?
+775,clinton,,"h-clinton, america","Well, very quickly, we at the Clinton Foundation spend 90 percent 90 percent of all the money that is donated on behalf of programs of people around the world and in our own country."
+776,clinton,,misc,I'm very proud of that.
+777,clinton,,misc,We have the highest rating from the watchdogs that follow foundations.
+778,clinton,,trump,"And I'd be happy to compare what we do with the Trump Foundation, which took money from other people and bought a six- foot portrait of Donald."
+779,clinton,,misc,It just was astonishing.
+780,clinton,,misc,"But when it comes to Haiti, Haiti is the poorest country in our hemisphere."
+781,clinton,,misc,"The earthquake and the hurricanes, it has devastated Haiti."
+782,clinton,,b-clinton,Bill and I have been involved in trying to help Haiti for many years.
+783,clinton,,misc,The Clinton Foundation raised $30 million to help Haiti after the catastrophic earthquake and all of the terrible problems the people there had.
+784,clinton,,economy,"We have done things to help small businesses, agriculture, and so much else."
+785,clinton,,economy,And we're going to keep working to help Haiti...
+786,clinton,,misc, ... because it's an important part of the American experience.
+787,trump,,misc, They don't want you to help them anymore.
+788,trump,,misc,(CROSSTALK)  TRUMP: I'd like to mention one thing.
+789,trump,,trump,"Trump Foundation, small foundation."
+790,trump,,misc,"People contribute, I contribute."
+791,trump,,military,"The money goes 100 percent 100 percent goes to different charities, including a lot of military."
+792,trump,,trump,I don't get anything.
+793,trump,,trump,I don't buy boats.
+794,trump,,trump,I don't buy planes.
+795,trump,,misc,What happens the money goes to them.
+796,moderator,,trump," Wasn't some of the money used to settle your lawsuits, sir?"
+797,trump,,america," No, it was we put up the American flag."
+798,trump,,misc,And that's it.
+799,trump,,america,They put up the American flag.
+800,trump,,america,We fought for the right in Palm Beach to put up the American flag.
+801,moderator,,misc,"But there was a penalty that was imposed by Palm Beach County, and the money came from your foundation..."
+802,moderator,,misc," ... instead of Mar-a-Lago or yourself, sir."
+803,trump,,misc," ... the money the money went to Fisher House, where they build houses the money that you're talking about went to Fisher House, where they build houses for veterans and disabled vets."
+804,clinton,,taxes," But, of course, there's no way we can know whether any of that is true, because he hasn't released his tax returns."
+805,clinton,,taxes,"He is the first candidate ever to run for president in the last 40-plus years who has not released his tax returns, so everything he says about charity or anything else, we can't prove it."
+806,clinton,,taxes,You can look at our tax returns.
+807,clinton,,taxes,We've got them all out there.
+808,clinton,,taxes,But what is really troubling is that we learned in the last debate he has not paid a penny in federal income tax.
+809,clinton,,immigration,"And we were talking about immigrants a few minutes ago, Chris."
+810,clinton,,"immigration, taxes","You know, half of all immigrants undocumented immigrants in our country actually pay federal income tax."
+811,clinton,,"taxes, immigration",So we have undocumented immigrants in America who are paying more federal income tax than a billionaire.
+812,clinton,,misc,I find that just astonishing.
+813,trump,,taxes," So let me just tell you very quickly, we're entitled because of the laws that people like her passed to take massive amounts of depreciation on other charges, and we do it."
+814,trump,,"buffet, soros, taxes","And all of her donors just about all of them I know Buffett took hundreds of millions of dollars, Soros, George Soros, took hundreds of millions of dollars..."
+815,trump,,misc, Let me just explain.
+816,moderator,,misc," But, no, we heard this..."
+817,trump,,taxes, Most of her donors have done the same thing as I do.
+818,moderator,,trump," Mr. Trump, we  OK."
+819,moderator,,misc," Folks, we heard this..."
+820,trump,,h-clinton," And you know, Hillary, what you should have done, you should have changed the law when you were a United States senator..."
+821,moderator,,misc," Folks, we heard this..."
+822,trump,,taxes," ... because your donors and your special interests are doing the same thing as I do, except even more so."
+823,trump,,taxes, You should have changed the law.
+824,trump,,taxes,"But you won't change the law, because you take in so much money."
+825,trump,,trump,"I mean, I sat in my apartment today on a very beautiful hotel down the street known as Trump..."
+826,clinton,,"steel, china", Made with Chinese steel.
+827,trump,,misc," But I will tell you, I sat there..."
+828,trump,,misc,(LAUGHTER)  ...
+829,trump,,misc,"I sat there watching ad after ad after ad, false ad."
+830,trump,,"h-clinton, taxes",All paid for by your friends on Wall Street that gave so much money because they know you're going to protect them.
+831,trump,,taxes,"And, frankly, you should have changed the laws."
+832,moderator,,trump, Mr. Trump...
+833,trump,,taxes," If you don't like what I did, you should have changed the laws."
+834,moderator,,"question, trump"," Mr. Trump, I want to ask you about one last question in this topic."
+835,moderator,,"question, election, h-clinton",You have been warning at rallies recently that this election is rigged and that Hillary Clinton is in the process of trying to steal it from you.
+836,moderator,,"question, election","Your running mate, Governor Pence, pledged on Sunday that he and you his words will absolutely accept the result of this election."
+837,moderator,,"question, election","Today your daughter, Ivanka, said the same thing."
+838,moderator,,"question, election","I want to ask you here on the stage tonight: Do you make the same commitment that you will absolutely sir, that you will absolutely accept the result of this election?"
+839,trump,,election, I will look at it at the time.
+840,trump,,election,I'm not looking at anything now.
+841,trump,,election,I'll look at it at the time.
+842,trump,,misc,What I've seen what I've seen is so bad.
+843,trump,,"election, media","First of all, the media is so dishonest and so corrupt, and the pile-on is so amazing."
+844,trump,,media,"The New York Times actually wrote an article about it, but they don't even care."
+845,trump,,media,It's so dishonest.
+846,trump,,media,And they've poisoned the mind of the voters.
+847,trump,,"media, election","But unfortunately for them, I think the voters are seeing through it."
+848,trump,,election,I think they're going to see through it.
+849,trump,,election,We'll find out on November 8th.
+850,trump,,election,But I think they're going to see through it.
+851,moderator,,misc," But, sir, there's..."
+852,trump,,election," If you look excuse me, Chris if you look at your voter rolls, you will see millions of people that are registered to vote millions, this isn't coming from me this is coming from Pew Report and other places millions of people that are registered to vote that shouldn't be registered to vote."
+853,trump,,election,So let me just give you one other thing.
+854,trump,,media,So I talk about the corrupt media.
+855,trump,,media,I talk about the millions of people tell you one other thing.
+856,trump,,h-clinton,She shouldn't be allowed to run.
+857,trump,,"crime, h-clinton","It's crooked she's she's guilty of a very, very serious crime."
+858,trump,,"election, h-clinton",She should not be allowed to run.
+859,trump,,h-clinton,"And just in that respect, I say it's rigged, because she should never..."
+860,trump,,"h-clinton, election"," Chris, she should never have been allowed to run for the presidency based on what she did with e-mails and so many other things."
+861,moderator,,america," But, sir, there is a tradition in this country in fact, one of the prides of this country is the peaceful transition of power and that no matter how hard-fought a campaign is, that at the end of the campaign that the loser concedes to the winner."
+862,moderator,,america,"Not saying that you're necessarily going to be the loser or the winner, but that the loser concedes to the winner and that the country comes together in part for the good of the country."
+863,moderator,,"question, america",Are you saying you're not prepared now to commit to that principle?
+864,trump,,election, What I'm saying is that I will tell you at the time.
+865,trump,,misc,I'll keep you in suspense.
+866,clinton,,misc," Well, Chris, let me respond to that, because that's horrifying."
+867,clinton,,"trump, election","You know, every time Donald thinks things are not going in his direction, he claims whatever it is, is rigged against him."
+868,clinton,,crime,The FBI conducted a year-long investigation into my e-mails.
+869,clinton,,crime,They concluded there was no case; he said the FBI was rigged.
+870,clinton,,trump,He lost the Iowa caucus.
+871,clinton,,trump,He lost the Wisconsin primary.
+872,clinton,,trump,He said the Republican primary was rigged against him.
+873,clinton,,"trump, crime",Then Trump University gets sued for fraud and racketeering; he claims the court system and the federal judge is rigged against him.
+874,clinton,,trump,There was even a time when he didn't get an Emmy for his TV program three years in a row and he started tweeting that the Emmys were rigged against him.
+875,clinton,,misc,(LAUGHTER)  CLINTON: This is this is a mindset.
+876,clinton,,trump,This is how Donald thinks.
+877,clinton,,misc,"And it's funny, but it's also really troubling."
+878,clinton,,america, So that is not the way our democracy works.
+879,clinton,,america,We've been around for 240 years.
+880,clinton,,election,We've had free and fair elections.
+881,clinton,,election,We've accepted the outcomes when we may not have liked them.
+882,clinton,,election,And that is what must be expected of anyone standing on a debate stage during a general election.
+883,clinton,,obama,"You know, President Obama said the other day when you're whining before the game is even finished..."
+884,moderator,,misc,(APPLAUSE)  WALLACE: Hold on.
+885,moderator,,misc,"Hold on, folks."
+886,moderator,,misc,"Hold on, folks."
+887,clinton,,misc, ... it just shows you're not up to doing the job.
+888,clinton,,trump,"And let's you know, let's be clear about what he is saying and what that means."
+889,clinton,,america,He is denigrating he's talking down our democracy.
+890,clinton,,misc,"And I, for one, am appalled that somebody who is the nominee of one of our two major parties would take that kind of position."
+891,trump,,"justice, h-clinton, b-clinton"," I think what the FBI did and what the Department of Justice did, including meeting with her husband, the attorney general, in the back of an airplane on the tarmac in Arizona, I think it's disgraceful."
+892,trump,,misc,I think it's a disgrace.
+893,trump,,america, I think we've never had a situation so bad in this country.
+894,moderator,,misc,"(APPLAUSE)  WALLACE: Hold on, folks."
+895,moderator,,misc,This doesn't do any good for anyone.
+896,moderator,,misc,"Let's please continue the debate, and let's move on to the subject of foreign hot spots."
+897,moderator,,"question, iraq",The Iraqi offensive to take back Mosul has begun.
+898,moderator,,"question, isis, iraq","If they are successful in pushing ISIS out of that city and out of all of Iraq, the question then becomes, what happens the day after?"
+899,moderator,,question,And that's something that whichever of you ends up whoever of you ends up as president is going to have to confront.
+900,moderator,,"question, military",Will you put U.S. troops into that vacuum to make sure that ISIS doesn't come back or isn't replaced by something even worse?
+901,moderator,,h-clinton,"Secretary Clinton, you go first in this segment."
+902,moderator,,misc,You have two minutes.
+903,clinton,,"iraq, military"," Well, I am encouraged that there is an effort led by the Iraqi army, supported by Kurdish forces, and also given the help and advice from the number of special forces and other Americans on the ground."
+904,clinton,,"military, iraq",But I will not support putting American soldiers into Iraq as an occupying force.
+905,clinton,,military,"I don't think that is in our interest, and I don't think that would be smart to do."
+906,clinton,,isis,"In fact, Chris, I think that would be a big red flag waving for ISIS to reconstitute itself."
+907,clinton,,iraq,The goal here is to take back Mosul.
+908,clinton,,misc,It's going to be a hard fight.
+909,clinton,,misc,I've got no illusions about that.
+910,clinton,,"syria, isis","And then continue to press into Syria to begin to take back and move on Raqqa, which is the ISIS headquarters."
+911,clinton,,military,I am hopeful that the hard work that American military advisers have done will pay off and that we will see a real a really successful military operation.
+912,clinton,,misc,But we know we've got lots of work to do.
+913,clinton,,"terrorism, syria, iran, russia","Syria will remain a hotbed of terrorism as long as the civil war, aided and abetted by the Iranians and the Russians, continue."
+914,clinton,,isis,"So I have said, look, we need to keep our eye on ISIS."
+915,clinton,,"safety, america, terrorism","That's why I want to have an intelligence surge that protects us here at home, why we have to go after them from the air, on the ground, online, why we have to make sure here at home we don't let terrorists buy weapons."
+916,clinton,,"safety, guns","If you're too dangerous to fly, you're too dangerous to buy a gun."
+917,clinton,,syria,"And I'm going to continue to push for a no-fly zone and safe havens within Syria not only to help protect the Syrians and prevent the constant outflow of refugees, but to, frankly, gain some leverage on both the Syrian government and the Russians so that perhaps we can have the kind of serious negotiation necessary to bring the conflict to an end and go forward on a political track."
+918,moderator,,trump," Mr. Trump, same question."
+919,moderator,,"question, isis, iraq","If we are able to push ISIS out of Mosul and out of Iraq, will would you be willing to put U.S. troops in there to prevent their return or something else?"
+920,trump,,iraq," Let me tell you, Mosul is so sad."
+921,trump,,iraq,We had Mosul.
+922,trump,,"h-clinton, iraq","But when she left, when she took everybody out, we lost Mosul."
+923,trump,,iraq,Now we're fighting again to get Mosul.
+924,trump,,"iraq, isis",The problem with Mosul and what they wanted to do is they wanted to get the leaders of ISIS who they felt were in Mosul.
+925,trump,,iraq,"About three months ago, I started reading that they want to get the leaders and they're going to attack Mosul."
+926,trump,,misc,"Whatever happened to the element of surprise,  OK?"
+927,trump,,iraq,We announce we're going after Mosul.
+928,trump,,"iraq, h-clinton","I have been reading about going after Mosul now for about how long is it, Hillary, three months?"
+929,trump,,misc,These people have all left.
+930,trump,,misc,They've all left.
+931,trump,,misc,The element of surprise.
+932,trump,,america,"Douglas MacArthur, George Patton spinning in their graves when they see the stupidity of our country."
+933,trump,,iraq,"So we're now fighting for Mosul, that we had."
+934,trump,,h-clinton,"All she had to do was stay there, and now we're going in to get it."
+935,trump,,iraq,But you know who the big winner in Mosul is going to be after we eventually get it?
+936,trump,,h-clinton,And the only reason they did it is because she's running for the office of president and they want to look tough.
+937,trump,,misc,They want to look good.
+938,trump,,misc,"He violated the red line in the sand, and he made so many mistakes, made all the mistakes."
+939,trump,,misc,That's why we have the great migration.
+940,trump,,election,But she wanted to look good for the election.
+941,trump,,misc,So they're going in.
+942,trump,,iraq,"But who's going to get Mosul, really?"
+943,trump,,iraq,We'll take Mosul eventually.
+944,trump,,misc,"But the way if you look at what's happening, much tougher than they thought."
+945,trump,,msic,"Much, much tougher."
+946,trump,,misc,Much more dangerous.
+947,trump,,military,Going to be more deaths that they thought.
+948,trump,,misc,But the leaders that we wanted to get are all gone because they're smart.
+949,trump,,iraq,So Mosul is going to be a wonderful thing.
+950,trump,,trade,"And Iran should write us a letter of thank you, just like the really stupid the stupidest deal of all time, a deal that's going to give Iran absolutely nuclear weapons."
+951,trump,,trade,"Iran should write us yet another letter saying thank you very much, because Iran, as I said many years ago, Iran is taking over Iraq, something they've wanted to do forever, but we've made it so easy for them."
+952,trump,,iraq,So we're now going to take Mosul.
+953,trump,,misc,And do you know who's going to be the beneficiary?
+954,trump,,misc,"Oh, yeah, they're making I mean, they are outsmarting look, you're not there, you might be involved in that decision."
+955,trump,,iraq,But you were there when you took everybody out of Mosul and out of Iraq.
+956,trump,,iraq,"You shouldn't have been in Iraq, but you did vote for it."
+957,trump,,iraq,"You shouldn't have been in Iraq, but once you were in Iraq, you should have never left the way."
+958,moderator,,misc," Sir, your two minutes are up."
+959,trump,,misc," The point is, the big winner is going to be Iran."
+960,clinton,,"trump, iraq"," Well, you know, once again, Donald is implying that he didn't support the invasion of Iraq."
+961,clinton,,misc,I said it was a mistake.
+962,clinton,,misc,I've said that years ago.
+963,clinton,,"trump, military, iraq", ... a very clear fact that...
+964,clinton,,"trump, military, iraq"," ... before the invasion, he supported it."
+965,clinton,,"trump, military, iraq","And, you know, I just want everybody to go Google it."
+966,clinton,,"trump, military, iraq",Google Donald Trump Iraq.
+967,clinton,,"trump, military, iraq",And you will see the dozens of sources which verify that he was for the invasion of Iraq.
+968,clinton,,"trump, military, iraq", And you can actually hear the audio of him saying that.
+969,clinton,,"trump, military, iraq","Now, why does that matter?"
+970,clinton,,"trump, military, iraq","Well, it matters because he has not told the truth about that position."
+971,clinton,,trump,I guess he believes it makes him look better now to contrast with me because I did vote for it.
+972,clinton,,misc,But what's really important here is to understand all the interplay.
+973,clinton,,iraq,Mosul is a Sunni city.
+974,clinton,,syria,Mosul is on the border of Syria.
+975,clinton,,misc,"And, yes, we do need to go after Baghdadi, and just like we went after bin Laden, while you were doing Celebrity Apprentice, and we brought him to justice."
+976,clinton,,military,We need to go after the leadership.
+977,clinton,,military,"But we need to get rid of them, get rid of their fighters."
+978,clinton,,"military, iraq",There are an estimated several thousand fighters in Mosul.
+979,clinton,,isis,They've been digging underground.
+980,clinton,,isis,They've been prepared to defend.
+981,clinton,,isis,It's going to be tough fighting.
+982,clinton,,syria,"But I think we can take back Mosul, and then we can move on into Syria and take back Raqqa."
+983,clinton,,trump,"I'm just amazed that he seems to think that the Iraqi government and our allies and everybody else launched the attack on Mosul to help me in this election, but that's how Donald thinks."
+984,clinton,,trump,"You know, he always is looking for some conspiracy."
+985,trump,,misc," Chris, we don't gain anything."
+986,clinton,,trump, He has all the conspiracy theories...
+987,clinton,,iraq,(CROSSTALK)  TRUMP: Iran is taking over Iraq.
+988,moderator,,h-clinton," Secretary Clinton, it's..."
+989,moderator,,iraq,(CROSSTALK)  TRUMP: Iran is taking over Iraq.
+990,moderator,,misc,We don't gain anything.
+991,clinton,,trump," This conspiracy theory, which he's been spewing out for quite some time."
+992,trump,,misc, If they did it by surprise...
+993,trump,,h-clinton,"(CROSSTALK)  WALLACE: Wait, wait, wait, Secretary Clinton, it's an open discussion."
+994,clinton,,misc,(CROSSTALK)  TRUMP: We could have gained if they did it by surprise.
+995,moderator,,trump," Secretary, please let Mr. Trump speak."
+996,clinton,,trump," ... unfit, and he proves it every time he talks."
+997,trump,,h-clinton," No, you are the one that's unfit."
+998,trump,,misc,"You know, WikiLeaks just actually came out John Podesta said some horrible things about you, and, boy, was he right."
+999,trump,,sanders,"And you know, Bernie Sanders, he said you have bad judgment."
+1000,trump,,iraq,"And if you think that going into Mosul after we let the world know we're going in, and all of the people that we really wanted the leaders they're all gone."
+1001,trump,,misc,"If you think that was good, then you do."
+1002,trump,,h-clinton,"Now, John Podesta said you have terrible instincts."
+1003,trump,,sanders,Bernie Sanders said you have bad judgment.
+1004,trump,,misc,I agree with both.
+1005,clinton,,sanders," Well, you should ask Bernie Sanders who he's supporting for president."
+1006,trump,,misc, Which is a big mistake.
+1007,clinton,,"sanders, america"," ... as he has campaigned for me around the country, you are the most dangerous person to run for president in the modern history of America."
+1008,clinton,,sanders,I think he's right.
+1009,moderator,,syria, Let's turn to Aleppo.
+1010,moderator,,"question, syria","Mr. Trump, in the last debate, you were both asked about the situation in the Syrian city of Aleppo."
+1011,moderator,,question,"And I want to follow up on that, because you said several things in that debate which were not true, sir."
+1012,moderator,,"question, syria",You said that Aleppo has basically fallen.
+1013,moderator,,question,"In fact, there in fact, there are..."
+1014,trump,,misc, It's a catastrophe.
+1015,moderator,,misc," It's a catastrophe, but there..."
+1016,trump,,misc, ... it's a mess.
+1017,moderator,,misc, There are a quarter of...
+1018,trump,,syria, Have you seen what's happening to Aleppo?
+1019,moderator,,question," Sir, if I may finish my question..."
+1020,trump,,syria,"  OK, so it hasn't fallen."
+1021,moderator,,syria," Well, there are a quarter of a million people still living there and being slaughtered."
+1022,trump,,misc, That's right.
+1023,trump,,misc,And they are being slaughtered...
+1024,trump,,misc, ... because of bad decisions.
+1025,moderator,,"question, isis, syria, russia"," If I may just finish here, and you also said that that Syria and Russia are busy fighting ISIS."
+1026,moderator,,"question, syria, military","In fact, they have been the ones who've been bombing and shelling eastern Aleppo, and they just announced a humanitarian pause, in effect, admitting that they have been bombing and shelling Aleppo."
+1027,moderator,,question,"Would you like to clear that up, sir?"
+1028,trump,,syria," Well, Aleppo is a disaster."
+1029,trump,,syria,It's a humanitarian nightmare.
+1030,trump,,syria,But it has fallen from the from any standpoint.
+1031,trump,,misc,"I mean, what do you need, a signed document?"
+1032,trump,,syria,Take a look at Aleppo.
+1033,trump,,syria,It is so sad when you see what's happened.
+1034,trump,,"h-clinton, syria","And a lot of this is because of Hillary Clinton, because what's happened is, by fighting Assad, who turned out to be a lot tougher than she thought, and now she's going to say, oh, he loves Assad, she's he's just much tougher and much smarter than her and Obama."
+1035,trump,,syria,"And everyone thought he was gone two years ago, three years ago."
+1036,trump,,russia,He he aligned with Russia.
+1037,trump,,"syria, iran","He now also aligned with Iran, who we made very powerful."
+1038,trump,,trade,We gave them $150 billion back.
+1039,trump,,trade,We give them $1.7 billion in cash.
+1040,trump,,trade,"I mean, cash."
+1041,trump,,trade,Bundles of cash as big as this stage.
+1042,trump,,trade,We gave them $1.7 billion.
+1043,trump,,"russia, iran",Now they have he has aligned with Russia and with Iran.
+1044,trump,,isis,"They don't want ISIS, but they have other things, because we're backing we're backing rebels."
+1045,trump,,military,We don't know who the rebels are.
+1046,trump,,trade,"We're giving them lots of money, lots of everything."
+1047,trump,,military,We don't know who the rebels are.
+1048,trump,,"russia, iran","And when and if and it's not going to happen, because you have Russia and you have Iran now."
+1049,trump,,syria,"But if they ever did overthrow Assad, you might end up with as bad as Assad is, and he's a bad guy, but you may very well end up with worse than Assad."
+1050,trump,,"h-clinton, syria, immigration","And this is what's caused the great migration, where she's taking in tens of thousands of Syrian refugees, who probably in many cases not probably, who are definitely..."
+1051,trump,,"isis, america"," ... in many cases, ISIS-aligned, and we now have them in our country, and wait until you see this is going to be the great Trojan horse."
+1052,trump,,misc,And wait until you see what happens in the coming years.
+1053,trump,,h-clinton,"Lots of luck, Hillary."
+1054,trump,,misc,Thanks a lot for doing a great job.
+1055,moderator,,"question, h-clinton, syria"," Secretary Clinton, you have talked about and in the last debate and again today that you would impose a no-fly zone to try to protect the people of Aleppo and to stop the killing there."
+1056,moderator,,"question, obama",President Obama has refused to do that because he fears it's going to draw us closer or deeper into the conflict.
+1057,moderator,,"question, military, syria, russia","And General Joseph Dunford, the chairman of the Joint Chiefs of Staff, says you impose a no-fly zone, chances are you're going to get into a war his words with Syria and Russia."
+1058,moderator,,"question, military","So the question I have is, if you impose a no-fly zone first of all, how do you respond to their concerns?"
+1059,moderator,,"question, russia, h-clinton","Secondly, if you impose a no-fly zone and a Russian plane violates that, does President Clinton shoot that plane down?"
+1060,clinton,,military," Well, Chris, first of all, I think a no-fly zone could save lives and could hasten the end of the conflict."
+1061,clinton,,obama,I'm well aware of the really legitimate concerns that you have expressed from both the president and the general.
+1062,clinton,,misc,This would not be done just on the first day.
+1063,clinton,,trade,This would take a lot of negotiation.
+1064,clinton,,"syria, russia",And it would also take making it clear to the Russians and the Syrians that our purpose here was to provide safe zones on the ground.
+1065,clinton,,syria,We've had millions of people leave Syria and those millions of people inside Syria who have been dislocated.
+1066,clinton,,"russia, syria","So I think we could strike a deal and make it very clear to the Russians and the Syrians that this was something that we believe was in the best interests of the people on the ground in Syria, it would help us with our fight against ISIS."
+1067,clinton,,"trump, immigration",But I want to respond to what Donald said about refugees.
+1068,clinton,,trump,He's made these claims repeatedly.
+1069,clinton,,immigration,"I am not going to let anyone into this country who is not vetted, who we do not have confidence in."
+1070,clinton,,"women, children",But I am not going to slam the door on women and children.
+1071,clinton,,"children, syria","That picture of that little 4-year-old boy in Aleppo, with the blood coming down his face while he sat in an ambulance, is haunting."
+1072,clinton,,isis,"That does not solve our internal challenges with ISIS and our need to stop radicalization, to work with American Muslim communities who are on the front lines to identify and prevent attacks."
+1073,clinton,,trump ,"In fact, the killer of the dozens of people at the nightclub in Orlando, the Pulse nightclub, was born in Queens, the same place Donald was born."
+1074,clinton,,misc,So let's be clear about what the threat is and how we are best going to be able to meet it.
+1075,clinton,,"syria, iraq, isis","And, yes, some of that threat emanates from over in Syria and Iraq, and we've got to keep fighting, and I will defeat ISIS, and some of it is we have to up our game and be much smarter here at home."
+1076,moderator,,misc," Folks, I want to get into our final segment."
+1077,moderator,,misc, Real quick.
+1078,trump,,isis, It's so ridiculous what she she will defeat ISIS.
+1079,trump,,isis,We should have never let ISIS happen in the first place.
+1080,trump,,isis,"And right now, they're in 32 countries."
+1081,trump,,misc, We should have wait one second.
+1082,trump,,military,They had a cease-fire three weeks ago.
+1083,trump,,"military, russia, syria","A cease-fire, the United States, Russia, and Syria."
+1084,trump,,russia,"And during the cease-fire, Russia took over vast swatches of land, and then they said we don't want the cease-fire anymore."
+1085,trump,,military,"We are so outplayed on missiles, on cease-fires."
+1086,trump,,misc,They are outplayed.
+1087,trump,,h-clinton,"Now, she wasn't there."
+1088,trump,,"putin, syria","But our country is so outplayed by Putin and Assad, and by the way and by Iran."
+1089,trump,,misc,Nobody can believe how stupid our leadership is.
+1090,moderator,,"trump, h-clinton, deficit"," Mr. Trump, Secretary Clinton no, we need to move on to our final segment, and that is the national debt, which has not been discussed until tonight."
+1091,moderator,,deficit,"Our national debt, as a share of the economy, our GDP, is now 77 percent."
+1092,moderator,,ww2,That's the highest since just after World War II.
+1093,moderator,,"question, h-clinton, economy","But the nonpartisan Committee for a Responsible Federal Budget says, Secretary Clinton, under your plan, debt would rise to 86 percent of GDP over the next 10 years."
+1094,moderator,,"question, trump","Mr. Trump, under your plan, they say it would rise to 105 percent of GDP over the next 10 years."
+1095,moderator,,"question, deficit","The question is, why are both of you ignoring this problem?"
+1096,moderator,,trump,"Mr. Trump, you go first."
+1097,trump,,jobs," Well, I say they're wrong, because I'm going to create tremendous jobs."
+1098,trump,,"economy, h-clinton","And we're bringing GDP from, really, 1 percent, which is what it is now, and if she got in, it will be less than zero."
+1099,trump,,economy,But we're bringing it from 1 percent up to 4 percent.
+1100,trump,,economy,And I actually think we can go higher than 4 percent.
+1101,trump,,economy,I think you can go to 5 percent or 6 percent.
+1102,trump,,economy,"And if we do, you don't have to bother asking your question, because we have a tremendous machine."
+1103,trump,,economy,We will have created a tremendous economic machine once again.
+1104,trump,,jobs,"To do that, we're taking back jobs."
+1105,trump,,jobs,"We're not going to let our companies be raided by other countries where we lose all our jobs, we don't make our product anymore."
+1106,trump,,misc,It's very sad.
+1107,trump,,"america, economy",But I'm going to create a the kind of a country that we were from the standpoint of industry.
+1108,trump,,misc,We've given it up.
+1109,trump,,misc,"We've become very, very sloppy."
+1110,trump,,trade,"We've had people that are political hacks making the biggest deals in the world, bigger than companies."
+1111,trump,,"economy, h-clinton","You take these big companies, these trade deals are far bigger than these companies, and yet we don't use our great leaders, many of whom back me and many of whom back Hillary, I must say."
+1112,trump,,misc,But we don't use those people.
+1113,trump,,trade,Those are the people these are the greatest negotiators in the world.
+1114,trump,,trade,We have the greatest businesspeople in the world.
+1115,trump,,trade,We have to use them to negotiate our trade deals.
+1116,trump,,misc,We use political hacks.
+1117,trump,,china,We use people that get the position because they gave they made a campaign contribution and they're dealing with China and people that are very much smarter than they are.
+1118,trump,,misc,So we have to use our great people.
+1119,trump,,economy,"But that being said, we will create an economic machine the likes of which we haven't seen in many decades."
+1120,trump,,economy,"And people, Chris, will again go back to work and they'll make a lot of money."
+1121,trump,,economy,And we'll have companies that will grow and expand and start from new.
+1122,moderator,,h-clinton, Secretary Clinton?
+1123,clinton,,"trump, america"," Well, first, when I hear Donald talk like that and know that his slogan is Make America Great Again,' I wonder when he thought America was great."
+1124,clinton,,"obama, america","And before he rushes and says, You know, before you and President Obama were there,' I think it's important to recognize that he has been criticizing our government for decades."
+1125,clinton,,"trump, past","You know, back in 1987, he took out a $100,000 ad in the New York Times, during the time when President Reagan was president, and basically said exactly what he just said now, that we were the laughingstock of the world."
+1126,clinton,,past,He was criticizing President Reagan.
+1127,clinton,,trump,"This is the way Donald thinks about himself, puts himself into, you know, the middle and says, You know, I alone can fix it,' as he said on the convention stage."
+1128,clinton,,deficit,"But if you look at the debt, which is the issue you asked about, Chris, I pay for everything I'm proposing."
+1129,clinton,,deficit,I do not add a penny to the national debt.
+1130,clinton,,deficit,"I take that very seriously, because I do think it's one of the issues we've got to come to grips with."
+1131,clinton,,"educaiton, infrastructure, healthcare","So when I talk about how we're going to pay for education, how we're going to invest in infrastructure, how we're going to get the cost of prescription drugs down, and a lot of the other issues that people talk to me about all the time, I've made it very clear we are going where the money is."
+1132,clinton,,taxes,We are going to ask the wealthy and corporations to pay their fair share.
+1133,clinton,,economy,And there is no evidence whatsoever that that will slow down or diminish our growth.
+1134,clinton,,economy,"In fact, I think just the opposite."
+1135,clinton,,economy,We'll have what economists call middle-out growth.
+1136,clinton,,middle-class,"We've got to get back to rebuilding the middle class, the families of America."
+1137,clinton,,economy,That's where growth will come from.
+1138,clinton,,economy,That's why I want to invest in you.
+1139,clinton,,misc,I want to invest in your family.
+1140,clinton,,economy,"And I think that's the smartest way to grow the economy, to make the economy fairer."
+1141,clinton,,misc,And we just have a big disagreement about this.
+1142,clinton,,trump,"You know, he started off with his dad as a millionaire..."
+1143,trump,,h-clinton," Yeah, yeah, we've heard we've heard this before, Hillary."
+1144,clinton,,h-clinton, I started off with my dad was a small-business man.
+1145,trump,,misc, We've heard this before.
+1146,clinton,,economy," And I think it you know, it's a difference that affects how we see the world and what we want to do with the economy."
+1147,trump,,h-clinton," Thank you, Hillary."
+1148,trump,,misc,Could I just respond?
+1149,moderator,,misc," Well, no, sir, because we're running out of time..."
+1150,trump,,"past, trade", Because I did disagree with Ronald Reagan very strongly on trade.
+1151,trump,,misc,I disagreed with him.
+1152,trump,,trade,We should have been much tougher on trade even then.
+1153,trump,,misc,I've been waiting for years.
+1154,trump,,misc," And frankly, now we're going to do it right."
+1155,moderator,,america,"The one last area I want to get into with you in this debate is the fact that the biggest driver of our debt is entitlements, which is 60 percent of all federal spending."
+1156,moderator,,medicare,"Now, the Committee for federal a Responsible Federal Budget has looked at both of your plans and they say neither of you has a serious plan that is going to solve the fact that Medicare's going to run out of money in the 2020s, Social Security is going to run out of money in the 2030s, and at that time, recipients are going to take huge cuts in their benefits."
+1157,moderator,,medicare,"So, in effect, the final question I want to ask you in this regard is and let me start with you, Mr. Trump, would President Trump make a deal to save Medicare and Social Security that included both tax increases and benefit cuts, in effect, a grand bargain on entitlements?"
+1158,trump,,taxes, I'm cutting taxes.
+1159,trump,,economy,We're going to grow the economy.
+1160,trump,,economy,It's going to grow at a record rate of growth.
+1161,moderator,,economy, That's not going to help in the entitlements.
+1162,trump,,misc," No, it's going to totally help you."
+1163,trump,,obamacare,And one thing we have to do: Repeal and replace the disaster known as Obamacare.
+1164,trump,,america,It's destroying our country.
+1165,trump,,economy,"It's destroying our businesses, our small business and our big businesses."
+1166,trump,,obamacare,We have to repeal and replace Obamacare.
+1167,trump,,past,"You take a look at the kind of numbers that that will cost us in the year ’17, it is a disaster."
+1168,trump,,obamacare,"If we don't repeal and replace now, it's probably going to die of its own weight."
+1169,trump,,obamacare,But Obamacare has to go.
+1170,trump,,obamacare,"It's the premiums are going up 60 percent, 70 percent, 80 percent."
+1171,trump,,future,Next year they're going to go up over 100 percent.
+1172,trump,,obamacare,"And I'm really glad that the premiums have started at least the people see what's happening, because she wants to keep Obamacare and she wants to make it even worse, and it can't get any worse."
+1173,trump,,healthcare,Bad health care at the most expensive price.
+1174,trump,,obamacare,We have to repeal and replace Obamacare.
+1175,moderator,,h-clinton," And, Secretary Clinton, same question, because at this point, Social Security and Medicare are going to run out, the trust funds are going to run out of money."
+1176,moderator,,taxes,"Will you as president entertain will you consider a grand bargain, a deal that includes both tax increases and benefit cuts to try to save both programs?"
+1177,clinton,,medicare," Well, Chris, I am on record as saying that we need to put more money into the Social Security Trust Fund."
+1178,clinton,,taxes,That's part of my commitment to raise taxes on the wealthy.
+1179,clinton,,"medicare, trump","My Social Security payroll contribution will go up, as will Donald's, assuming he can't figure out how to get out of it."
+1180,clinton,,medicare,But what we want to do is to replenish the Social Security Trust Fund...
+1181,trump,,h-clinton, Such a nasty woman.
+1182,clinton,,medicare," ... by making sure that we have sufficient resources, and that will come from either raising the cap and/or finding other ways to get more money into it."
+1183,clinton,,misc,I will not cut benefits.
+1184,clinton,,medicare,I want to enhance benefits for low-income workers and for women who have been disadvantaged by the current Social Security system.
+1185,clinton,,"taxes, deficit",But what Donald is proposing with these massive tax cuts will result in a $20 trillion additional national debt.
+1186,clinton,,medicare,That will have dire consequences for Social Security and Medicare.
+1187,clinton,,obaamcare,"And I'll say something about the Affordable Care Act, which he wants to repeal."
+1188,clinton,,obamacare,The Affordable Care Act extended the solvency of the Medicare Trust Fund.
+1189,clinton,,mediacre,"So if repeals it, our Medicare problem gets worse."
+1190,trump,,b-clinton, Your husband disagrees with you.
+1191,clinton,,healthcare, ... the long-term health care drivers.
+1192,clinton,,misc,"We've got to get costs down, increase value, emphasize wellness."
+1193,clinton,,misc,I have a plan for doing that.
+1194,clinton,,misc,And I think that we will be able to get entitlement spending under control by with more resources and harder decisions.
+1195,moderator,,misc," This is this is the final time, probably to both of your delight, that you're going to be on a stage together in this campaign."
+1196,moderator,,misc,I would like to end it on a positive note.
+1197,moderator,,misc,"You had not agreed to closing statements, but it seems to me in a funny way that might make it more interesting because you haven't prepared closing statements."
+1198,moderator,,"america, election","So I'd like you each to take and we're going to put a clock up, a minute, as the final question in the final debate, to tell the American people why they should elect you to be the next president."
+1199,moderator,,h-clinton,"Secretary Clinton, it's your turn to go first."
+1200,clinton,,america," Well, I would like to say to everyone watching tonight that I'm reaching out to all Americans Democrats, Republicans, and independents because we need everybody to help make our country what it should be, to grow the economy, to make it fairer, to make it work for everyone."
+1201,clinton,,america,"We need your talents, your skills, your commitments, your energy, your ambition."
+1202,clinton,,past,"You know, I've been privileged to see the presidency up close."
+1203,clinton,,america,And I know the awesome responsibility of protecting our country and the incredible opportunity of working to try to make life better for all of you.
+1204,clinton,,children,I have made the cause of children and families really my life's work.
+1205,clinton,,future,That's what my mission will be in the presidency.
+1206,clinton,,misc,"I will stand up for families against powerful interests, against corporations."
+1207,clinton,,"jobs, education","I will do everything that I can to make sure that you have good jobs, with rising incomes, that your kids have good educations from preschool through college."
+1208,clinton,,election,I hope you will give me a chance to serve as your president.
+1209,moderator,,"h-clinton, trump"," Secretary Clinton, thank you. Mr. Trump."
+1210,trump,,economy, She's raising the money from the people she wants to control.
+1211,trump,,misc,Doesn't work that way.
+1212,trump,,election,"But when I started this campaign, I started it very strongly."
+1213,trump,,america,It's called Make America Great Again.
+1214,trump,,america,We're going to make America great.
+1215,trump,,military,We have a depleted military.
+1216,trump,,military,We have the greatest people on Earth in our military.
+1217,trump,,military,We don't take care of our veterans.
+1218,trump,,immigration,"We take care of illegal immigrants, people that come into the country illegally, better than we take care of our vets."
+1219,trump,,misc,That can't happen.
+1220,trump,,"women, police",Our policemen and women are disrespected.
+1221,trump,,"justice, safety","We need law and order, but we need justice, too."
+1222,trump,,inner-cities,Our inner cities are a disaster.
+1223,trump,,crime,You get shot walking to the store.
+1224,trump,,education,They have no education.
+1225,trump,,jobs,They have no jobs.
+1226,trump,,racism,I will do more for African-Americans and Latinos than she can ever do in 10 lifetimes.
+1227,trump,,racism,"All she's done is talk to the African-Americans and to the Latinos, but they get the vote, and then they come back, they say, we'll see you in four years."
+1228,trump,,america,"We are going to make America strong again, and we are going to make America great again, and it has to start now."
+1229,trump,,obama,"We cannot take four more years of Barack Obama, and that's what you get when you get her."
+1230,moderator,,h-clinton,"(APPLAUSE)  Secretary Clinton hold on just a moment, folks."
+1231,moderator,,"h-clinton, trump","Secretary Clinton, Mr. Trump, I want to thank you both for participating in all three of these debates."
+1232,moderator,,misc,That brings to an end this year's debates sponsored by the Commission on Presidential Debates.
+1233,moderator,,misc,"We want to thank the University of Nevada, Las Vegas, and its students for having us."
+1234,moderator,,election,Now the decision is up to you.
+1235,moderator,,election,"While millions have already voted, Election Day, November 8th, is just 20 days away."
+1236,moderator,,america,'ne thing everyone here can agree on: We hope you will go vote.
+1237,moderator,,america,It is one of the honors and obligations of living in this great country.
+1238,moderator,,misc,"Thank you, and good night."

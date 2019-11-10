@@ -1,0 +1,15 @@
+[
+  {"id": "biden", "label": "Biden", "full_name": "Joe Biden","image":"headshots/biden.jpg"},
+  {"id": "booker", "label": "Booker", "full_name": "Cory Booker","image":"headshots/booker.jpg"},
+  {"id": "buttigieg", "label": "Buttigieg", "full_name": "Pete Buttigieg","image":"headshots/buttigieg.jpg"},
+  {"id": "gabbard", "label": "Gabbard", "full_name": "Tulsi Gabbard","image":"headshots/gabbard.jpg"},
+  {"id": "gillibrand", "label": "Gillibrand", "full_name": "Kirsten Gillibrand","image":"headshots/gillibrand.jpg"},
+  {"id": "harris", "label": "Harris", "full_name": "Kamala Harris","image":"headshots/harris.jpg"},
+  {"id": "klobuchar", "label": "Klobuchar", "full_name": "Amy Klobuchar","image":"headshots/klobuchar.jpg"},
+  {"id": "orourke", "label": "O'Rourke", "full_name": "Beto O'Rourke","image":"headshots/orourke.jpg"},
+  {"id": "sanders", "label": "Sanders", "full_name": "Bernie Sanders","image":"headshots/sanders.jpg"},
+  {"id": "warren", "label": "Warren", "full_name": "Elizabeth Warren","image":"headshots/warren.jpg"},
+  {"id": "trump", "label": "Trump", "full_name": "Donald Trump","image":"headshots/trump.jpg"},
+  {"id": "omalley", "label": "O'Malley", "full_name": "Martin O'Malley","image":"headshots/omalley.jpg"},
+  {"id": "clinton", "label": "Clinton", "full_name": "Hillary Clinton","image":"headshots/clinton.jpg"}
+]

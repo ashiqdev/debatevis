@@ -1,0 +1,93 @@
+body{
+  font-family: sans-serif;
+}
+
+#container{
+  position: relative;
+}
+div.skip{
+  visibility: hidden;
+}
+path.link {
+  fill: none;
+  stroke: #999;
+}
+.chord{
+  opacity: 0.2;
+  stroke: black;
+  stroke-width: 1;
+}
+.chord-active{
+  opacity: 1;
+}
+.phrase{
+    font-size: 1em;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+#player{
+  position: fixed;
+  left: 160px;
+  bottom: 60px;
+}
+#sections{
+  width: 340px;
+}
+#sections > div {
+  margin-bottom: 20px;
+  opacity: 0.5
+}
+#sections > div.graph-scroll-active{
+  opacity: 1;
+}
+.speaker{
+  stroke-width: 2;
+}
+#title{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.topic-label{
+  text-shadow: 0 0 4px #fff;
+  font-size: 9pt;
+}
+#graph-svg {
+  position: fixed;
+  top: 50px;
+}
+#chord-svg{
+  position: fixed;
+  top: 100px;
+}
+.hover-detail{
+  font-size: 9pt;
+  font-family: sans-serif;
+}
+.phrase{
+  font-size: 11pt;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.selectpicker{
+  position: relative;
+  z-index: 1000;
+  overflow: inherit;
+  visibility: hidden;
+}
+.topic-tag{
+  font-size: 9pt;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#sections > div{
+  opacity: .7
+}
+
+#sections div.graph-scroll-active{
+  opacity: 1;
+  font-weight: bold;
+}
